@@ -1,1 +1,16 @@
-<style>
+
+#Kids{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+#row1{
+    margin-left: 300px;
+    float: left;
+}
+
+#row2{
+    margin-right: 300px;
+    float: right;
+}
