@@ -1,29 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>LK Make Log</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="homeCSS.css" rel="stylesheet"/>
+
+    <title>Eating page</title>
 </head>
+
 <body>
-    <div style="text-align: center">
-        Keywords:<br>
-        <input type="button" value="This kid likes to talk with others"><br>
-        <input type="button" value="Performed well on the learning part">
+<!-- navbar in all pages-->
+<div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white">About</h4>
+                <p class="text-muted">LogKids strives to serve for childcare teachers who need to make instant log of child under their care, and provide the log reviewing in a meaningful way. Start using LogKids to spend less time on notes-taking and interact with the child more!</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+                <h4 class="text-white">Contact</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">logkids@gmail.com</a></li>
+                    <!-- <li><a href="#" class="text-white">Like on Facebook</a></li>
+                     <li><a href="#" class="text-white">Email me</a></li> -->
+                </ul>
+            </div>
+        </div>
     </div>
-    <div style="text-align: center">
-        <textarea style="height:300px;width: 300px" placeholder="Please input detail log here"></textarea>
-    </div>
+</div>
 
-    <div style="text-align: center">
-            Eating part:
-            <label>Less than normal<input name="eat" type="radio" value="Less than normal" ></label>
-            <label>Normal<input  name="eat" type="radio" value="Normal" checked="checked"></label>
-            <label>More than normal<input  name="eat" type="radio" value="More than normal"></label>
+<div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+        <a href="index.html" class="navbar-brand d-flex align-items-center"><b>LogKids</b></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<!-- main body  -->
+<main role="main">
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Welcome to LogKids</h1>
+            <p class="lead text-muted">Eat performance</p>
+        </div>
+    </section>
+
+    <!-- Evaluation part-->
+    <div class="album py-5 bg-light">
+        <div style="text-align: center">
+            <button type="button" class="btn btn-secondary btn-lg" disabled>Eating</button>
+        </div>
+
+        <div style="text-align: center">
+            Amount of this kid eat<br>
+            <input class="btn-outline-secondary" type="button" value="less than normal">
+            <input class="btn-outline-secondary" type="button" value="normal">
+            <input class="btn-outline-secondary" type="button" value="more than average">
+
+        </div>
+        <br>
+        <div style="text-align: center">
+            <textarea style="height:300px;width: 350px" placeholder="Please input detailed log here"></textarea>
             <br>
-
+            <input type="submit" value="save"/>
+            <input type="submit" value="complete"/>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
     </div>
-    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+</main>
+
+<!-- info in all pages -->
+<footer class="text-muted">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>KAIST 2019 CS374 @Team XZY</p>
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./HomePage.js"></script>
 </body>
+
 
 </html>
