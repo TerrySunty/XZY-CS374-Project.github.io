@@ -14,7 +14,12 @@
     margin-right: 400px;
     float: right;
 } */
-
+.center-div
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
 
 .evaluation {
   margin: 0 auto;
