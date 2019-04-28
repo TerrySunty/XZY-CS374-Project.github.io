@@ -14,6 +14,7 @@ function writeToDatabase(comment) {
         name:comment
     });
 }
+
 $( document ).ready(function(){
-    writeToDatabase("Bob");
+    
 });
