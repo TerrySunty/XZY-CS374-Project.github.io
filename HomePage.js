@@ -7,3 +7,13 @@ var config = {
     messagingSenderId: "77437705828"
 };
 firebase.initializeApp(config);
+
+function writeToDatabase(comment) {
+    var newKey = firebase.database().ref('/kidsBox/').push();
+    newKey.set({
+        name:comment
+    });
+}
+$( document ).ready(function(){
+    writeToDatabase("Bob");
+});
