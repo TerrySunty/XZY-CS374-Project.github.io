@@ -16,5 +16,5 @@ function writeToDatabase(comment) {
 }
 
 $( document ).ready(function(){
-    
+
 });
