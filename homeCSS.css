@@ -15,6 +15,19 @@
     float: right;
 } */
 
+
+.evaluation {
+  margin: 0 auto;
+  width: 350px;
+}
+
+.btn-outline-secondary {
+  color: #6c757d;
+  background-color: transparent;
+  background-image: none;
+  border-color: #6c757d;
+}
+
 .jumbotron {
   padding-top: 3rem;
   padding-bottom: 3rem;
