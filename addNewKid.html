@@ -50,53 +50,63 @@
         </div>
     </section>
 
-    <!-- Evaluation part-->
-    <div class="album py-5 bg-light">
+    <!-- Firebase part-->
+<!--     <div class="album py-5 bg-light">
         <table class="center-div" style="text-align: left">
-                <!-- <tr><td><label>Age:<input id="age" type="text" placeholder="age"></label></td></tr>
+                <tr><td><label>Age:<input id="age" type="text" placeholder="age"></label></td></tr>
                 <tr><td><label>Gender: Boy<input  name="gender" type="radio" value="boy">Girl<input name="gender" type="radio" value="girl"></label></td></tr>
                 <tr><td><label>Name:  <input  id="name" type="text" placeholder="name"></label></td></tr>
-                <tr><td><input class="btn btn-primary" id="kid_submit" type="submit" value="Submit"></td></tr> -->
-                
-<form class="form-horizontal">
-
-    <div class="form-group"> <!-- Kid Name -->
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <label for="kid_name" class="control-label col-sm-auto font-weight-bold">Name</label>
-            <div class="col-sm-3">
-                <input type="text" class="form-control" id="kid_name" name="kid_name" placeholder="">
-            </div>  
-        </div>
-    </div>
-
-    <fieldset class="form-group">
-        <div class="row">
-          <div class="col-sm-4"></div>
-          <legend class="col-form-label col-sm-auto font-weight-bold pt-0">Gender</legend>
-          <div class="col-sm-4">
-            <div class="form-check custom-control-inline">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-              <label class="form-check-label" for="gridRadios1">Boy</label>
-            </div>
-            <div class="form-check custom-control-inline">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-              <label class="form-check-label" for="gridRadios2">Girl</label>
-            </div>
-          </div>
-        </div>
-    </fieldset> 
-                    
-     <div class="container text-center">
-            <button class="btn btn-primary" id="eating_submit" type="submit">Submit</button>
-    </div>  
-</form>  
-
-
-
+                <tr><td><input class="btn btn-primary" id="kid_submit" type="submit" value="Submit"></td></tr>
         </table>
         <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
-    </div>
+    </div> -->
+                
+    <form class="form-horizontal">
+
+        <div class="form-group"> <!-- Kid Name -->
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <label for="kid_name" class="control-label col-sm-auto font-weight-bold">Name</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Kid's name" autofocus="autofocus">
+                </div>  
+            </div>
+        </div>
+
+        <fieldset class="form-group">
+            <div class="row">
+              <div class="col-sm-4"></div>
+              <legend class="col-form-label col-sm-auto font-weight-bold pt-0">Gender</legend>
+              <div class="col-sm-4">
+                <div class="form-check custom-control-inline">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gender" value="option1" checked>
+                  <label class="form-check-label" for="gridRadios1">Boy</label>
+                </div>
+                <div class="form-check custom-control-inline">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gender" value="option2">
+                  <label class="form-check-label" for="gridRadios2">Girl</label>
+                </div>
+              </div>
+            </div>
+        </fieldset> 
+
+         <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4 custom-control-inline"></div>
+                <label for="inputState" class="col-sm-auto font-weight-bold pt-0">Age</label>
+                <select id="inputState" class="col-sm-3">
+                    <option selected>Choose</option>
+                        <option id="age_2">2</option>
+                        <option id="age_3">3</option>
+                        <option id="age_4">4</option>
+                </select>
+            </div>
+        </div>
+
+         <div class="container text-center">
+                <button class="btn btn-primary" id="eating_submit" type="submit">Submit</button>
+        </div>  
+    </form>  
 </main>
 
 <!-- info in all pages -->
