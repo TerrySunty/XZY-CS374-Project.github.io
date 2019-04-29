@@ -10,10 +10,11 @@ var config = {
 firebase.initializeApp(config);//initialize firebase
 
 
-var age=document.getElementById('age');
-var filter=document.getElementsByName('gender');
-var kidname=document.getElementById('name');
+var age=document.getElementById('ageinput').value;
+var filter=document.getElementsByName('gridRadios');
+var kidname=document.getElementById('name').innerText;
 var kidgender='boy';
+
 
 $("input[name='filter']").click(function(){
 
@@ -24,45 +25,32 @@ $("input[name='filter']").click(function(){
 
 });
 
-function writeToDatabase(age,kidname,kidgender) {
+function writeToDatabase(age,kidname,kidgender,photo) {
     var newKey = firebase.database().ref('/kidsBox/').push();
     newKey.set({
         age:age,
         gender:kidgender,
-        name:kidname
+        name:kidname,
+        photo_path:photo
     });
 }
-
-
-function htmladd(age,kidname,kidgender){
-    var div1=document.createElement('div');
-    div1.class="col-6 col-sm-4 col-md-3 col-lg-2 py-4";
-
-    var link=document.createElement('a');
-    link.href="task choosing.html";
-
-    var div2=document.createElement('div');
-    div2.class="card";
-    var svg=document.createElement('svg');
-    svg.xmlns="http://www.w3.org/2000/svg";
-    svg.xmlns.xlink="http://www.w3.org/1999/xlink";
-    
-
-
-
-
-    var div3=document.createElement('div');
-    var div4=document.createElement('div');
-}
-
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-var photo_index=getRandomInt(0,20);//先简易实现,后期修改
+
+
+
+
+
+
+
 
 var createbutton=document.getElementById("createButton");
-createbutton.onclick=function(){
-    writeToDatabase(age,kidname,kidgender);
 
+createbutton.onclick=function(){
+    var photo_path="kids_png/"+kidgender+"s_png/"+kidgender+"-"+getRandomInt(0,20)+".png";
+    writeToDatabase(age,kidname,kidgender,photo_path);
+    window.location.href='index.html';
+    return false;
 };
