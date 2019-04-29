@@ -1,2 +1,2 @@
 # XZY-CS374-Project
-Team XZY - for childcare teachers to make quick log about kids under their care and review past logs in a meaningful way
+LogKids @Team XZY - for childcare teachers to make instant log about kids under their care and review past data in a meaningful way
