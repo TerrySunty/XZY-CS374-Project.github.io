@@ -15,8 +15,28 @@ function writeToDatabase(comment) {
     });
 }
 
+var age;
+var kidname;
+var kidgender;
+var path;
 
-function htmladd(age,kidname,kidgender){
+function readFromDatabase() {
+    return firebase.database().ref('/kidsBox/').once('value', function(snapshot) {
+        initializeTable();
+
+        var myValue = snapshot.val();
+        if(myValue!==null){
+            var keyList = Object.keys(myValue);
+            for(var i=0;i<keyList.length;i++) {
+                var myKey = keyList[i];
+                var row=ReAddrow(myValue[myKey].pair,myValue[myKey].answer);
+                age=myValue[myKey].age
+
+        }
+    });
+}
+
+function htmladd(age,kidname,kidgender,path){
     var div1=document.createElement('div');
     div1.class="col-6 col-sm-4 col-md-3 col-lg-2 py-4";
 
@@ -30,7 +50,7 @@ function htmladd(age,kidname,kidgender){
     svg.xmlns.xlink="http://www.w3.org/1999/xlink";
     var img=document.createElement('image');
 
-    img.href=photo_path;
+    img.href=path;
 
 
     var div3=document.createElement('div');
