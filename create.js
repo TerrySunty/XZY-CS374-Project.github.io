@@ -51,6 +51,6 @@ var createbutton=document.getElementById("createButton");
 createbutton.onclick=function(){
     var photo_path="kids_png/"+kidgender+"s_png/"+kidgender+"-"+getRandomInt(0,20)+".png";
     writeToDatabase(age,kidname,kidgender,photo_path);
-    window.location.href='index.html';
+    window.location.replace('index.html');
     return false;
 };

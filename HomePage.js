@@ -30,7 +30,7 @@ function readFromDatabase() {
             for(var i=0;i<keyList.length;i++) {
                 var myKey = keyList[i];
                 var row=ReAddrow(myValue[myKey].pair,myValue[myKey].answer);
-                age=myValue[myKey].age
+                age=myValue[myKey].age}
 
         }
     });
