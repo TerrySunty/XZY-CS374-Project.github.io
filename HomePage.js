@@ -22,60 +22,63 @@ var path;
 
 function readFromDatabase() {
     return firebase.database().ref('/kidsBox/').once('value', function(snapshot) {
-        initializeTable();
+
 
         var myValue = snapshot.val();
         if(myValue!==null){
             var keyList = Object.keys(myValue);
             for(var i=0;i<keyList.length;i++) {
                 var myKey = keyList[i];
-                var row=ReAddrow(myValue[myKey].pair,myValue[myKey].answer);
-                age=myValue[myKey].age}
+                age=myValue[myKey].age;
+                kidgender=myValue[myKey].gender;
+                kidname=myValue[myKey].name;
+                path=myValue[myKey].photo_path;
+                htmladd(kidname,path)
+            }
 
         }
     });
 }
 
-function htmladd(age,kidname,kidgender,path){
+function htmladd(kidname,path){
     var div1=document.createElement('div');
-    div1.class="col-6 col-sm-4 col-md-3 col-lg-2 py-4";
+    div1.className="col-6 col-sm-4 col-md-3 col-lg-2 py-4";
 
     var link=document.createElement('a');
     link.href="task choosing.html";
 
     var div2=document.createElement('div');
-    div2.class="card";
-    var svg=document.createElement('svg');
-    svg.xmlns="http://www.w3.org/2000/svg";
-    svg.xmlns.xlink="http://www.w3.org/1999/xlink";
-    var img=document.createElement('image');
+    div2.className="card";
 
-    img.href=path;
+    var img=document.createElement('image');
+    img.className="card-img-top";
+    img.alt="Card image cap";
+    img.src=path;
 
 
     var div3=document.createElement('div');
-    div3.class='card-body';
+    div3.className='card-body';
     var pha=document.createElement('p');
-    pha.class='card-name text-center';
+    pha.className='card-name text-center';
     pha.innerHTML=kidname;
 
 
     var div4 =document.createElement('div');
-    div4.class="d-flex justify-content-between align-items-center";
-
+    div4.className="d-flex justify-content-between align-items-center";
     div3.appendChild(pha);
     div3.appendChild(div4);
-    div2.appendChild(svg);
     div2.appendChild(img);
     div2.appendChild(div3);
-    link.appendChild(div2);
+    link.append(div2);
     div1.appendChild(link);
-    var add_id=$("#add-icon");
-    $(div1).insertBefore(add_id);
+
+    var kidsBox=document.getElementById('kidsBox');
+    kidsBox.appendChild(div1);
+
 
 
 }
 
 $( document ).ready(function(){
-
+    readFromDatabase();
 });

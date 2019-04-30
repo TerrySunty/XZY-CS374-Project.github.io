@@ -10,9 +10,9 @@ var config = {
 firebase.initializeApp(config);//initialize firebase
 
 
-var age=document.getElementById('ageinput').value;
+var age;
 var filter=document.getElementsByName('gridRadios');
-var kidname=document.getElementById('name').innerText;
+var kidname=document.getElementById('name');
 var kidgender='boy';
 
 
@@ -30,7 +30,7 @@ function writeToDatabase(age,kidname,kidgender,photo) {
     newKey.set({
         age:age,
         gender:kidgender,
-        name:kidname,
+        name:kidname.value,
         photo_path:photo
     });
 }
@@ -47,10 +47,9 @@ function getRandomInt(min, max) {
 
 
 var createbutton=document.getElementById("createButton");
-
+var photo_path="https://raw.githubusercontent.com/TerrySunty/XZY-CS374-Project.github.io/master/kids_png/"+kidgender+"s_png/"+kidgender+"-"+getRandomInt(0,20)+".png";
 createbutton.onclick=function(){
-    var photo_path="kids_png/"+kidgender+"s_png/"+kidgender+"-"+getRandomInt(0,20)+".png";
+    age=$("#ageinput option:selected").val();
     writeToDatabase(age,kidname,kidgender,photo_path);
-    window.location.replace('index.html');
-    return false;
+    setTimeout("window.location.href='./index.html'",500)
 };
