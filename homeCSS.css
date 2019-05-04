@@ -83,8 +83,22 @@ footer p {
   transition: 0.2s;
 }
 
+.addTag span:before {
+  font-family: "fontAwesome";
+  content: '\f2e7';
+  font-weight: 900;
+  position: relative;
+  opacity: 1;
+
+  transition: 0.2s;
+}
+
+.fas fa-utensils{
+  background-color: black;
+}
+
 .addTag span:after {
-  content: '\00bb';
+  content: '\00af';
   position: absolute;
   opacity: 0;
   top: 0;
@@ -94,6 +108,8 @@ footer p {
 
 .addTag:hover span{
   background-color: #4CAF50;
+  border: 5px;
+  border-color: #b81900;
   color: white;
   padding-right: 15px;
 }
