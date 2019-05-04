@@ -7,3 +7,10 @@ var config = {
     messagingSenderId: "77437705828"
 };
 firebase.initializeApp(config);
+
+$(document).ready(function() {
+
+    $("#button").click(function(){
+        $(".addTag").effect( "highlight", {color:"#00eee0"}, 3000 );
+    });
+});
