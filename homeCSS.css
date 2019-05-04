@@ -83,16 +83,6 @@ footer p {
   transition: 0.2s;
 }
 
-.addTag span:before {
-  font-family: "fontAwesome";
-  content: '\f2e7';
-  font-weight: 900;
-  position: relative;
-  opacity: 1;
-
-  transition: 0.2s;
-}
-
 .fas fa-utensils{
   background-color: black;
 }
