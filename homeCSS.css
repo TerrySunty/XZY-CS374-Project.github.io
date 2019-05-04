@@ -66,3 +66,39 @@ footer {
 footer p {
   margin-bottom: .25rem;
 }
+
+/* Adding Tag*/
+.addTag {
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition-duration: 0.2s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.addTag span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+
+.addTag span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.2s;
+}
+
+.addTag:hover span{
+  background-color: #4CAF50;
+  color: white;
+  padding-right: 15px;
+}
+
+.addTag:hover span:after {
+  opacity: 1;
+  right: 0;
+}
