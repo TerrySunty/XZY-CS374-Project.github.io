@@ -83,10 +83,6 @@ footer p {
   transition: 0.2s;
 }
 
-.fas fa-utensils{
-  background-color: black;
-}
-
 .addTag span:after {
   content: '\00af';
   position: absolute;
@@ -97,7 +93,7 @@ footer p {
 }
 
 .addTag:hover span{
-  background-color: #4CAF50;
+  background-color: #0244e2;
   border: 5px;
   border-color: #b81900;
   color: white;
@@ -107,4 +103,9 @@ footer p {
 .addTag:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.bold-mute{
+  color: gray;
+  font-weight: bold;
 }
