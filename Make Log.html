@@ -8,14 +8,15 @@
         <script type = "text/javascript"
                 src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
         </script>
-
         <script type = "text/javascript"
                 src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
         </script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
                     <title>Make Log</title>
+        <script src="./makelog.js"></script>
+        <link rel="stylesheet" href="bootstrap-tagsinput.min.js">
+        <link rel="stylesheet" href="bootstrap-tagsinput.css">
     </head>
 
     <body>
@@ -104,9 +105,13 @@
                                 <div class="form-group">
                                     <label class="font-weight-bold" for="eating_comments">Comments:</label>
                                     <div>
-                                        <button class = "addTag"><span><i class = "fas fa-utensils"></i> Ate a lot of vegetables today</span></button>
+                                        <button class = "addTag"><span>Ate a lot of vegetables today</span></button>
                                         <button class = "addTag"><span> Did not finish milk</span></button>
                                         <button class = "addTag"><span> Drank the entire bowl of soup by himself</span></button>
+                                        <button class= "addTag" id = "addBtn"><i class="fas fa-plus-circle"></i></button>
+
+                                        <input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput">
+
                                     </div><br>
                                     <textarea class="form-control center-block" id="eating_comments" rows="1" ></textarea><br>
                                 </div>
