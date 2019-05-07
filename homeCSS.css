@@ -93,9 +93,8 @@ footer p {
 }
 
 .addTag:hover span{
-  background-color: #0244e2;
+  background-color: #2f98e2;
   border: 5px;
-  border-color: #b81900;
   color: white;
   padding-right: 15px;
 }
@@ -105,7 +104,29 @@ footer p {
   right: 0;
 }
 
+/* Adding additional Tag*/
+.addExTag {
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition-duration: 0.2s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.addExTag span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+
+.addExTag:hover span{
+  background-color: #2f98e2;
+  border: 5px;
+  color: white;
+}
+
 .bold-mute{
   color: gray;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
