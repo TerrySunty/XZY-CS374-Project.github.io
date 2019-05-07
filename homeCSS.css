@@ -84,7 +84,7 @@ footer p {
 }
 
 .addTag span:after {
-  content: '\00af';
+  content: '\0000';
   position: absolute;
   opacity: 0;
   top: 0;

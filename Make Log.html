@@ -14,9 +14,9 @@
         </script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
                     <title>Make Log</title>
-        <script src="./makelog.js"></script>
-        <link rel="stylesheet" href="bootstrap-tagsinput.min.js">
-        <link rel="stylesheet" href="bootstrap-tagsinput.css">
+        <script src="makelog.js"></script>
+        <script src="bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js"></script>
+        <link rel="stylesheet" href="bootstrap-tagsinput-latest/src/bootstrap-tagsinput.css">
     </head>
 
     <body>
@@ -105,15 +105,8 @@
                                 <div class="form-group">
                                     <label class="font-weight-bold" for="eating_comments">Comments:</label>
                                     <div>
-                                        <button class = "addTag"><span>Ate a lot of vegetables today</span></button>
-                                        <button class = "addTag"><span> Did not finish milk</span></button>
-                                        <button class = "addTag"><span> Drank the entire bowl of soup by himself</span></button>
-                                        <button class= "addTag" id = "addBtn"><i class="fas fa-plus-circle"></i></button><br>
-
-                                        <input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput">
-
+                                        <input type="text" value="Ate a lot of vegetables today, Did not finish milk, Drank the entire bowl of soup" data-role="tagsinput">
                                     </div>
-                                    <textarea class="form-control center-block" id="eating_comments" rows="1" ></textarea><br>
                                 </div>
                             </form>
                             <div class="container text-center">
