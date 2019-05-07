@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="homeCSS.css" rel="stylesheet"/>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Complete Log Page</title>
 </head>
 
@@ -50,25 +50,37 @@
     <!-- container-->
     <div class="album py-5 bg-light">
         <div class="container">
-            <h5 class="font-weight-bold" for="pills-tab">Name: </h5>
-            <h6 class = "bold-mute"> &emsp; BEN</h5><br>
+            <div class="col-md-12 text-left">
+                <h5 class="font-weight-bold" for="pills-tab">Name: </h5>
+                <h6 class = "bold-mute"> &emsp; BEN</h5><br>
 
-            <h5 class="font-weight-bold" for="pills-tab">Category: </h5>
-            <h6 class = "bold-mute"> &emsp; Eating</h6><br>
+                    <h5 class="font-weight-bold" for="pills-tab">Category: </h5>
+                    <h6 class = "bold-mute"> &emsp; Eating</h6><br>
 
-            <h5 class="font-weight-bold" for="pills-tab">Quick tags selected: </h5>
-            <h6 class = "bold-mute"> &emsp; [Eating amount: NORMAL] </h6>
+                    <h5 class="font-weight-bold" for="pills-tab">Quick tags selected: </h5>
+                    <h6 class = "bold-mute"> &emsp; [Eating amount: NORMAL] </h6>
+                    <ol>
+                        <li class = "bold-mute"> Did not finish milk </li>
+                        <li class = "bold-mute"> Drank the entire bowl of soup by himself</li>
+                    </ol>
+                    <h6 class = "bold-mute"> &emsp; Additional comments: Ate an apple </h6><br>
 
-            <ol>
-                <li class = "bold-mute"> Did not finish milk </li>
-                <li class = "bold-mute"> Drank the entire bowl of soup by himself</li>
-            </ol>
-            <h5 class="font-weight-bold" for="eating_comments">Comments:</h5>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="eating_comments">Add additional tags:</label>
+                        <div>
+                            <button class = "addExTag"><span>Ate a lot of vegetables today</span></button>
+                            <button class = "addExTag"><span> Ate very cleanly</span></button>
+                            <button class = "addExTag"><span> Tried broccoli for the first time</span></button>
+                            <button class= "addExTag" id = "addBtn"><i class="fas fa-plus-circle"></i></button>
+                        </div>
+                    </div>
+                    </form>
 
-
-
-            <textarea class="form-control center-block" id="eating_comments" rows="3" ></textarea><br>
+                    <h5 class="font-weight-bold" for="eating_comments">Comments:</h5>
+                    <textarea class="form-control center-block" id="eating_comments" rows="3" ></textarea><br>
+            </div>
         </div>
+
 
 
         <div class="container text-center">
