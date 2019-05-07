@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8763cc83-06ca-4433-b725-d53c87772fc0" name="Default Changelist" comment="basic kids information">
-      <change beforePath="$PROJECT_DIR$/Make Log.html" beforeDir="false" afterPath="$PROJECT_DIR$/Make Log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/makelog.js" beforeDir="false" afterPath="$PROJECT_DIR$/makelog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task choosing.html" beforeDir="false" afterPath="$PROJECT_DIR$/task choosing.html" afterDir="false" />
-    </list>
+    <list default="true" id="8763cc83-06ca-4433-b725-d53c87772fc0" name="Default Changelist" comment="basic kids information" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -95,11 +91,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makelog.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4886">
+              <caret line="349" column="9" lean-forward="true" selection-start-line="349" selection-start-column="9" selection-end-line="349" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -206,7 +211,7 @@
       <workItem from="1556523400845" duration="6119000" />
       <workItem from="1556627976473" duration="5738000" />
       <workItem from="1556989525922" duration="6240000" />
-      <workItem from="1556995811019" duration="20367000" />
+      <workItem from="1556995811019" duration="20595000" />
     </task>
     <task id="LOCAL-00001" summary="add link">
       <created>1556358901517</created>
@@ -247,7 +252,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61790000" />
+    <option name="totallyTimeSpent" value="62018000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -413,13 +418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2278">
-          <caret line="337" column="21" selection-start-line="337" selection-start-column="16" selection-end-line="337" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Incomplete Log List.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
@@ -445,6 +443,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4886">
+          <caret line="349" column="9" lean-forward="true" selection-start-line="349" selection-start-column="9" selection-end-line="349" selection-end-column="9" />
         </state>
       </provider>
     </entry>
