@@ -13,4 +13,6 @@ $(document).ready(function() {
     $("#button").click(function(){
         $(".addTag").effect( "highlight", {color:"#00eee0"}, 3000 );
     });
+
+    $("input").tagsinput('items');
 });
