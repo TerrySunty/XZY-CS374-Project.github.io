@@ -1,4 +1,5 @@
-$("#datepicker").datepicker(
-		    {viewMode: 'years',
-		     format: 'mm-yyyy'
-		});
+$("#datepicker1").datepicker( {
+    format: "mm-yyyy",
+    startView: "months", 
+    minViewMode: "months"
+});

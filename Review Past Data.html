@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="homeCSS.css" rel="stylesheet"/>
+    <link href="datepicker/css/datepicker.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="homeCSS.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" />
-
+    <script type="text/javascript" src="datepicker/js/bootstrap-datepicker.js"></script>
+    <!-- <script type="text/javascript" src="review.js"></script> -->
 
 
 
@@ -52,6 +55,14 @@
 
     <p>Date: <input type="text" id="datepicker"></p>
 
+<!--     <div class="input-append date" id="datepicker1" data-date="02-2012" 
+         data-date-format="mm-yyyy">
+
+     <input  type="text" readonly="readonly" name="date" >    
+     <span class="add-on"><i class="icon-th"></i></span>      
+    </div>  -->
+<!--     <label for="myDate">Date :</label>
+    <input name="myDate" class="monthYearPicker" /> -->
 
 <!--  <div class="container-fluid">
 
@@ -120,18 +131,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="external/jquery/jquery.js"></script>
-    <script src="jquery-ui.min.js"></script>
 
-    <script>
-    $("#datepicker").datepicker( {
-        format: "mm-yyyy",
-        viewMode: "months", 
-        minViewMode: "months"
+<!--     <script>
+  $( function() {
+    $( "#datepicker" ).datepicker({
+    format: "mm-yyyy",
+    startView: "months", 
+    minViewMode: "months"
     });
+  } );
+    </script> -->
 
-      
-    </script>
+
+
+
 <!-- <script src="chart-area-demo.js"></script>
 <script src="chart-pie-demo.js"></script>
 <script src="chart-bar-demo.js"></script> -->

@@ -1,0 +1,19 @@
+{
+  "name": "jquery-ui-month-picker",
+  "description": "jQuery UI Month Picker Plugin",
+  "version": "3.0.4",
+  "license": "GPL-3.0",
+  "repository": "https://github.com/KidSysco/jquery-ui-month-picker.git",
+  "scripts": {
+    "test": "grunt test",
+    "postinstall": "bower install"
+  },
+  "devDependencies": {
+    "bower": "",
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-qunit": "^0.6.0",
+    "grunt-contrib-uglify": "~0.6.0",
+    "grunt-gh-pages": "^1.0.0"
+  }
+}

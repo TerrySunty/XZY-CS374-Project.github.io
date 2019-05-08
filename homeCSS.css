@@ -130,3 +130,7 @@ footer p {
   color: gray;
   /*font-weight: bold;*/
 }
+
+.ui-datepicker-calendar {
+    display: none;
+ }
