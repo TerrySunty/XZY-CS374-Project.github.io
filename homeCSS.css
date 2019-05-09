@@ -131,10 +131,6 @@ footer p {
   /*font-weight: bold;*/
 }
 
-.ui-datepicker-calendar {
-  display: none;
- }
-
 .thematicBreak{
   display: block;
   margin-top: 0.5em;
@@ -143,4 +139,8 @@ footer p {
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
+}
+
+.bgEmpha{
+  background-color: rgba(128, 142, 144, 0.89);
 }
