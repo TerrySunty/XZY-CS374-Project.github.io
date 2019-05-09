@@ -8,12 +8,7 @@ var config = {
 };
 firebase.initializeApp(config);
 
-function writeToDatabase(comment) {
-    var newKey = firebase.database().ref('/kidsBox/').push();
-    newKey.set({
-        name:comment
-    });
-}
+
 
 var age;
 var kidname;

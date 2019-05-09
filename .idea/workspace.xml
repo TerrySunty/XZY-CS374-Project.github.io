@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8763cc83-06ca-4433-b725-d53c87772fc0" name="Default Changelist" comment="basic kids information">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Make Log.html" beforeDir="false" afterPath="$PROJECT_DIR$/Make Log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/makelog.js" beforeDir="false" afterPath="$PROJECT_DIR$/makelog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task choosing.html" beforeDir="false" afterPath="$PROJECT_DIR$/task choosing.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,35 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Incomplete Log List.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Make Log.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="56" column="43" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homeCSS.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="97" column="15" selection-start-line="97" selection-start-column="15" selection-end-line="97" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eating.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="70" column="51" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#div#2;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="375">
+              <caret line="244" column="16" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -54,35 +30,121 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makelog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="431">
+              <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Make Log.html">
+        <entry file="file://E:/Chrome浏览器下载/bootstrap-tagsinput-latest/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="162" column="87" selection-start-line="162" selection-start-column="87" selection-end-line="162" selection-end-column="87" />
+            <state relative-caret-position="358">
+              <caret line="191" column="44" selection-start-line="191" selection-start-column="37" selection-end-line="191" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bootstrap-tagsinput-latest/dist/bootstrap-tagsinput.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="103" column="38" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testsss.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="556">
+              <caret line="749" column="7" selection-start-line="749" selection-start-column="7" selection-end-line="749" selection-end-column="7" />
+              <folding>
+                <element signature="e#4687#4691#0" expanded="true" />
+                <element signature="e#4702#4708#0" expanded="true" />
+                <element signature="e#4712#4718#0" expanded="true" />
+                <element signature="e#4725#4731#0" expanded="true" />
+                <element signature="e#4772#4778#0" expanded="true" />
+                <element signature="e#4789#4795#0" expanded="true" />
+                <element signature="e#4804#4810#0" expanded="true" />
+                <element signature="e#4812#4816#0" expanded="true" />
+                <element signature="e#5476#5480#0" expanded="true" />
+                <element signature="e#5497#5501#0" expanded="true" />
+                <element signature="e#5670#5674#0" expanded="true" />
+                <element signature="e#5682#5686#0" expanded="true" />
+                <element signature="e#6783#6787#0" expanded="true" />
+                <element signature="e#6824#6828#0" expanded="true" />
+                <element signature="e#6831#6835#0" expanded="true" />
+                <element signature="e#6859#6863#0" expanded="true" />
+                <element signature="e#6872#6876#0" expanded="true" />
+                <element signature="e#6883#6887#0" expanded="true" />
+                <element signature="e#6890#6894#0" expanded="true" />
+                <element signature="e#6919#6923#0" expanded="true" />
+                <element signature="e#6933#6937#0" expanded="true" />
+                <element signature="e#6944#6948#0" expanded="true" />
+                <element signature="e#6951#6955#0" expanded="true" />
+                <element signature="e#6976#6980#0" expanded="true" />
+                <element signature="e#6986#6990#0" expanded="true" />
+                <element signature="e#6997#7001#0" expanded="true" />
+                <element signature="e#7004#7008#0" expanded="true" />
+                <element signature="e#7030#7034#0" expanded="true" />
+                <element signature="e#7041#7045#0" expanded="true" />
+                <element signature="e#7052#7056#0" expanded="true" />
+                <element signature="e#7059#7063#0" expanded="true" />
+                <element signature="e#7083#7087#0" expanded="true" />
+                <element signature="e#7092#7096#0" expanded="true" />
+                <element signature="e#7103#7107#0" expanded="true" />
+                <element signature="e#7108#7112#0" expanded="true" />
+                <element signature="e#7119#7123#0" expanded="true" />
+                <element signature="e#8601#8605#0" expanded="true" />
+                <element signature="e#8616#8622#0" expanded="true" />
+                <element signature="e#8626#8632#0" expanded="true" />
+                <element signature="e#8639#8645#0" expanded="true" />
+                <element signature="e#8665#8671#0" expanded="true" />
+                <element signature="e#8682#8688#0" expanded="true" />
+                <element signature="e#8697#8703#0" expanded="true" />
+                <element signature="e#8705#8709#0" expanded="true" />
+                <element signature="e#8710#8714#0" expanded="true" />
+                <element signature="e#8720#8724#0" expanded="true" />
+                <element signature="e#9226#9230#0" expanded="true" />
+                <element signature="e#9237#9241#0" expanded="true" />
+                <element signature="e#10719#10723#0" expanded="true" />
+                <element signature="e#10734#10740#0" expanded="true" />
+                <element signature="e#10744#10750#0" expanded="true" />
+                <element signature="e#10752#10756#0" expanded="true" />
+                <element signature="e#10757#10761#0" expanded="true" />
+                <element signature="e#10767#10771#0" expanded="true" />
+                <element signature="e#11602#11606#0" expanded="true" />
+                <element signature="e#11613#11617#0" expanded="true" />
+                <element signature="e#13010#13014#0" expanded="true" />
+                <element signature="e#13025#13031#0" expanded="true" />
+                <element signature="e#13035#13041#0" expanded="true" />
+                <element signature="e#13043#13047#0" expanded="true" />
+                <element signature="e#13048#13052#0" expanded="true" />
+                <element signature="e#13058#13062#0" expanded="true" />
+                <element signature="e#14248#14252#0" expanded="true" />
+                <element signature="e#14259#14263#0" expanded="true" />
+                <element signature="e#29463#29467#0" expanded="true" />
+                <element signature="e#29474#29478#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task choosing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="75" column="18" lean-forward="true" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+            <state relative-caret-position="630">
+              <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/create.js">
+        <entry file="file://$PROJECT_DIR$/../CS374/Pro3/capital_game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="9" selection-end-column="52" />
+            <state relative-caret-position="200">
+              <caret line="344" column="16" selection-start-line="344" selection-start-column="16" selection-end-line="344" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -93,8 +155,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -104,8 +166,13 @@
       <find>btn btn-primary</find>
       <find>submit</find>
       <find>#0</find>
-      <find>input</find>
       <find>img</find>
+      <find>eating_submit</find>
+      <find>inte</find>
+      <find>input</find>
+      <find>remove</find>
+      <find>item</find>
+      <find>itemRem</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,21 +198,22 @@
         <option value="$PROJECT_DIR$/homeCSS.css" />
         <option value="$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.css" />
         <option value="$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/HomePage.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/create.js" />
-        <option value="$PROJECT_DIR$/Make Log.html" />
-        <option value="$PROJECT_DIR$/makelog.js" />
         <option value="$PROJECT_DIR$/MakeLog.html" />
         <option value="$PROJECT_DIR$/task choosing.html" />
+        <option value="$PROJECT_DIR$/HomePage.js" />
+        <option value="$PROJECT_DIR$/node_modules/tesst.html" />
+        <option value="$PROJECT_DIR$/testsss.html" />
+        <option value="$PROJECT_DIR$/makelog.js" />
+        <option value="$PROJECT_DIR$/Make Log.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="980" />
-    <option name="height" value="1031" />
+    <option name="x" value="815" />
+    <option name="width" value="1114" />
+    <option name="height" value="1033" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -188,12 +256,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.makelog.js">
     <configuration name="Make Log.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/XZY-CS374-Project.github.io/Make Log.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="makelog.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/makelog.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.makelog.js" />
         <item itemvalue="JavaScript Debug.Make Log.html" />
       </list>
     </recent_temporary>
@@ -265,24 +337,31 @@
       <option name="project" value="LOCAL" />
       <updated>1557380385225</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="basic kids information">
+      <created>1557381440619</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1557381440619</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64517000" />
+    <option name="totallyTimeSpent" value="68513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24900925" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15587847" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -408,20 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HomePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="9" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/meta.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -443,24 +508,223 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/makelog.js">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="326">
+          <caret line="498" column="31" selection-start-line="498" selection-start-column="31" selection-end-line="498" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Make Log.html">
+    <entry file="file://$PROJECT_DIR$/HomePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="162" column="87" selection-start-line="162" selection-start-column="87" selection-end-line="162" selection-end-column="87" />
+        <state relative-caret-position="50">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="27" selection-start-line="27" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_code.jquery.com_jquery-3.3.1.slim.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="3836" selection-start-line="3836" selection-end-line="3836" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/tesst.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="747" column="41" lean-forward="true" selection-start-line="747" selection-start-column="41" selection-end-line="747" selection-end-column="41" />
+          <folding>
+            <element signature="e#4687#4691#0" expanded="true" />
+            <element signature="e#4702#4708#0" expanded="true" />
+            <element signature="e#4712#4718#0" expanded="true" />
+            <element signature="e#4725#4731#0" expanded="true" />
+            <element signature="e#4772#4778#0" expanded="true" />
+            <element signature="e#4789#4795#0" expanded="true" />
+            <element signature="e#4804#4810#0" expanded="true" />
+            <element signature="e#4812#4816#0" expanded="true" />
+            <element signature="e#5476#5480#0" expanded="true" />
+            <element signature="e#5497#5501#0" expanded="true" />
+            <element signature="e#5670#5674#0" expanded="true" />
+            <element signature="e#5682#5686#0" expanded="true" />
+            <element signature="e#6783#6787#0" expanded="true" />
+            <element signature="e#6824#6828#0" expanded="true" />
+            <element signature="e#6831#6835#0" expanded="true" />
+            <element signature="e#6859#6863#0" expanded="true" />
+            <element signature="e#6872#6876#0" expanded="true" />
+            <element signature="e#6883#6887#0" expanded="true" />
+            <element signature="e#6890#6894#0" expanded="true" />
+            <element signature="e#6919#6923#0" expanded="true" />
+            <element signature="e#6933#6937#0" expanded="true" />
+            <element signature="e#6944#6948#0" expanded="true" />
+            <element signature="e#6951#6955#0" expanded="true" />
+            <element signature="e#6976#6980#0" expanded="true" />
+            <element signature="e#6986#6990#0" expanded="true" />
+            <element signature="e#6997#7001#0" expanded="true" />
+            <element signature="e#7004#7008#0" expanded="true" />
+            <element signature="e#7030#7034#0" expanded="true" />
+            <element signature="e#7041#7045#0" expanded="true" />
+            <element signature="e#7052#7056#0" expanded="true" />
+            <element signature="e#7059#7063#0" expanded="true" />
+            <element signature="e#7083#7087#0" expanded="true" />
+            <element signature="e#7092#7096#0" expanded="true" />
+            <element signature="e#7103#7107#0" expanded="true" />
+            <element signature="e#7108#7112#0" expanded="true" />
+            <element signature="e#7119#7123#0" expanded="true" />
+            <element signature="e#8601#8605#0" expanded="true" />
+            <element signature="e#8616#8622#0" expanded="true" />
+            <element signature="e#8626#8632#0" expanded="true" />
+            <element signature="e#8639#8645#0" expanded="true" />
+            <element signature="e#8665#8671#0" expanded="true" />
+            <element signature="e#8682#8688#0" expanded="true" />
+            <element signature="e#8697#8703#0" expanded="true" />
+            <element signature="e#8705#8709#0" expanded="true" />
+            <element signature="e#8710#8714#0" expanded="true" />
+            <element signature="e#8720#8724#0" expanded="true" />
+            <element signature="e#9226#9230#0" expanded="true" />
+            <element signature="e#9237#9241#0" expanded="true" />
+            <element signature="e#10719#10723#0" expanded="true" />
+            <element signature="e#10734#10740#0" expanded="true" />
+            <element signature="e#10744#10750#0" expanded="true" />
+            <element signature="e#10752#10756#0" expanded="true" />
+            <element signature="e#10757#10761#0" expanded="true" />
+            <element signature="e#10767#10771#0" expanded="true" />
+            <element signature="e#11602#11606#0" expanded="true" />
+            <element signature="e#11613#11617#0" expanded="true" />
+            <element signature="e#13010#13014#0" expanded="true" />
+            <element signature="e#13025#13031#0" expanded="true" />
+            <element signature="e#13035#13041#0" expanded="true" />
+            <element signature="e#13043#13047#0" expanded="true" />
+            <element signature="e#13048#13052#0" expanded="true" />
+            <element signature="e#13058#13062#0" expanded="true" />
+            <element signature="e#14248#14252#0" expanded="true" />
+            <element signature="e#14259#14263#0" expanded="true" />
+            <element signature="e#29463#29467#0" expanded="true" />
+            <element signature="e#29474#29478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testsss.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="749" column="7" selection-start-line="749" selection-start-column="7" selection-end-line="749" selection-end-column="7" />
+          <folding>
+            <element signature="e#4687#4691#0" expanded="true" />
+            <element signature="e#4702#4708#0" expanded="true" />
+            <element signature="e#4712#4718#0" expanded="true" />
+            <element signature="e#4725#4731#0" expanded="true" />
+            <element signature="e#4772#4778#0" expanded="true" />
+            <element signature="e#4789#4795#0" expanded="true" />
+            <element signature="e#4804#4810#0" expanded="true" />
+            <element signature="e#4812#4816#0" expanded="true" />
+            <element signature="e#5476#5480#0" expanded="true" />
+            <element signature="e#5497#5501#0" expanded="true" />
+            <element signature="e#5670#5674#0" expanded="true" />
+            <element signature="e#5682#5686#0" expanded="true" />
+            <element signature="e#6783#6787#0" expanded="true" />
+            <element signature="e#6824#6828#0" expanded="true" />
+            <element signature="e#6831#6835#0" expanded="true" />
+            <element signature="e#6859#6863#0" expanded="true" />
+            <element signature="e#6872#6876#0" expanded="true" />
+            <element signature="e#6883#6887#0" expanded="true" />
+            <element signature="e#6890#6894#0" expanded="true" />
+            <element signature="e#6919#6923#0" expanded="true" />
+            <element signature="e#6933#6937#0" expanded="true" />
+            <element signature="e#6944#6948#0" expanded="true" />
+            <element signature="e#6951#6955#0" expanded="true" />
+            <element signature="e#6976#6980#0" expanded="true" />
+            <element signature="e#6986#6990#0" expanded="true" />
+            <element signature="e#6997#7001#0" expanded="true" />
+            <element signature="e#7004#7008#0" expanded="true" />
+            <element signature="e#7030#7034#0" expanded="true" />
+            <element signature="e#7041#7045#0" expanded="true" />
+            <element signature="e#7052#7056#0" expanded="true" />
+            <element signature="e#7059#7063#0" expanded="true" />
+            <element signature="e#7083#7087#0" expanded="true" />
+            <element signature="e#7092#7096#0" expanded="true" />
+            <element signature="e#7103#7107#0" expanded="true" />
+            <element signature="e#7108#7112#0" expanded="true" />
+            <element signature="e#7119#7123#0" expanded="true" />
+            <element signature="e#8601#8605#0" expanded="true" />
+            <element signature="e#8616#8622#0" expanded="true" />
+            <element signature="e#8626#8632#0" expanded="true" />
+            <element signature="e#8639#8645#0" expanded="true" />
+            <element signature="e#8665#8671#0" expanded="true" />
+            <element signature="e#8682#8688#0" expanded="true" />
+            <element signature="e#8697#8703#0" expanded="true" />
+            <element signature="e#8705#8709#0" expanded="true" />
+            <element signature="e#8710#8714#0" expanded="true" />
+            <element signature="e#8720#8724#0" expanded="true" />
+            <element signature="e#9226#9230#0" expanded="true" />
+            <element signature="e#9237#9241#0" expanded="true" />
+            <element signature="e#10719#10723#0" expanded="true" />
+            <element signature="e#10734#10740#0" expanded="true" />
+            <element signature="e#10744#10750#0" expanded="true" />
+            <element signature="e#10752#10756#0" expanded="true" />
+            <element signature="e#10757#10761#0" expanded="true" />
+            <element signature="e#10767#10771#0" expanded="true" />
+            <element signature="e#11602#11606#0" expanded="true" />
+            <element signature="e#11613#11617#0" expanded="true" />
+            <element signature="e#13010#13014#0" expanded="true" />
+            <element signature="e#13025#13031#0" expanded="true" />
+            <element signature="e#13035#13041#0" expanded="true" />
+            <element signature="e#13043#13047#0" expanded="true" />
+            <element signature="e#13048#13052#0" expanded="true" />
+            <element signature="e#13058#13062#0" expanded="true" />
+            <element signature="e#14248#14252#0" expanded="true" />
+            <element signature="e#14259#14263#0" expanded="true" />
+            <element signature="e#29463#29467#0" expanded="true" />
+            <element signature="e#29474#29478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CS374/Pro3/capital_game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="344" column="16" selection-start-line="344" selection-start-column="16" selection-end-line="344" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task choosing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="75" column="18" lean-forward="true" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+        <state relative-caret-position="630">
+          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-tagsinput-latest/dist/bootstrap-tagsinput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="103" column="38" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makelog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Chrome浏览器下载/bootstrap-tagsinput-latest/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="191" column="44" selection-start-line="191" selection-start-column="37" selection-end-line="191" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Make Log.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="244" column="16" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
         </state>
       </provider>
     </entry>
