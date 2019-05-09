@@ -107,17 +107,27 @@ tr{
   color: white;
 }
 
+/* Important checkbox*/
 .star {
-    visibility:hidden;
-    font-size:30px;
-    cursor:pointer;
+  visibility:hidden;
+  font-size:35px;
+  cursor:pointer;
+
 }
 .star:before {
-   content: "\2605";
-   position: absolute;
-   visibility:visible;
+  content: "\2605";
+  position: absolute;
+  visibility:visible;
+  color: orange;
 }
 .star:checked:before {
-   content: "\2606";
-   position: absolute;
+  content: "\2606";
+  position: absolute;
+  color: black;
+}
+
+.INLINE {
+  overflow: hidden;
+  color: #e4606d;
+  display: block;
 }
