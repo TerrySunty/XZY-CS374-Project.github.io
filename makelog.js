@@ -1,3 +1,4 @@
+//config of firebase
 var config = {
     apiKey: "AIzaSyC8IHBEyIwBLsqE80vYcW_rvETrcdSEuzg",
     authDomain: "logkids.firebaseapp.com",
