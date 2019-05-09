@@ -31,12 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addNewKid.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="97" column="96" selection-start-line="97" selection-start-column="96" selection-end-line="97" selection-end-column="96" />
-              <folding>
-                <element signature="e#4529#4535#0" expanded="true" />
-                <element signature="e#4535#4541#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="336">
+              <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="50" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -53,22 +49,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Complete Log.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="51" selection-start-line="51" selection-end-line="53" selection-end-column="45" />
-              <folding>
-                <element signature="e#2544#2550#0" expanded="true" />
-                <element signature="e#2712#2718#1" expanded="true" />
-                <element signature="e#2745#2751#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="252">
+              <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Review Past Data.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="66" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Make Log.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="191" column="30" lean-forward="true" selection-end-line="255" />
+            <state relative-caret-position="126">
+              <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -76,26 +76,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24416">
+            <state relative-caret-position="24415">
               <caret line="5" column="151806" selection-start-line="5" selection-start-column="151806" selection-end-line="5" selection-end-column="151806" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homeCSS.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="238">
+              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -112,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1414">
-              <caret line="101" selection-start-line="101" selection-end-line="101" />
+            <state relative-caret-position="-2492">
+              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="21" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -163,23 +154,36 @@
         <option value="$PROJECT_DIR$/task choosing.html" />
         <option value="$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/makelog.js" />
-        <option value="$PROJECT_DIR$/Complete Log.html" />
-        <option value="$PROJECT_DIR$/homeCSS.css" />
         <option value="$PROJECT_DIR$/addNewKid.html" />
+        <option value="$PROJECT_DIR$/Complete Log.html" />
         <option value="$PROJECT_DIR$/Make Log.html" />
+        <option value="$PROJECT_DIR$/homeCSS.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="949" />
-    <option name="width" value="980" />
+    <option name="x" value="834" />
+    <option name="width" value="1097" />
     <option name="height" value="1031" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="XZY-CS374-Project.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XZY-CS374-Project.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -219,7 +223,7 @@
       <workItem from="1556523400845" duration="6119000" />
       <workItem from="1556627976473" duration="5738000" />
       <workItem from="1556989525922" duration="6240000" />
-      <workItem from="1556995811019" duration="25521000" />
+      <workItem from="1556995811019" duration="29104000" />
     </task>
     <task id="LOCAL-00001" summary="add link">
       <created>1556358901517</created>
@@ -260,15 +264,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66944000" />
+    <option name="totallyTimeSpent" value="70527000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="459" y="0" width="731" height="687" extended-state="0" />
+    <frame x="556" y="0" width="731" height="687" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24945612" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.24801272" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -334,13 +338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Review Past Data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/create.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -399,32 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1414">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Incomplete Log List.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="91" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Complete Log.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="51" selection-start-line="51" selection-end-line="53" selection-end-column="45" />
-          <folding>
-            <element signature="e#2544#2550#0" expanded="true" />
-            <element signature="e#2712#2718#1" expanded="true" />
-            <element signature="e#2745#2751#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -439,35 +410,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap.min.css">
+    <entry file="file://$PROJECT_DIR$/Incomplete Log List.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24416">
-          <caret line="5" column="151806" selection-start-line="5" selection-start-column="151806" selection-end-line="5" selection-end-column="151806" />
+        <state relative-caret-position="294">
+          <caret line="91" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homeCSS.css">
+    <entry file="file://$PROJECT_DIR$/Review Past Data.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        <state relative-caret-position="269">
+          <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="66" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2492">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24415">
+          <caret line="5" column="151806" selection-start-line="5" selection-start-column="151806" selection-end-line="5" selection-end-column="151806" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addNewKid.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="97" column="96" selection-start-line="97" selection-start-column="96" selection-end-line="97" selection-end-column="96" />
-          <folding>
-            <element signature="e#4529#4535#0" expanded="true" />
-            <element signature="e#4535#4541#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="336">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="50" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Complete Log.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Make Log.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="191" column="30" lean-forward="true" selection-end-line="255" />
+        <state relative-caret-position="126">
+          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeCSS.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -39,10 +39,10 @@
   margin-bottom: 0;
   background-color: #fff;
 }
-@media (min-width: 768px) {
+@media (min-width: 300px) {
   .jumbotron {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
