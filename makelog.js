@@ -44,5 +44,5 @@ function readFromDatabase() {
 }
 
 $(document).ready(function(){
-    
+
 });
