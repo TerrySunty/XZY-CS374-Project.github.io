@@ -6,7 +6,8 @@ var config = {
     storageBucket: "logkids.appspot.com",
     messagingSenderId: "77437705828"
 };
-firebase.initializeApp(config);
+firebase.initializeApp(config);//initialize firebase
+
 
 $(document).ready(function() {
 

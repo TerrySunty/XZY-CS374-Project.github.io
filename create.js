@@ -51,5 +51,5 @@ var photo_path="https://raw.githubusercontent.com/TerrySunty/XZY-CS374-Project.g
 createbutton.onclick=function(){
     age=$("#ageinput option:selected").val();
     writeToDatabase(age,kidname,kidgender,photo_path);
-    setTimeout("window.location.href='./index.html'",500)
+    setTimeout("window.location.href='./index.html'",3000)
 };

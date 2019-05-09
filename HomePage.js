@@ -23,7 +23,8 @@ var path;
 function readFromDatabase() {
     return firebase.database().ref('/kidsBox/').once('value', function(snapshot) {
 
-
+        var div;
+        var insertID='#insert';
         var myValue = snapshot.val();
         if(myValue!==null){
             var keyList = Object.keys(myValue);
@@ -33,14 +34,15 @@ function readFromDatabase() {
                 kidgender=myValue[myKey].gender;
                 kidname=myValue[myKey].name;
                 path=myValue[myKey].photo_path;
-                htmladd(kidname,path)
+                div=htmladd(kidname,path);
+                $(div).insertBefore(insertID);
             }
 
         }
     });
 }
 
-function htmladd(kidname,path){
+function htmladd(kidname,path){// add a new kid box, use data fetched from firebase
     var div1=document.createElement('div');
     div1.className="col-6 col-sm-4 col-md-3 col-lg-2 py-4";
 
@@ -52,8 +54,9 @@ function htmladd(kidname,path){
 
     var img=document.createElement('image');
     img.className="card-img-top";
-    img.alt="Card image cap";
-    img.src=path;
+    $(img).attr("src",path);
+    $(img).attr("alt","Card image cap");
+    console.log(typeof(path));
 
 
     var div3=document.createElement('div');
@@ -71,9 +74,7 @@ function htmladd(kidname,path){
     div2.appendChild(div3);
     link.append(div2);
     div1.appendChild(link);
-
-    var kidsBox=document.getElementById('kidsBox');
-    kidsBox.appendChild(div1);
+    return div1
 
 
 
