@@ -7,7 +7,8 @@ $( function() {
         .datepicker({
           defaultDate: "-1w",
           changeMonth: true,
-          numberOfMonths: 1
+          numberOfMonths: 1,
+          changeYear: true
         })
         .on( "change", function() {
           to.datepicker( "option", "minDate", getDate( this ) );
@@ -15,7 +16,9 @@ $( function() {
       to = $( "#to" ).datepicker({
         defaultDate: "+0w",
         changeMonth: true,
-        numberOfMonths: 1
+        numberOfMonths: 1,
+        changeYear: true
+
       })
       .on( "change", function() {
         from.datepicker( "option", "maxDate", getDate( this ) );
@@ -52,18 +55,5 @@ var ctxP = document.getElementById("pieChart").getContext('2d');
   });
 
 
-      canvas.onclick = function(evt) {
-      var activePoints = myNewChart.getElementsAtEvent(evt);
-      if (activePoints[0]) {
-        var chartData = activePoints[0]['_chart'].config.data;
-        var idx = activePoints[0]['_index'];
-
-        var label = chartData.labels[idx];
-        var value = chartData.datasets[0].data[idx];
-
-        console.log(hi);
-        alert(url);
-      }
-    };
 
 

@@ -4,10 +4,11 @@
     <head>
         <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link href="homeCSS.css" rel="stylesheet"/>
+            <!-- <link href="homeCSS.css" rel="stylesheet"/> -->
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link rel="stylesheet" type="text/css" href="jquery-ui-themes-1.12.1/themes/flick/jquery-ui.css">
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
+            <link rel="stylesheet" type="text/css" href="review.css">
 
 
             <title>Data Reiew Page</title>
@@ -46,14 +47,18 @@
 
         <!-- main body  -->
         <main role="main">
+            <div class="album py-5 bg-light">
 
-            <div class="container">
-                <h3 class="text-center text-black my-4">Data Review</h3>
-            </div>
+            <section class="jumbotron text-center">
+                <div class="container">
+                    <h1 class="jumbotron-heading">Data Review</h1>
+                    <p class="lead text-muted">BEN</p>
+                </div>
+            </section>
 
             <div class="container">
                 <div class="row">
-                    <div class="offset-sm-3 col-sm-auto">
+                    <div class="offset-md-3">
                         <label for="from">From</label>
                         <input class="form-control-sm" type="text" id="from" name="from">
                         <label for="to">to</label>
@@ -79,9 +84,11 @@
                 </div>
             </div>
 
-            <canvas id="pieChart"></canvas>
+            <div class="chart-container">
+                <canvas id="pieChart"></canvas>
+            </div>
         
-
+        </div>
         </main>
 
 
@@ -102,9 +109,9 @@
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
         <script type="text/javascript" src="review.js"></script>
+
         <script type="text/javascript">
-            
-      canvas.onclick = function(evt) {
+            canvas.onclick = function(evt) {
       var activePoints = myNewChart.getElementsAtEvent(evt);
       if (activePoints[0]) {
         var chartData = activePoints[0]['_chart'].config.data;
