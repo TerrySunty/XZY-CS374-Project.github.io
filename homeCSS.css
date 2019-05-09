@@ -107,6 +107,7 @@ tr{
   color: white;
 }
 
+
 /* Important checkbox*/
 .star {
   visibility:hidden;
@@ -126,8 +127,17 @@ tr{
   color: black;
 }
 
-.INLINE {
-  overflow: hidden;
-  color: #e4606d;
-  display: block;
+/*
+input[type=checkbox] + label {
+  position: absolute;
+  color: black;
+  visibility:hidden;
+  font-size:35px;
+  cursor:pointer;
 }
+input[type=checkbox]:checked + label {
+  position: absolute;
+  visibility:visible;
+  color: orange;
+}
+*/
