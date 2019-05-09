@@ -84,7 +84,7 @@ footer p {
 }
 
 .addTag span:after {
-  content: '\00af';
+  content: '\0000';
   position: absolute;
   opacity: 0;
   top: 0;
@@ -130,3 +130,7 @@ footer p {
   color: gray;
   /*font-weight: bold;*/
 }
+
+.ui-datepicker-calendar {
+    display: none;
+ }

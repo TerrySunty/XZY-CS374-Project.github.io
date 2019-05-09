@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
 
     <head>
         <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="bootstrap-tagsinput-latest/src/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
                     <link href="homeCSS.css" rel="stylesheet"/>
         <script type = "text/javascript"
@@ -10,13 +12,12 @@
         </script>
         <script type = "text/javascript"
                 src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         </script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
                     <title>Make Log</title>
-        <script src="./makelog.js"></script>
-        <link rel="stylesheet" href="bootstrap-tagsinput.min.js">
-        <link rel="stylesheet" href="bootstrap-tagsinput.css">
+        <script src="makelog.js"></script>
+        <script src="bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js"></script>
+        <link rel="stylesheet" href="bootstrap-tagsinput-latest/src/bootstrap-tagsinput.css">
     </head>
 
     <body>
@@ -103,17 +104,10 @@
                                     </div><br>
                             <form>
                                 <div class="form-group">
-                                    <label class="font-weight-bold" for="eating_comments">Comments:</label>
+                                    <label class="font-weight-bold" for="eating_comments">Selected Tags:</label>
                                     <div>
-                                        <button class = "addTag"><span>Ate a lot of vegetables today</span></button>
-                                        <button class = "addTag"><span> Did not finish milk</span></button>
-                                        <button class = "addTag"><span> Drank the entire bowl of soup by himself</span></button>
-                                        <button class= "addTag" id = "addBtn"><i class="fas fa-plus-circle"></i></button>
-
-                                        <input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput">
-
-                                    </div><br>
-                                    <textarea class="form-control center-block" id="eating_comments" rows="1" ></textarea><br>
+                                        <input type="text" value="Ate a lot of vegetables today, Did not finish milk, Drank the entire bowl of soup" data-role="tagsinput" placeholder="Add tag...">
+                                    </div>
                                 </div>
                             </form>
                             <div class="container text-center">
