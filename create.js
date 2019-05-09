@@ -16,7 +16,7 @@ var kidname=document.getElementById('name');
 var kidgender='boy';
 
 
-$("input[name='filter']").click(function(){
+$("input[name='gridRadios']").click(function(){
 
     if(filter[1].checked){
         kidgender='girl';
@@ -51,5 +51,5 @@ var photo_path="https://raw.githubusercontent.com/TerrySunty/XZY-CS374-Project.g
 createbutton.onclick=function(){
     age=$("#ageinput option:selected").val();
     writeToDatabase(age,kidname,kidgender,photo_path);
-    setTimeout("window.location.href='./index.html'",3000)
+    setTimeout("window.location.href='./index.html'",900)
 };
