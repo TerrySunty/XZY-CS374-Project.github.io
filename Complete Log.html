@@ -57,7 +57,7 @@
         <div class="container">
             <div class="col-md-12 text-left">
                 <div>
-                    <h5 class="font-weight-bold" for="eating_comments">Pre-information:
+                    <h5 class="font-weight-bold" for="eating_comments">Log 
                         <p class="text-muted float-right"> <small><small><small>Recorded on: <i>24/5/2019 3.20pm</i></small></small></small></p></h5>
                 </div>
 
@@ -72,19 +72,25 @@
                 <label class="font-weight-bold" for="sleeping_comments">Selected tags:</label>
                 <div>
                     <input type="text" value="Ate a lot of vegetables today, Did not finish milk, Drank the entire bowl of soup" data-role="tagsinput">
-                </div>
+                </div><br>
+
+
+                <button data-toggle="collapse" data-target="#demo">Show latest history</button>
+
+<div id="demo" class="collapse">
+<h5><small><small><small>Recorded on: <i>23/5/2019 3.00pm</i></small></small></small></h5>
+<input type="text" value="Ate an apple" data-role="tagsinput"><br>
+She ate it for the first time
+</div>
+<br><br>
+
+
+                <label class="font-weight-bold" for="sleeping_comments">Comments:</label>
+                <textarea class="form-control center-block" id="eating_comments" rows="3" placeholder="Type your comments here"></textarea><br>
             </div>
         </div>
     </div>
 
-
-        <div class="album py-3">
-            <div class="container">
-                <div class="col-md-12 text-left">
-                    <h5 class="font-weight-bold" for="eating_comments">Comments:</h5>
-                    <textarea class="form-control center-block" id="eating_comments" rows="3"></textarea><br>
-                </div>
-            </div>
 
             <div class="container text-center">
                 <button class="btn btn-success" id="eating_save" type="save">Save</button>
