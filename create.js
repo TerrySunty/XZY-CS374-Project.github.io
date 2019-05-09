@@ -16,7 +16,7 @@ var kidname=document.getElementById('name');
 var kidgender='boy';
 
 
-$("input[name='gridRadios']").click(function(){
+$("input[name='filter']").click(function(){
 
     if(filter[1].checked){
         kidgender='girl';
@@ -47,10 +47,9 @@ function getRandomInt(min, max) {
 
 
 var createbutton=document.getElementById("createButton");
-
+var photo_path="https://raw.githubusercontent.com/TerrySunty/XZY-CS374-Project.github.io/master/kids_png/"+kidgender+"s_png/"+kidgender+"-"+getRandomInt(0,20)+".png";
 createbutton.onclick=function(){
     age=$("#ageinput option:selected").val();
-    var photo_path="https://raw.githubusercontent.com/TerrySunty/XZY-CS374-Project.github.io/master/kids_png/"+kidgender+"s_png/"+kidgender+"-"+getRandomInt(0,20)+".png";
     writeToDatabase(age,kidname,kidgender,photo_path);
-    setTimeout("window.location.href='./index.html'",900)
+    setTimeout("window.location.href='./index.html'",3000)
 };

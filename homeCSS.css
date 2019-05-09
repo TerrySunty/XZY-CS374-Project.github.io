@@ -34,15 +34,15 @@
 }
 
 .jumbotron {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   margin-bottom: 0;
   background-color: white;
 }
-@media (min-width: 768px) {
+@media (min-width: 300px) {
   .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -131,6 +131,16 @@ footer p {
   /*font-weight: bold;*/
 }
 
-.ui-datepicker-calendar {
-    display: none;
- }
+.thematicBreak{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.bgEmpha{
+  background-color: rgba(128, 142, 144, 0.89);
+}

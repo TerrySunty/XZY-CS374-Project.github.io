@@ -8,6 +8,7 @@
     <link href="homeCSS.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Complete Log Page</title>
+    <link rel="stylesheet" href="bootstrap-tagsinput-latest/src/bootstrap-tagsinput.css">
 </head>
 
 <body>
@@ -44,51 +45,54 @@
 <!-- main body  -->
 <main role="main">
 
-    <div class="container">
-        <h3 class="text-center text-black my-4">Complete Log</h3>
-    </div>
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Complete Log</h1>
+            <p class="lead text-muted">BEN</p>
+        </div>
+    </section>
 
     <!-- container-->
     <div class="album py-5 bg-light">
         <div class="container">
             <div class="col-md-12 text-left">
-                <h5 class="font-weight-bold" for="pills-tab">Name: </h5>
-                <h6 class = "bold-mute"> &emsp; BEN</h5><br>
+                <div>
+                    <h5 class="font-weight-bold" for="eating_comments">Pre-information:
+                        <p class="text-muted float-right"> <small><small><small>Recorded on: <i>24/5/2019 3.20pm</i></small></small></small></p></h5>
+                </div>
 
-                    <h5 class="font-weight-bold" for="pills-tab">Category: </h5>
-                    <h6 class = "bold-mute"> &emsp; Eating</h6><br>
+                <hr>
 
-                    <h5 class="font-weight-bold" for="pills-tab">Quick tags selected: </h5>
-                    <h6 class = "bold-mute"> &emsp; [Eating amount: NORMAL] </h6>
-                    <ol>
-                        <li class = "bold-mute"> Did not finish milk </li>
-                        <li class = "bold-mute"> Drank the entire bowl of soup by himself</li>
-                    </ol>
-                    <h6 class = "bold-mute"> &emsp; Additional comments: Ate an apple </h6><br>
+                <label class="font-weight-bold" for="sleeping_comments">Category:</label>
+                <h6 class="bold-mute">  <i class="fas fa-utensils"></i> Eating</h6><br>
 
-                    <div class="form-group">
-                        <label class="font-weight-bold" for="eating_comments">Add additional tags:</label>
-                        <div>
-                            <button class = "addExTag"><span>Ate a lot of vegetables today</span></button>
-                            <button class = "addExTag"><span> Ate very cleanly</span></button>
-                            <button class = "addExTag"><span> Tried broccoli for the first time</span></button>
-                            <button class= "addExTag"><i class="fas fa-plus-circle"></i></button>
-                        </div>
-                    </div>
-                    </form>
+                <label class="font-weight-bold" for="sleeping_comments">Eating amount:</label>
+                <h6 class="bold-mute">   Less than normal</h6><br>
 
+                <label class="font-weight-bold" for="sleeping_comments">Selected tags:</label>
+                <div>
+                    <input type="text" value="Ate a lot of vegetables today, Did not finish milk, Drank the entire bowl of soup" data-role="tagsinput">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="album py-3">
+            <div class="container">
+                <div class="col-md-12 text-left">
                     <h5 class="font-weight-bold" for="eating_comments">Comments:</h5>
-                    <textarea class="form-control center-block" id="eating_comments" rows="3" ></textarea><br>
+                    <textarea class="form-control center-block" id="eating_comments" rows="3"></textarea><br>
+                </div>
+            </div>
+
+            <div class="container text-center">
+                <button class="btn btn-success" id="eating_save" type="save">Save</button>
+                <button class="btn btn-danger" id="eating_submit" type="submit">Submit</button>
             </div>
         </div>
 
 
-
-        <div class="container text-center">
-            <button class="btn btn-success" id="eating_save" type="save">Save</button>
-            <button class="btn btn-danger" id="eating_submit" type="submit">Submit</button>
-        </div>
-    </div>
 </main>
 
 
@@ -105,6 +109,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js"></script>
 </body>
 
 </html>
