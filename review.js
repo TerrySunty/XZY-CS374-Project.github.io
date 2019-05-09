@@ -37,22 +37,63 @@ $( function() {
   } );
 
 
-var ctxP = document.getElementById("pieChart").getContext('2d');
-  var myPieChart = new Chart(ctxP, {
-    type: 'pie',
-    data: {
-      labels: ["tag1", "tag2", "tag3", "tag4", "tag5"],
+// var ctxP = document.getElementById("pieChart").getContext('2d');
+//   var myPieChart = new Chart(ctxP, {
+//     type: 'pie',
+//     data: {
+//       labels: ["tag1", "tag2", "tag3", "tag4", "tag5"],
 
-      datasets: [{
-        data: [300, 50, 100, 40, 120],
-        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
-        hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-      }]
-    },
-    options: {
-      responsive: true
-    }
-  });
+//       datasets: [{
+//         data: [300, 50, 100, 40, 120],
+//         backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+//         hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+//       }]
+//     },
+//     options: {
+//       responsive: true
+//     }
+//   });
+
+var data = {
+  datasets: [{
+    data: [300, 50, 100, 40, 120],
+    backgroundColor: [
+      "#F7464A",
+      "#46BFBD",
+      "#FDB45C", 
+      "#949FB1", 
+      "#4D5360"
+    ]
+  }],
+  labels: ["tag1", "tag2", "tag3", "tag4", "tag5"],
+};
+
+
+  $(document).ready(
+  function() {
+    var canvas = document.getElementById("pieChart");
+    var ctx = canvas.getContext("2d");
+    var myNewChart = new Chart(ctx, {
+      type: 'pie',
+      data: data
+    });
+
+    canvas.onclick = function(evt) {
+      var activePoints = myNewChart.getElementsAtEvent(evt);
+      if (activePoints[0]) {
+        var chartData = activePoints[0]['_chart'].config.data;
+        var idx = activePoints[0]['_index'];
+
+        var label = chartData.labels[idx];
+        var value = chartData.datasets[0].data[idx];
+
+        var url = "http://example.com/?label=" + label + "&value=" + value;
+        console.log(url);
+        alert(url);
+      }
+    };
+  }
+);
 
 
 
