@@ -47,9 +47,10 @@ function getRandomInt(min, max) {
 
 
 var createbutton=document.getElementById("createButton");
-var photo_path="https://raw.githubusercontent.com/TerrySunty/XZY-CS374-Project.github.io/master/kids_png/"+kidgender+"s_png/"+kidgender+"-"+getRandomInt(0,20)+".png";
+
 createbutton.onclick=function(){
     age=$("#ageinput option:selected").val();
+    var photo_path="https://raw.githubusercontent.com/TerrySunty/XZY-CS374-Project.github.io/master/kids_png/"+kidgender+"s_png/"+kidgender+"-"+getRandomInt(0,20)+".png";
     writeToDatabase(age,kidname,kidgender,photo_path);
     setTimeout("window.location.href='./index.html'",900)
 };

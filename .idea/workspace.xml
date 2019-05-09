@@ -3,32 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8763cc83-06ca-4433-b725-d53c87772fc0" name="Default Changelist" comment="basic kids information">
       <change beforePath="$PROJECT_DIR$/Make Log.html" beforeDir="false" afterPath="$PROJECT_DIR$/Make Log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/bootstrap-tagsinput.jquery.json" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/bootstrap-tagsinput.jquery.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/assets/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/assets/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/assets/app_bs2.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/assets/app_bs2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/assets/app_bs3.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/assets/app_bs3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/assets/cities.json" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/assets/cities.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/assets/citynames.json" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/assets/citynames.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/bootstrap-2.3.2.html" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/bootstrap-2.3.2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/examples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/bootstrap-tagsinput-angular.tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/bootstrap-tagsinput-angular.tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/bootstrap-tagsinput/events.tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/bootstrap-tagsinput/events.tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/bootstrap-tagsinput/input_with_object_items.tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/bootstrap-tagsinput/input_with_object_items.tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/bootstrap-tagsinput/input_with_string_items.tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/bootstrap-tagsinput/input_with_string_items.tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/bootstrap-tagsinput/reproduced_bugs.tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/bootstrap-tagsinput/reproduced_bugs.tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/bootstrap-tagsinput/select_with_object_items.tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/bootstrap-tagsinput/select_with_object_items.tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/bootstrap-tagsinput/select_with_string_items.tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/bootstrap-tagsinput/select_with_string_items.tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-tagsinput-latest/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/create.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Make Log.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="256" column="84" selection-start-line="256" selection-start-column="84" selection-end-line="256" selection-end-column="84" />
+            <state relative-caret-position="436">
+              <caret line="257" column="36" lean-forward="true" selection-start-line="257" selection-start-column="36" selection-end-line="257" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#button#1;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -63,10 +38,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addNewKid.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="81" column="79" lean-forward="true" selection-start-line="81" selection-start-column="69" selection-end-line="81" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/create.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="10" />
+            <state relative-caret-position="531">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -136,10 +120,10 @@
         <option value="$PROJECT_DIR$/addNewKid.html" />
         <option value="$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/HomePage.js" />
-        <option value="$PROJECT_DIR$/create.js" />
         <option value="$PROJECT_DIR$/makelog.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Make Log.html" />
+        <option value="$PROJECT_DIR$/create.js" />
       </list>
     </option>
   </component>
@@ -206,7 +190,7 @@
       <workItem from="1556627976473" duration="5738000" />
       <workItem from="1556989525922" duration="6240000" />
       <workItem from="1556995811019" duration="32264000" />
-      <workItem from="1557393344132" duration="1712000" />
+      <workItem from="1557393344132" duration="2132000" />
     </task>
     <task id="LOCAL-00001" summary="add link">
       <created>1556358901517</created>
@@ -247,7 +231,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77922000" />
+    <option name="totallyTimeSpent" value="78342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -394,13 +378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addNewKid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="81" column="79" selection-start-line="81" selection-start-column="69" selection-end-line="81" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HomePage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -422,20 +399,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Make Log.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="256" column="84" selection-start-line="256" selection-start-column="84" selection-end-line="256" selection-end-column="84" />
+        <state relative-caret-position="436">
+          <caret line="257" column="36" lean-forward="true" selection-start-line="257" selection-start-column="36" selection-end-line="257" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#button#1;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addNewKid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="81" column="79" lean-forward="true" selection-start-line="81" selection-start-column="69" selection-end-line="81" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
