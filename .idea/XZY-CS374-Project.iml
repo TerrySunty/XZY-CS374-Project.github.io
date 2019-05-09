@@ -13,5 +13,7 @@
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="jquery-ui" level="application" />
+    <orderEntry type="library" name="bootstrap-tagsinput" level="application" />
+    <orderEntry type="library" name="bootstrap-tagsinput-angular" level="application" />
   </component>
 </module>

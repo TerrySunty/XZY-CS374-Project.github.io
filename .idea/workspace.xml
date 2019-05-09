@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8763cc83-06ca-4433-b725-d53c87772fc0" name="Default Changelist" comment="basic kids information" />
+    <list default="true" id="8763cc83-06ca-4433-b725-d53c87772fc0" name="Default Changelist" comment="basic kids information">
+      <change beforePath="$PROJECT_DIR$/.idea/XZY-CS374-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/XZY-CS374-Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Make Log.html" beforeDir="false" afterPath="$PROJECT_DIR$/Make Log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/makelog.js" beforeDir="false" afterPath="$PROJECT_DIR$/makelog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tagsinput/bootstrap-tagsinput-angular.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tagsinput/bootstrap-tagsinput.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tagsinput/bootstrap-tagsinput.js" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,29 +22,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Make Log.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="159" column="38" lean-forward="true" selection-start-line="159" selection-start-column="38" selection-end-line="159" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/makelog.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+            <state relative-caret-position="336">
+              <caret line="245" column="21" selection-start-line="245" selection-start-column="21" selection-end-line="245" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/Chrome浏览器下载/bootstrap-tagsinput-latest/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">
+        <entry file="file://$PROJECT_DIR$/makelog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="191" column="44" selection-start-line="191" selection-start-column="37" selection-end-line="191" selection-end-column="44" />
+            <state relative-caret-position="181">
+              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -54,6 +54,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-33">
               <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addNewKid.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -81,8 +90,8 @@
       <find>input</find>
       <find>remove</find>
       <find>item</find>
-      <find>itemRem</find>
       <find>save</find>
+      <find>itemRem</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -258,13 +267,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68655000" />
+    <option name="totallyTimeSpent" value="69641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15587847" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15587847" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -410,13 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addNewKid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-675">
-          <caret line="86" column="80" lean-forward="true" selection-start-line="86" selection-start-column="80" selection-end-line="86" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -454,20 +456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/Chrome浏览器下载/bootstrap-tagsinput-latest/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="191" column="44" selection-start-line="191" selection-start-column="37" selection-end-line="191" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Make Log.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="159" column="38" lean-forward="true" selection-start-line="159" selection-start-column="38" selection-end-line="159" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../CS374/Pro3/capital_game.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -482,10 +470,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/addNewKid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Chrome浏览器下载/bootstrap-tagsinput-latest/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="191" column="44" selection-start-line="191" selection-start-column="37" selection-end-line="191" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/makelog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+        <state relative-caret-position="181">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Make Log.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="245" column="21" selection-start-line="245" selection-start-column="21" selection-end-line="245" selection-end-column="21" />
         </state>
       </provider>
     </entry>

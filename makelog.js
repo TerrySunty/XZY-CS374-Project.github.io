@@ -20,22 +20,14 @@ function writeToDatabase(age,kidname,kidgender,photo) {
     });
 }
 
-function readFromDatabase() {
+function readKidsTag() {
     return firebase.database().ref('/kidsBox/').once('value', function(snapshot) {
-
-        var div;
-        var insertID='#insert';
         var myValue = snapshot.val();
         if(myValue!==null){
             var keyList = Object.keys(myValue);
             for(var i=0;i<keyList.length;i++) {
                 var myKey = keyList[i];
-                age=myValue[myKey].age;
-                kidgender=myValue[myKey].gender;
-                kidname=myValue[myKey].name;
-                path=myValue[myKey].photo_path;
-                div=htmladd(kidname,path);
-                $(div).insertBefore(insertID);
+
             }
 
         }
@@ -43,7 +35,6 @@ function readFromDatabase() {
 }
 
 $( document ).ready(function() {
-    $('.tags').tagsinput('items');
     $('.tags').on('itemRemoved',function(){
         console.log("hello");
     });
