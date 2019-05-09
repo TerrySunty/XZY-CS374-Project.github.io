@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-tagsinput-latest/src/bootstrap.min.css">
+
     <link href="homeCSS.css" rel="stylesheet"/>
     <script type = "text/javascript"
             src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
@@ -14,6 +15,8 @@
     </script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Make Log</title>
+    <script src="makelog.js"></script>
+    <script src="bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js"></script>
     <link rel="stylesheet" href="bootstrap-tagsinput-latest/src/bootstrap-tagsinput.css">
 </head>
 
@@ -56,187 +59,196 @@
             <p class="lead text-muted">BEN</p>
         </div>
     </section>
-    <hr>
+
     <!-- container-->
-    <div class="album py-3 bg-white">
+    <div class="album pt-3 pb-7 bg-white">
         <div class="container">
-            <label class="font-weight-bold" for="pills-tab">Category:</label>
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="pills-eating-tab" data-toggle="pill" href="#pills-eating" role="tab" aria-controls="pills-eating" aria-selected="true"><button class="btn"><i class="fas fa-utensils" ></i> </button>Eating</a>
-                </li>
-                <li>
-                    <a class="nav-link" id="pills-sleeping-tab" data-toggle="pill" href="#pills-sleeping" role="tab" aria-controls="pills-sleeping" aria-selected="false"><button class="btn"><i class="fas fa-bed"></i></button>Sleeping</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-social-tab" data-toggle="pill" href="#pills-social" role="tab" aria-controls="pills-social" aria-selected="false"><button class="btn"><i class="fas fa-user-friends"></i></button>Social</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-physical-tab" data-toggle="pill" href="#pills-physical" role="tab" aria-controls="pills-physical" aria-selected="false"><button class="btn"><i class="fas fa-walking"></i></button>Physical</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-cognitive-tab" data-toggle="pill" href="#pills-cognitive" role="tab" aria-controls="pills-cognitive" aria-selected="false"><button class="btn"><i class="fas fa-brain"></i></button>Cognitive</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-literacy-tab" data-toggle="pill" href="#pills-literacy" role="tab" aria-controls="pills-literacy" aria-selected="false"><button class="btn"><i class="fas fa-comment"></i></button>Literacy</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-other-tab" data-toggle="pill" href="#pills-other" role="tab" aria-controls="pills-other" aria-selected="false"><button class="btn"><i class="fas fa-ellipsis-h"></i></button>Other</a>
-                </li>
-            </ul>
+            <div class="col-md-12 text-left">
 
-            <div class="tab-content" id="pills-tabContent">
-
-                <!-- eating -->
-                <div class="tab-pane fade show active" id="pills-eating" role="tabpanel" aria-labelledby="pills-eating-tab">
-                    <label class="font-weight-bold" for="pills-eating">Amount eaten:</label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="eatingRadio1" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="eatingRadio1">Less than usual</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="eatingRadio2" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="eatingRadio2">Usual portion</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="eatingRadio3" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="eatingRadio3">More than usual</label>
-                    </div><br>
-                    <form>
-                        <div class="form-group">
-                            <label class="font-weight-bold">Selected Tags:</label>
-                            <div>
-                                <input type="text" value="Ate a lot of vegetables today, Did not finish milk, Drank the entire bowl of soup" data-role="tagsinput" placeholder="Add tag...">
-                            </div>
-                        </div>
-                    </form>
-                    <div class="container text-center col-sm-6 col-md-4 py-2">
-                        <button style="width: 100px; height: 40px;" class="btn btn-success float-left" id="eating_save" type="button">Save</button>&emsp;&emsp;
-                        <button style="width: 100px; height: 40px;" class="btn btn-danger float-right" id="eating_submit" type="submit">Submit</button>
-                    </div>
+                <div>
+                    <h5 class="font-weight-bold" for="eating_comments">&nbsp;
+                        <p class="text-muted float-right"> <small><small>Current Date: <i>24/5/2019</i></small></small></p></h5>
                 </div>
+                <hr>
+                <label class="font-weight-bold" for="pills-tab">Category:</label>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-eating-tab" data-toggle="pill" href="#pills-eating" role="tab" aria-controls="pills-eating" aria-selected="true"><button class="btn"><i class="fas fa-utensils" ></i> </button>Eating</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" id="pills-sleeping-tab" data-toggle="pill" href="#pills-sleeping" role="tab" aria-controls="pills-sleeping" aria-selected="false"><button class="btn"><i class="fas fa-bed"></i></button>Sleeping</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-social-tab" data-toggle="pill" href="#pills-social" role="tab" aria-controls="pills-social" aria-selected="false"><button class="btn"><i class="fas fa-user-friends"></i></button>Social</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-physical-tab" data-toggle="pill" href="#pills-physical" role="tab" aria-controls="pills-physical" aria-selected="false"><button class="btn"><i class="fas fa-walking"></i></button>Physical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-cognitive-tab" data-toggle="pill" href="#pills-cognitive" role="tab" aria-controls="pills-cognitive" aria-selected="false"><button class="btn"><i class="fas fa-brain"></i></button>Cognitive</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-literacy-tab" data-toggle="pill" href="#pills-literacy" role="tab" aria-controls="pills-literacy" aria-selected="false"><button class="btn"><i class="fas fa-comment"></i></button>Literacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-other-tab" data-toggle="pill" href="#pills-other" role="tab" aria-controls="pills-other" aria-selected="false"><button class="btn"><i class="fas fa-ellipsis-h"></i></button>Other</a>
+                    </li>
+                </ul>
 
-                <!-- sleeping -->
-                <div class="tab-pane fade" id="pills-sleeping" role="tabpanel" aria-labelledby="pills-sleeping-tab">
-                    <label class="font-weight-bold" for="pills-sleeping">Time slept for</label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="sleepingRadio1" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="sleepingRadio1">Less than 2 hours </label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="sleepingRadio2" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="sleepingRadio2">2 - 3 hours</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="sleepingRadio3" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="sleepingRadio3">More than 3 hours</label>
-                    </div><br>
-                    <form>
-                        <div class="form-group">
-                            <label class="font-weight-bold">Selected Tags:</label>
-                            <div>
-                                <input type="text" value="Slept soundly, Had difficulty falling asleep,Woke up early" data-role="tagsinput" placeholder="Add tag...">
-                            </div>
+                <div class="tab-content" id="pills-tabContent">
+
+                    <!-- eating -->
+                    <div class="tab-pane fade show active" id="pills-eating" role="tabpanel" aria-labelledby="pills-eating-tab">
+                        <label class="font-weight-bold" for="pills-eating">Amount eaten:</label>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="eatingRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="eatingRadio1">Less than usual</label>
                         </div>
-                    </form>
-                    <div class="container text-center col-sm-6 col-md-4 py-2">
-                        <button style="width: 100px; height: 40px;" class="btn btn-success float-left" id="sleeping_save" type="button">Save</button>
-                        <button style="width: 100px; height: 40px;" class="btn btn-danger float-right" id="sleeping_submit" type="submit">Submit</button>
-                    </div>
-                </div>
-
-                <!-- social -->
-                <div class="tab-pane fade" id="pills-social" role="tabpanel" aria-labelledby="pills-social-tab">
-                    <form>
-                        <div class="form-group">
-                            <label class="font-weight-bold" >Selected Tags:</label>
-                            <div>
-                                <input type="text" value="Had fun playing with other kids, Completed a puzzle with a friend, Made a new friend" data-role="tagsinput" placeholder="Add tag...">
-                            </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="eatingRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="eatingRadio2">Usual portion</label>
                         </div>
-                    </form>
-                    <div class="container text-center col-sm-6 col-md-4 py-2">
-                        <button style="width: 100px; height: 40px;" class="btn btn-success float-left" id="social_save" type="button">Save</button>
-                        <button style="width: 100px; height: 40px;" class="btn btn-danger float-right" id="social_submit" type="submit">Submit</button>
-                    </div>
-                </div>
-
-                <!-- physical -->
-                <div class="tab-pane fade" id="pills-physical" role="tabpanel" aria-labelledby="pills-physical-tab">
-                    <form>
-                        <div class="form-group">
-                            <label class="font-weight-bold" >Selected Tags:</label>
-                            <div>
-                                <input type="text" value="Walked up stairs on his own, Ate on his own, Did 5 push-ups :D" data-role="tagsinput" placeholder="Add tag...">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="eatingRadio3" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="eatingRadio3">More than usual</label>
+                        </div><br>
+                        <form>
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="eating_comments">Selected Tags:</label>
+                                <div>
+                                    <input type="text" value="Ate a lot of vegetables today, Did not finish milk, Drank the entire bowl of soup" data-role="tagsinput" placeholder="Add tag...">
+                                </div>
                             </div>
+                        </form>
+                        <div class="container text-center col-sm-6 col-md-4 py-2">
+                            <button style="width: 100px; height: 40px;" class="btn btn-success float-left" id="eating_save" type="save"><b>Save</b></button>&emsp;&emsp;
+                            <button style="width: 100px; height: 40px;" class="btn btn-danger float-right" id="eating_submit" type="submit">Submit</button>
                         </div>
-                    </form>
-                    <div class="container text-center col-sm-6 col-md-4 py-2">
-                        <button style="width: 100px; height: 40px;" class="btn btn-success float-left" id="physical_save" type="button">Save</button>
-                        <button style="width: 100px; height: 40px;" class="btn btn-danger float-right" id="physical_submit" type="submit">Submit</button>
                     </div>
-                </div>
 
-
-                <!-- cognitive -->
-                <div class="tab-pane fade" id="pills-cognitive" role="tabpanel" aria-labelledby="pills-cognitive-tab">
-                    <form>
-                        <div class="form-group">
-                            <label class="font-weight-bold">Selected Tags:</label>
-                            <div>
-                                <input type="text" value="Completed a puzzle set without help, Curious about a friend's bruise" data-role="tagsinput" placeholder="Add tag...">
-                            </div>
+                    <!-- sleeping -->
+                    <div class="tab-pane fade" id="pills-sleeping" role="tabpanel" aria-labelledby="pills-sleeping-tab">
+                        <label class="font-weight-bold" for="pills-sleeping">Time slept for</label>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="sleepingRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="sleepingRadio1">Less than 2 hours </label>
                         </div>
-                    </form>
-                    <div class="container text-center col-sm-6 col-md-4 py-2">
-                        <button style="width: 100px; height: 40px;" class="btn btn-success float-left" id="cognitive_save" type="button">Save</button>
-                        <button style="width: 100px; height: 40px;" class="btn btn-danger float-right" id="cognitive_submit" type="submit">Submit</button>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="sleepingRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="sleepingRadio2">2 - 3 hours</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="sleepingRadio3" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="sleepingRadio3">More than 3 hours</label>
+                        </div><br>
+                        <form>
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="eating_comments">Selected Tags:</label>
+                                <div>
+                                    <input type="text" value="Slept soundly, Had difficulty falling asleep,Woke up early" data-role="tagsinput" placeholder="Add tag...">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="container text-center col-sm-6 col-md-4 py-2">
+                            <button style="width: 100px; height: 40px;" class="btn btn-success float-left" id="eating_save" type="save"><b>Save</b></button>
+                            <button style="width: 100px; height: 40px;" class="btn btn-danger float-right" id="eating_submit" type="submit">Submit</button>
+                        </div>
                     </div>
-                </div>
 
-                <!-- literacy -->
-                <div class="tab-pane fade" id="pills-literacy" role="tabpanel" aria-labelledby="pills-literacy-tab">
-                    <form>
-                        <div class="form-group">
-                            <label class="font-weight-bold" >Selected Tags:</label>
-                            <div>
-                                <input type="text" value="Recited the full list of alphabets, Learnt to spell a few words, Had a debate with the teacher :o" data-role="tagsinput" placeholder="Add tag...">
+                    <!-- social -->
+                    <div class="tab-pane fade" id="pills-social" role="tabpanel" aria-labelledby="pills-social-tab">
+                        <form>
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="eating_comments">Selected Tags:</label>
+                                <div>
+                                    <input type="text" value="Had fun playing with other kids, Completed a puzzle with a friend, Made a new friend" data-role="tagsinput" placeholder="Add tag...">
+                                </div>
                             </div>
+                        </form>
+                        <div class="container text-center col-sm-6 col-md-4 py-2">
+                            <button style="width: 100px; height: 40px;" class="btn btn-success float-left" id="eating_save" type="save"><b>Save</b></button>
+                            <button style="width: 100px; height: 40px;" class="btn btn-danger float-right" id="eating_submit" type="submit">Submit</button>
                         </div>
-                    </form>
-                    <div class="container text-center col-sm-6 col-md-4 py-2">
-                        <button style="width: 100px; height: 40px;" class="btn btn-success float-left" id="literacy_save" type="button">Save</button>
-                        <button style="width: 100px; height: 40px;" class="btn btn-danger float-right" id="literacy_submit" type="submit">Submit</button>
                     </div>
-                </div>
 
-                <!-- other -->
-                <div class="tab-pane fade" id="pills-other" role="tabpanel" aria-labelledby="pills-other-tab">
-                    <form>
-                        <div class="form-group">
-                            <label class="font-weight-bold" >Selected Tags:</label>
-                            <div>
-                                <input type="text" value="Extraaaaaaaaaa" data-role="tagsinput" placeholder="Add tag...">
+                    <!-- physical -->
+                    <div class="tab-pane fade" id="pills-physical" role="tabpanel" aria-labelledby="pills-physical-tab">
+                        <form>
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="eating_comments">Selected Tags:</label>
+                                <div>
+                                    <input type="text" value="Walked up stairs on his own, Ate on his own, Did 5 push-ups :D" data-role="tagsinput" placeholder="Add tag...">
+                                </div>
                             </div>
+                        </form>
+                        <div class="container text-center col-sm-6 col-md-4 py-2">
+                            <button style="width: 100px; height: 40px;" class="btn btn-success float-left" id="eating_save" type="save"><b>Save</b></button>
+                            <button style="width: 100px; height: 40px;" class="btn btn-danger float-right" id="eating_submit" type="submit">Submit</button>
                         </div>
-                    </form>
-                    <div class="container text-center col-sm-6 col-md-4 py-2">
-                        <button style="width: 100px; height: 40px;" class="btn btn-success float-left" id="other_save" type="button">Save</button>
-                        <button style="width: 100px; height: 40px;" class="btn btn-danger float-right" id="other_submit" type="submit">Submit</button>
+                    </div>
+
+
+                    <!-- cognitive -->
+                    <div class="tab-pane fade" id="pills-cognitive" role="tabpanel" aria-labelledby="pills-cognitive-tab">
+                        <form>
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="eating_comments">Selected Tags:</label>
+                                <div>
+                                    <input type="text" value="Completed a puzzle set without help, Curious about a friend's bruise" data-role="tagsinput" placeholder="Add tag...">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="container text-center col-sm-6 col-md-4 py-2">
+                            <button style="width: 100px; height: 40px;" class="btn btn-success float-left" id="eating_save" type="save"><b>Save</b></button>
+                            <button style="width: 100px; height: 40px;" class="btn btn-danger float-right" id="eating_submit" type="submit">Submit</button>
+                        </div>
+                    </div>
+
+                    <!-- literacy -->
+                    <div class="tab-pane fade" id="pills-literacy" role="tabpanel" aria-labelledby="pills-literacy-tab">
+                        <form>
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="eating_comments">Selected Tags:</label>
+                                <div>
+                                    <input type="text" value="Recited the full list of alphabets, Learnt to spell a few words, Had a debate with the teacher :o" data-role="tagsinput" placeholder="Add tag...">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="container text-center col-sm-6 col-md-4 py-2">
+                            <button style="width: 100px; height: 40px;" class="btn btn-success float-left" id="eating_save" type="save"><b>Save</b></button>
+                            <button style="width: 100px; height: 40px;" class="btn btn-danger float-right" id="eating_submit" type="submit">Submit</button>
+                        </div>
+                    </div>
+
+                    <!-- other -->
+                    <div class="tab-pane fade" id="pills-other" role="tabpanel" aria-labelledby="pills-other-tab">
+                        <form>
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="eating_comments">Selected Tags:</label>
+                                <div>
+                                    <input type="text" value="Extraaaaaaaaaa" data-role="tagsinput" placeholder="Add tag...">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="container text-center col-sm-6 col-md-4 py-2">
+                            <button style="width: 100px; height: 40px;" class="btn btn-success float-left saveBtnQuick" id="eating_save" type="save">Save</button>
+                            <button style="width: 100px; height: 40px;" class="btn btn-danger float-right cmpBtnQuick" id="eating_submit" type="submit">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </main>
 
 
 <!-- info in all pages -->
 <footer class="text-muted">
-    <div class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>KAIST 2019 CS374 @Team XZY</p>
+    <div class="album pt-5 bg-white">
+        <div class="container">
+            <p class="float-right BLACK"><a href="#">Back to top</a></p>
+            <p>KAIST 2019 CS374 @Team XZY</p>
+        </div>
     </div>
 </footer>
 
@@ -246,13 +258,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
-<script src="./bootstrap-tagsinput-latest/dist/bootstrap-tagsinput.js"></script>
 <script src="./makelog.js"></script>
 </body>
 
