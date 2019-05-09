@@ -6,6 +6,11 @@
 }
 
 .jumbotron{
-	background-color: white !important;
+	background-color: transparent !important;
 	margin: 0;
 }
+
+.fa-star{
+	  color: #FADC46;
+}
+

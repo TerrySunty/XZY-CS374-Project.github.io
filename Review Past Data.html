@@ -9,6 +9,7 @@
             <link rel="stylesheet" type="text/css" href="jquery-ui-themes-1.12.1/themes/flick/jquery-ui.css">
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
             <link rel="stylesheet" type="text/css" href="review.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 
             <title>Data Reiew Page</title>
@@ -56,7 +57,7 @@
             </section>
             <div class="container">
 
-                <div style="background-color: white !important; " class="album py-4 bg-light">
+                <div class="album py-5">
 
                     <div class="row">
                         <div class="offset-md-3">
@@ -85,21 +86,41 @@
                     </div>
                 </div>
 
-                <div class="chart-container">
-                    <canvas id="pieChart"></canvas>
+                <div class="album">
+            
+                    <div class="chart-container text-center">
+                        <canvas id="pieChart"></canvas>
+                        <br>
+                        <strong class="lead"><i class="fas fa-chart-pie"></i> Top-5 used tags and other tags</strong>
+
+                    </div>
+
+
                 </div>
 
             </div>
 
             <div class="container">
-                <div class="log-list album py-4 bg-light">
+                <div class="log-list album py-1 bg-light">
+                    
+                    <h4 class="text-center lead">
+                        <i class="fas fa-clipboard"></i> 
+                        All eating logs about tag
+                        <br><br>
+                        <small><small><i class="fas fa-quote-left"></i></small></small> 
+                        <mark> dislike </mark>
+                        <small><small><i class="fas fa-quote-right"></i></small></small>
+                    </h4>
+
+                    <hr>
+
                     <!-- Log One -->
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <h4><i class="fas fa-utensils"></i> Eating</h4> 
-                            <small class="text-muted"><i>06/05/2019 12:30am</i></small>
-                            <p>Ate an apple</p>
-                            <a class="btn btn-primary" href="Complete Log.html">Complete it!</a>
+                            <i class="fas fa-comment-dots fa-lg"></i>
+                            <h5>Ate an apple he doesn't like </h5>
+                            <p><small class="text-muted"><i>06/05/2019 12:30am</i></small></p>
+                            <a class="btn btn-primary" href="Complete Log.html">See Details</a>
                         </div>
                     </div>
                     <!-- /.row -->
@@ -109,10 +130,11 @@
                     <!-- Log Two -->
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <h4><i class="fas fa-bed"></i> Sleeping</h4> 
-                            <small class="text-muted"><i>06/05/2019 13:30am</i></small>
-                            <p>Didn't sleep at all</p>
-                            <a class="btn btn-primary" href="Complete Log.html">Complete it!</a>
+                            <i class="fas fa-comment-dots fa-lg"></i>
+                            <h5>Didn't finish the lunch for it has fish</h5>
+                            <i class="fas fa-star"></i> important
+                            <p><small class="text-muted"><i>06/05/2019 12:30am</i></small></p>
+                            <a class="btn btn-primary" href="Complete Log.html">See Details</a>
                         </div>
                     </div>
                     <!-- /.row -->
@@ -122,10 +144,10 @@
                     <!-- Log Three -->
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <h4><i class="fas fa-user-friends"></i> Social</h4> 
-                            <small class="text-muted"><i>06/05/2019 10:30am</i></small>
-                            <p>First time to play with classmate</p>
-                            <a class="btn btn-primary" href="Complete Log.html">Complete it!</a>
+                            <i class="fas fa-comment-dots fa-lg"></i>
+                            <h5>Don't like sweet things</h5>
+                            <p><small class="text-muted"><i>06/05/2019 10:30am</i></small></p>
+                            <a class="btn btn-primary" href="Complete Log.html">See Details</a>
                         </div>
                     </div>
 
@@ -136,10 +158,11 @@
                     <!-- Log Four -->
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <h4><i class="fas fa-walking"></i> Physical</h4> 
-                            <small class="text-muted"><i>06/05/2019 11:30am</i></small>
-                            <p>Ran two circles himself</p>
-                            <a class="btn btn-primary" href="Complete Log.html">Complete it!</a>
+                            <i class="fas fa-comment-dots fa-lg"></i>
+                            <h5>Dislike eating fish</h5>
+                            <i class="fas fa-star"></i> important
+                            <p><small class="text-muted"><i>05/04/2019 12:30am</i></small></p>
+                            <a class="btn btn-primary" href="Complete Log.html">See Details</a>
                         </div>
                     </div>
 

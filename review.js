@@ -56,16 +56,17 @@ $( function() {
 
 var data = {
   datasets: [{
-    data: [300, 50, 100, 40, 120],
+    data: [300, 50, 100, 40, 120, 20],
     backgroundColor: [
       "#F7464A",
       "#46BFBD",
       "#FDB45C", 
       "#949FB1", 
-      "#4D5360"
+      "#4D5360",
+      "#ADD8E6"
     ]
   }],
-  labels: ["tag1", "tag2", "tag3", "tag4", "tag5"],
+  labels: ["tag1", "tag2", "tag3", "tag4", "tag5", "other"],
 };
 
 
