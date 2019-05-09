@@ -34,15 +34,15 @@
 }
 
 .jumbotron {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   margin-bottom: 0;
   background-color: #fff;
 }
 @media (min-width: 768px) {
   .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 
@@ -132,5 +132,15 @@ footer p {
 }
 
 .ui-datepicker-calendar {
-    display: none;
+  display: none;
  }
+
+.thematicBreak{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
