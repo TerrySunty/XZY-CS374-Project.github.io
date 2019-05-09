@@ -8,12 +8,7 @@ var config = {
 };
 firebase.initializeApp(config);
 
-function writeToDatabase(comment) {
-    var newKey = firebase.database().ref('/kidsBox/').push();
-    newKey.set({
-        name:comment
-    });
-}
+
 
 var age;
 var kidname;
@@ -52,7 +47,7 @@ function htmladd(kidname,path){// add a new kid box, use data fetched from fireb
     var div2=document.createElement('div');
     div2.className="card";
 
-    var img=document.createElement('image');
+    var img=document.createElement('img');
     img.className="card-img-top";
     $(img).attr("src",path);
     $(img).attr("alt","Card image cap");
