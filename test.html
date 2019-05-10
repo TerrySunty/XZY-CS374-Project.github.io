@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -20,7 +20,7 @@ $( "#myDatepicker" ).datepicker();
 </script>
  
 </body>
-</html>
+</html> -->
 
 
 <!-- <!DOCTYPE html>
@@ -59,6 +59,142 @@ $( "#myDatepicker" ).datepicker();
 
 </body>
 </html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="homeCSS.css" rel="stylesheet"/> -->
+    <link rel="stylesheet" type="text/css" href="jquery-ui-themes-1.12.1/themes/flick/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
+    <link rel="stylesheet" type="text/css" href="review.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-tagsinput-latest/src/bootstrap.min.css">
+    <title>Data Reiew Page</title>
+</head>
+
+<body>
+<!-- navbar in all pages-->
+<div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white">About</h4>
+                <p class="text-muted">LogKids strives to serve for childcare teachers who need to make instant log of child under their care, and provide the log reviewing in a meaningful way. Start using LogKids to spend less time on notes-taking and interact with the child more!</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+                <h4 class="text-white">Contact</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">logkids@gmail.com</a></li>
+                    <!-- <li><a href="#" class="text-white">Like on Facebook</a></li>
+                     <li><a href="#" class="text-white">Email me</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+        <a href="index.html" class="navbar-brand d-flex align-items-center"><b>LogKids</b></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<!-- main body  -->
+<main role="main">
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Data Review</h1>
+            <p class="lead text-muted">BEN</p>
+        </div>
+    </section>
+
+    <div class="album py-3 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-3">
+                    <label for="from">From</label>
+                    <input class="form-control-sm" type="text" id="from" name="from">
+                    <label for="to">to</label>
+                    <input class="form-control-sm" type="text" id="to" name="to">
+                </div>
+
+                <div class="col-auto">
+                    <select class="custom-select custom-select-sm mb-3">
+                        <option selected>Select category...</option>
+                        <option value="1">Eating</option>
+                        <option value="2">Sleeping</option>
+                        <option value="3">Social</option>
+                        <option value="4">Physical</option>
+                        <option value="5">Cognitive</option>
+                        <option value="6">Literacy</option>
+                        <option value="7">Other</option>
+                    </select>
+                </div>
+
+                <div class="col-auto">
+                    <button type="button" class="btn btn-primary btn-sm">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="pieChart"></canvas>
+        </div>
+
+    </div>
+</main>
+
+
+<!-- info in all pages -->
+<footer class="text-muted">
+    <div class="container">
+        <div class="album pt-5 bg-white">
+            <p class="float-right BLACK"><a href="#"><span class="text-muted fas fa-chevron-up">&nbsp;Back to top</span></a></p>
+            <p>KAIST 2019 CS374 @Team XZY</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+<script type="text/javascript" src="review.js"></script>
+
+<script type="text/javascript">
+    canvas.onclick = function(evt) {
+        var activePoints = myNewChart.getElementsAtEvent(evt);
+        if (activePoints[0]) {
+            var chartData = activePoints[0]['_chart'].config.data;
+            var idx = activePoints[0]['_index'];
+
+            var label = chartData.labels[idx];
+            var value = chartData.datasets[0].data[idx];
+
+            console.log(hi);
+            alert(url);
+        }
+    };
+</script>
+
+<!--         <script src="jquery/js/jquery-1.9.0.min.js"></script>
+        <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script> -->
+</body>
+
+</html>
+
 
 
 

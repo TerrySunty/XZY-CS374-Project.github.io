@@ -35,14 +35,14 @@
 
 .jumbotron {
   padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
   margin-bottom: 0;
   background-color: white;
 }
 @media (min-width: 300px) {
   .jumbotron {
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
   }
 }
 
@@ -67,65 +67,6 @@ footer p {
   margin-bottom: .25rem;
 }
 
-/* Adding Tag*/
-.addTag {
-  border-radius: 8px;
-  background-color: #ffffff;
-  transition-duration: 0.2s;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.addTag span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.2s;
-}
-
-.addTag span:after {
-  content: '\0000';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.2s;
-}
-
-.addTag:hover span{
-  background-color: #2f98e2;
-  border: 5px;
-  color: white;
-  padding-right: 15px;
-}
-
-.addTag:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-/* Adding additional Tag*/
-.addExTag {
-  border-radius: 8px;
-  background-color: #ffffff;
-  transition-duration: 0.2s;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.addExTag span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.2s;
-}
-
-.addExTag:hover span{
-  background-color: #2f98e2;
-  border: 5px;
-  color: white;
-}
-
 .bold-mute{
   color: gray;
   /*font-weight: bold;*/
@@ -142,5 +83,61 @@ footer p {
 }
 
 .bgEmpha{
-  background-color: rgba(128, 142, 144, 0.89);
+  background-color: rgba(223, 230, 230, 0.4);
+  padding: 20px;
 }
+
+.histTag{
+  background-color: #cfe2f3;
+  border-radius: 3px;
+  padding: 2px 5px 2px 5px;
+}
+
+.histTable{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+tr{
+  vertical-align: top;
+}
+
+.saveBtnQuick{
+  font-weight:bold;
+  color: white;
+}
+
+
+/* Important checkbox*/
+.star {
+  visibility:hidden;
+  font-size:35px;
+  cursor:pointer;
+
+}
+.star:before {
+  content: "\2605";
+  position: absolute;
+  visibility:visible;
+  color: orange;
+}
+.star:checked:before {
+  content: "\2606";
+  position: absolute;
+  color: black;
+}
+
+/*
+input[type=checkbox] + label {
+  position: absolute;
+  color: black;
+  visibility:hidden;
+  font-size:35px;
+  cursor:pointer;
+}
+input[type=checkbox]:checked + label {
+  position: absolute;
+  visibility:visible;
+  color: orange;
+}
+*/

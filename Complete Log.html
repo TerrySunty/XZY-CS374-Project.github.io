@@ -44,7 +44,6 @@
 
 <!-- main body  -->
 <main role="main">
-
     <section class="jumbotron text-center">
         <div class="container">
             <h1 class="jumbotron-heading">Complete Log</h1>
@@ -53,16 +52,14 @@
     </section>
 
     <!-- container-->
-    <div class="album py-5 bg-light">
+    <div class="album py-3 bg-white">
         <div class="container">
             <div class="col-md-12 text-left">
                 <div>
-                    <h5 class="font-weight-bold" for="eating_comments">Log 
-                        <p class="text-muted float-right"> <small><small><small>Recorded on: <i>24/5/2019 3.20pm</i></small></small></small></p></h5>
+                    <h5 class="font-weight-bold" for="eating_comments">&nbsp;
+                        <p class="text-muted float-right"> <small><small>Recorded on: <i>24/5/2019 3.20pm</i></small></small></p></h5>
                 </div>
-
                 <hr>
-
                 <label class="font-weight-bold" for="sleeping_comments">Category:</label>
                 <h6 class="bold-mute">  <i class="fas fa-utensils"></i> Eating</h6><br>
 
@@ -70,44 +67,120 @@
                 <h6 class="bold-mute">   Less than normal</h6><br>
 
                 <label class="font-weight-bold" for="sleeping_comments">Selected tags:</label>
-                <div>
-                    <input type="text" value="Ate a lot of vegetables today, Did not finish milk, Drank the entire bowl of soup" data-role="tagsinput">
-                </div><br>
-
-
-                <div id="show_history">
-                    <button type="button" class="btn btn-outline-secondary btn-small" data-toggle="collapse" data-target="#demo">Show latest history</button>
-                    <div id="demo" class="collapse">
-                    <h5><small><small><small>Recorded on: <i>23/5/2019 3.00pm</i></small></small></small></h5>
-                    <input type="text" value="Ate an apple" data-role="tagsinput"><br>
-                    She ate it for the first time
-                    </div>
-                    <br><br>
+                <div class="d-flex flex-column">
+                    <input type="text" value="Ate an apple, Did not finish milk, Drank the entire bowl of soup" data-role="tagsinput"; placeholder="Add tag...">
                 </div>
-
-
-                <label class="font-weight-bold" for="sleeping_comments">Comments:</label>
-                <textarea class="form-control center-block" id="eating_comments" rows="3" placeholder="Type your comments here"></textarea><br>
             </div>
         </div>
     </div>
 
-
-            <div class="container text-center">
-                <button class="btn btn-success" id="eating_save" type="save">Save</button>
-                <button class="btn btn-danger" id="eating_submit" type="submit">Submit</button>
+    <div class="album bg-white">
+        <div class="container">
+            <div class="col-md-12 text-left">
+                <button type="button" class="btn btn-outline-secondary btn-small" data-toggle="collapse" data-target="#demo">Show latest history</button>
+                <div id="demo" class="collapse">
+                    <div class="album; bgEmpha">
+                        <div class="container">
+                            <div class="histTable">
+                                <div class="col-md-12 text-left">
+                                    <table>
+                                        <tr>
+                                            <td><b>Tag:&ensp;</b></td>
+                                            <td><h7 class = "histTag"> Ate an apple </h7> &nbsp;
+                                                <h7 class = "histTag"> Cleaned up after himself</h7></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h7><b>Recorded:&ensp;</b></td>
+                                            <td><i>23/5/2019 3.00pm</i></h7></td>
+                                        </tr>
+                                        <tr><td>&nbsp</td><td>&nbsp</td></tr>
+                                        <tr>
+                                            <td><b>Comment:&ensp;</b></td>
+                                            <td><h7>He ate an apple for the first time and picked up the small bits that fell on the floor.</h7></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="histTable">
+                                <div class="col-md-12 text-left">
+                                    <table>
+                                        <tr>
+                                            <td><b>Tag:&ensp;</b></td>
+                                            <td><h7 class = "histTag"> Did not finish milk </h7> &nbsp;
+                                                <h7 class = "histTag"> Cry </h7>&nbsp;
+                                                <h7 class = "histTag"> Full </h7>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td><h7><b>Recorded:&ensp;</b></td>
+                                            <td><i>22/5/2019 1.20pm</i></h7></td>
+                                        </tr>
+                                        <tr><td>&nbsp</td><td>&nbsp</td></tr>
+                                        <tr>
+                                            <td><b>Comment:&ensp;</b></td>
+                                            <td><h7>Did not want to finish his milk and kept crying. Might be because he ate a lot for lunch.</h7></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="histTable">
+                                <div class="col-md-12 text-left">
+                                    <table>
+                                        <tr>
+                                            <td><b>Tag:&ensp;</b></td>
+                                            <td><h7 class = "histTag"> Drank the entire bowl of soup </h7>&nbsp;
+                                                <h7 class = "histTag"> Cabbage soup </h7></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h7><b>Recorded:&ensp;</b></td>
+                                            <td><i>23/5/2019 12.25pm</i></h7></td>
+                                        </tr>
+                                        <tr><td>&nbsp</td><td>&nbsp</td></tr>
+                                        <tr>
+                                            <td><b>Comment:&ensp;</b></td>
+                                            <td><h7>Seems like he really liked the texture of the cabbage in the soup!</h7></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    <br>
+    <div class="album pt-3 pb-5 bg-white">
+        <div class="container">
+            <div class="col-md-12 text-left">
+                <label class="font-weight-bold" for="sleeping_comments">Comments:</label>
+                <textarea class="form-control center-block" id="eating_comments" rows="3" placeholder="Type your comments here"></textarea>
 
+                <div class=“row”>
+                    <label class="font-weight-bold float-left" for="iStar"><br>Mark as important:</label>
+                    <input id="iStar" class="glyphicon glyphicon-star star" type="checkbox" checked>
 
+                </div>
+                <br><br>
+
+                <div class="container text-center col-sm-6 col-md-4 py-4">
+                    <button style="width: 100px; height: 40px;" class="btn btn-outline-success float-left" id="eating_save" type="save">Save</button>&emsp;&emsp;
+                    <button style="width: 100px; height: 40px;" class="btn btn-outline-danger float-right" id="eating_submit" type="submit"><b>Submit</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 
 <!-- info in all pages -->
 <footer class="text-muted">
-    <div class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>KAIST 2019 CS374 @Team XZY</p>
+    <div class="album bg-white">
+        <div class="container">
+            <p class="float-right BLACK"><a href="#"><span class="text-muted fas fa-chevron-up">&nbsp;Back to top</span></a></p>
+            <p>KAIST 2019 CS374 @Team XZY</p>
+        </div>
     </div>
 </footer>
 

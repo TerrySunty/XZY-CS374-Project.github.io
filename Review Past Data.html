@@ -4,11 +4,12 @@
     <head>
         <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!-- <link href="homeCSS.css" rel="stylesheet"/> -->
+            <link href="homeCSS.css" rel="stylesheet"/>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link rel="stylesheet" type="text/css" href="jquery-ui-themes-1.12.1/themes/flick/jquery-ui.css">
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
             <link rel="stylesheet" type="text/css" href="review.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 
             <title>Data Reiew Page</title>
@@ -47,7 +48,6 @@
 
         <!-- main body  -->
         <main role="main">
-            <div class="album py-5 bg-light">
 
             <section class="jumbotron text-center">
                 <div class="container">
@@ -55,40 +55,150 @@
                     <p class="lead text-muted">BEN</p>
                 </div>
             </section>
+            <div class="container">
+
+                <div class="album py-5">
+
+                    <div class="row">
+                        <div class="offset-md-3">
+                            <label for="from">From</label>
+                            <input class="form-control-sm" type="text" id="from" name="from">
+                            <label for="to">to</label>
+                            <input class="form-control-sm" type="text" id="to" name="to">
+                        </div>
+
+                        <div class="col-auto">
+                            <select class="custom-select custom-select-sm mb-3">
+                              <option selected>Select category...</option>
+                              <option value="1">Eating</option>
+                              <option value="2">Sleeping</option>
+                              <option value="3">Social</option>
+                              <option value="4">Physical</option>
+                              <option value="5">Cognitive</option>
+                              <option value="6">Literacy</option>
+                              <option value="7">Other</option>
+                            </select>                    
+                        </div>
+
+                        <div class="col-auto">
+                            <button type="button" class="btn btn-primary btn-sm">Search</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="album">
+                    <div class="chart-container text-center">
+                        <strong class="lead"><i class="fas fa-chart-pie"></i> Top-5 used tags and other tags</strong>
+                        <canvas id="pieChart"></canvas>
+                    </div>
+
+
+                </div>
+
+            </div>
 
             <div class="container">
-                <div class="row">
-                    <div class="offset-md-3">
-                        <label for="from">From</label>
-                        <input class="form-control-sm" type="text" id="from" name="from">
-                        <label for="to">to</label>
-                        <input class="form-control-sm" type="text" id="to" name="to">
+                <div class="log-list album py-1 bg-light">
+                    
+                    <h4 class="text-center lead">
+                        <br>
+                        <br>
+                        <i class="fas fa-clipboard"></i> 
+                        All eating logs about tag
+                        <br>
+                        <br>
+                        <small><small><i class="fas fa-quote-left"></i></small></small> 
+                        <mark> dislike </mark>
+                        <small><small><i class="fas fa-quote-right"></i></small></small>
+                        <br>
+                        <br>
+                    </h4>
+
+                    <hr>
+
+                    <!-- Log One -->
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <i class="fas fa-comment-dots fa-lg"></i>
+                            <h5>Ate an apple he doesn't like </h5>
+                            <p><small class="text-muted"><i>06/05/2019 12:30am</i></small></p>
+                            <a class="btn btn-primary" href="Complete Log.html">See Details</a>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+
+                    <hr>
+
+                    <!-- Log Two -->
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <i class="fas fa-comment-dots fa-lg"></i>
+                            <h5>Didn't finish the lunch for it has fish</h5>
+                            <i class="fas fa-star"></i> important
+                            <p><small class="text-muted"><i>06/05/2019 12:30am</i></small></p>
+                            <a class="btn btn-primary" href="Complete Log.html">See Details</a>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+
+                    <hr>
+
+                    <!-- Log Three -->
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <i class="fas fa-comment-dots fa-lg"></i>
+                            <h5>Don't like sweet things</h5>
+                            <p><small class="text-muted"><i>06/05/2019 10:30am</i></small></p>
+                            <a class="btn btn-primary" href="Complete Log.html">See Details</a>
+                        </div>
                     </div>
 
-                    <div class="col-auto">
-                        <select class="custom-select custom-select-sm mb-3">
-                          <option selected>Select category...</option>
-                          <option value="1">Eating</option>
-                          <option value="2">Sleeping</option>
-                          <option value="3">Social</option>
-                          <option value="4">Physical</option>
-                          <option value="5">Cognitive</option>
-                          <option value="6">Literacy</option>
-                          <option value="7">Other</option>
-                        </select>                    
+                    <!-- /.row -->
+
+                    <hr>
+
+                    <!-- Log Four -->
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <i class="fas fa-comment-dots fa-lg"></i>
+                            <h5>Dislike eating fish</h5>
+                            <i class="fas fa-star"></i> important
+                            <p><small class="text-muted"><i>05/04/2019 12:30am</i></small></p>
+                            <a class="btn btn-primary" href="Complete Log.html">See Details</a>
+                        </div>
                     </div>
 
-                    <div class="col-auto">
-                        <button type="button" class="btn btn-primary btn-sm">Search</button>
-                    </div>
+                    <!-- /.row -->
+
+                    <hr>
+
+                    <!-- <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>     -->
                 </div>
             </div>
 
-            <div class="chart-container">
-                <canvas id="pieChart"></canvas>
-            </div>
         
-        </div>
         </main>
 
 
