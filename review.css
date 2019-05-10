@@ -8,6 +8,9 @@
 .jumbotron{
 	background-color: transparent !important;
 	margin: 0;
+	padding-top: 2rem;
+	padding-bottom: 0rem;
+	margin-bottom: 0;
 }
 
 .fa-star{
