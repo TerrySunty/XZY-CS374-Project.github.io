@@ -89,6 +89,8 @@ function initialize(){
 
 
 function read_tag(category="",id=""){
+
+
     firebase.database().ref('/kidsBox/'+kid_key+'/showBox/'+category+"/").once("value",function(snapshot){
         var myValue=snapshot.val();
         var str="";
@@ -101,7 +103,8 @@ function read_tag(category="",id=""){
                 if(i+1!==keyList.length){str+=",";}
             }
         }
-        document.getElementById(id).value=str;
+        var newinput="<div><input id="+id+" type='text' value='"+str+"' data-role='tagsinput' placeholder='Add tag...'/></div>";
+        $("#"+category).replaceWith(newinput);
     });
 }
 function delete_tag(category="",item=""){
