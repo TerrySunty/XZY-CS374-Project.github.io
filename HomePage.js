@@ -42,8 +42,16 @@ function htmladd(kidname,path){// add a new kid box, use data fetched from fireb
     div1.className="col-6 col-sm-4 col-md-3 col-lg-2 py-4";
 
     var link=document.createElement('a');
-    link.href="task choosing.html";
-
+    link.href="#";
+    $(link).on("click","p",function(){
+        var name=this.innerHTML;
+        setTimeout(function(){
+            firebase.database().ref('/name_index/').set({
+                name_index:name
+            });
+            window.location="task choosing.html";
+        },300);
+    });
     var div2=document.createElement('div');
     div2.className="card";
 
