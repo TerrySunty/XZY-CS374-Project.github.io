@@ -30,13 +30,10 @@ function initialize(){
                 if(myValue!==null){
                     console.log("locating kid");
                     var keyList = Object.keys(myValue);
-                    for(var i=0;i<keyList.length;i++){
-                        var myKey = keyList[i];
-                        if(name_idx===myValue[myKey].name){
-                            kid_key=myKey;
-                            break;
-                        }
-                    }
+                    var myKey = keyList[0];
+                    var tags=myValue[myKey].tag;
+                    var amount=myValue[myKey].amount;
+                    var time=myValue[myKey].time;
                     //在这里写后续的函数
 
                 }
