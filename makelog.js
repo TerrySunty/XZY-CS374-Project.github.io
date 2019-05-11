@@ -324,6 +324,4 @@ var otherid="#othertag";
 $(document).ready(function(){
     initialize();
 
-
-
 });
