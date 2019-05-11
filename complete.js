@@ -34,6 +34,7 @@ function initialize(){
                         }
                     }
                     //在这里写后续的函数
+
                 }
             });
         }
@@ -46,4 +47,3 @@ $(document).ready(function(){
     initialize();
 
 });
-

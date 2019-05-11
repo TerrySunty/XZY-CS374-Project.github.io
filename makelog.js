@@ -190,6 +190,7 @@ function initialize(){
             var keyList = Object.keys(myValue);
             var myKey = keyList[0];
             name_idx=myValue[myKey];
+            document.getElementById("head_name").innerHTML=name_idx;
             firebase.database().ref('/kidsBox/').once('value', function(snapshot){
                 var myValue = snapshot.val();
                 if(myValue!==null){
