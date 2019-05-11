@@ -11,17 +11,21 @@ var config = {
 firebase.initializeApp(config);//initialize firebase
 
 
-var name_idx;
-var kid_key;
+
+var kid;
+var chosen_category;
+var log_key;
 function initialize(){
-    firebase.database().ref('/name_index/').once('value', function(snapshot){
+    firebase.database().ref('/incomplete_index/').once('value', function(snapshot){
         var myValue = snapshot.val();
         if(myValue!==null){
-            console.log("getting chosen kid name");
+            console.log("getting into chosen kid's incomplete log");
             var keyList = Object.keys(myValue);
             var myKey = keyList[0];
-            name_idx=myValue[myKey];
-            firebase.database().ref('/kidsBox/').once('value', function(snapshot){
+            kid=myValue[myKey].kid_key;
+            chosen_category=myValue[myKey].category;
+            log_key=myValue[myKey].key_idx;
+            firebase.database().ref('/kidsBox/'+kid+"/incompleteBox/"+chosen_category+"/"+log_key+"/").once('value', function(snapshot){
                 var myValue = snapshot.val();
                 if(myValue!==null){
                     console.log("locating kid");
