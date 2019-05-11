@@ -245,7 +245,7 @@ function read_tag(category="",id=""){
                 if(i+1!==keyList.length){str+=",";}
             }
         }
-        $("#"+id).tagsinput("add",str)
+        $("#"+id).tagsinput("add",str) //load current tags into input box
     });
 
 }
