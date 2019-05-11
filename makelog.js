@@ -47,19 +47,19 @@ function locate(){
     })
 }
 
-
+//get name's index, corresponding kid's key in firebase, load current tags in showBox
 function initialize(){
     firebase.database().ref('/name_index/').once('value', function(snapshot){
         var myValue = snapshot.val();
         if(myValue!==null){
-            console.log("1");
+            console.log("getting chosen kid name");
             var keyList = Object.keys(myValue);
             var myKey = keyList[0];
             name_idx=myValue[myKey];
             firebase.database().ref('/kidsBox/').once('value', function(snapshot){
                 var myValue = snapshot.val();
                 if(myValue!==null){
-                    console.log("2");
+                    console.log("locating kid");
                     var keyList = Object.keys(myValue);
                     for(var i=0;i<keyList.length;i++){
                         var myKey = keyList[i];
@@ -86,8 +86,6 @@ function initialize(){
 }
 
 //-----------------------------Show Box control function, Show Box is related to what will be shown in selected tags only
-
-
 function read_tag(category="",id=""){
 
 
@@ -95,7 +93,7 @@ function read_tag(category="",id=""){
         var myValue=snapshot.val();
         var str="";
         if(myValue!==null){
-            console.log('3');
+
             var keyList=Object.keys(myValue);
             for(var i=0;i<keyList.length;i++){
                 var myKey=keyList[i];
@@ -103,10 +101,11 @@ function read_tag(category="",id=""){
                 if(i+1!==keyList.length){str+=",";}
             }
         }
-        var newinput="<div><input id="+id+" type='text' value='"+str+"' data-role='tagsinput' placeholder='Add tag...'/></div>";
-        $("#"+category).replaceWith(newinput);
+        $("#"+id).tagsinput("add",str);//loading current tags in showbox
+
     });
 }
+
 function delete_tag(category="",item=""){
     return firebase.database().ref('kidsBox'+kid_key+'/showBox/'+category).once('value',function(snapshot){
         var myValue=snapshot.val();
