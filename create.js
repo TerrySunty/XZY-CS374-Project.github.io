@@ -67,7 +67,7 @@ var createbutton=document.getElementById("createButton");
 
 createbutton.onclick=function(){
     age=$("#ageinput option:selected").val();
-    var photo_path="https://raw.githubusercontent.com/TerrySunty/XZY-CS374-Project.github.io/master/kids_png/"+kidgender+"s_png/"+kidgender+"-"+getRandomInt(0,20)+".png";
+    var photo_path="https://raw.githubusercontent.com/TerrySunty/XZY-CS374-Project.github.io/master/kids_png/"+kidgender+"s_png/"+kidgender+"-"+getRandomInt(1,20)+".png";
     writeToDatabase(age,kidname,kidgender,photo_path);
     setTimeout("window.location.href='./index.html'",950)
 };

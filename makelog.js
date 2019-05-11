@@ -18,34 +18,178 @@ firebase.initializeApp(config);//initialize firebase
 
 
 var name_idx;
-function read_name_index(){
-     firebase.database().ref('/name_index/').once('value', function(snapshot){
-        var myValue = snapshot.val();
-        if(myValue!==null){
-            var keyList = Object.keys(myValue);
-            var myKey = keyList[0];
-            name_idx=myValue[myKey];
-            locate();
-        }
-    });
-}
-
 var kid_key;
-function locate(){
-    firebase.database().ref('/kidsBox/').once('value', function(snapshot){
-        var myValue = snapshot.val();
-        if(myValue!==null){
-            var keyList = Object.keys(myValue);
-            for(var i=0;i<keyList.length;i++){
-                var myKey = keyList[i];
-                if(name_idx===myValue[myKey].name){
-                    kid_key=myKey;
-                    break;
-                }
-            }
-        }
-    })
-}
+var eat_save=document.getElementById("eating_save");
+var eat_submit=document.getElementById("eating_submit");
+var sleep_save=document.getElementById("sleeping_save");
+var sleep_submit=document.getElementById("sleeping_submit");
+var social_save=document.getElementById("social_save");
+var social_submit=document.getElementById("social_submit");
+var physical_save=document.getElementById("physical_save");
+var physical_submit=document.getElementById("physical_submit");
+var cognitivg_save=document.getElementById("cognitive_save");
+var cognitive_submit=document.getElementById("cognitive_submit");
+var literacy_save=document.getElementById("literacy_save");
+var lieteracy_submit=document.getElementById("literacy_submit");
+var other_save=document.getElementById("other_save");
+var other_submit=document.getElementById("other_submit");
+
+eat_save.onclick=function(){
+    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/eating/').push();
+    newKey.set({
+       amount:$("input[name='eatAmount']:checked").next("label").text(),
+        tag: $(eatid).tagsinput("items"),
+        comment:"",
+        complete:false
+    });
+    alert("You saved a eating log!");
+    $(eat_save).attr("disabled",true);
+};
+eat_submit.onclick=function(){
+    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/eating/').push();
+    newKey.set({
+        amount:$("input[name='eatAmount']:checked").next("label").text(),
+        tag: $(eatid).tagsinput("items"),
+        comment:"No comment this time...",
+        complete:true
+    });
+    alert("You submitted a eating log!");
+    $(eat_submit).attr("disabled",true);
+};
+
+sleep_save.onclick=function(){
+    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/sleeping/').push();
+    newKey.set({
+        amount:$("input[name='sleepTime']:checked").next("label").text(),
+        tag: $(sleepingid).tagsinput("items"),
+        comment:"",
+        complete:false
+    });
+    alert("You saved a sleeping log!");
+    $(sleep_save).attr("disabled",true);
+};
+
+sleep_submit.onclick=function(){
+    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/sleeping/').push();
+    newKey.set({
+        amount:$("input[name='sleepTime']:checked").next("label").text(),
+        tag: $(eatid).tagsinput("items"),
+        comment:"No comment this time...",
+        complete:true
+    });
+    alert("You submitted a eating log!");
+    $(sleep_submit).attr("disabled",true);
+};
+
+social_save.onclick=function(){
+    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/social/').push();
+    newKey.set({
+        tag: $(socialid).tagsinput("items"),
+        comment:"",
+        complete:false
+    });
+    alert("You saved a social log!");
+    $(social_save).attr("disabled",true);
+};
+
+social_submit.onclick=function(){
+    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/social/').push();
+    newKey.set({
+        tag: $(socialid).tagsinput("items"),
+        comment:"",
+        complete:true
+    });
+    alert("You saved a social log!");
+    $(social_save).attr("disabled",true);
+};
+
+physical_save.onclick=function(){
+    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/physical/').push();
+    newKey.set({
+        tag: $(physicalid).tagsinput("items"),
+        comment:"",
+        complete:false
+    });
+    alert("You saved a physical log!");
+    $(physical_save).attr("disabled",true);
+};
+
+physical_submit.onclick=function(){
+    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/physical/').push();
+    newKey.set({
+        tag: $(physicalid).tagsinput("items"),
+        comment:"",
+        complete:true
+    });
+    alert("You saved a physical log!");
+    $(physical_submit).attr("disabled",true);
+};
+
+cognitive_save.onclick=function(){
+    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/cognitive/').push();
+    newKey.set({
+        tag: $(cognitiveid).tagsinput("items"),
+        comment:"",
+        complete:false
+    });
+    alert("You saved a cognitive log!");
+    $(cognitivg_save).attr("disabled",true);
+};
+
+cognitive_submit.onclick=function(){
+    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/cognitive/').push();
+    newKey.set({
+        tag: $(cognitiveid).tagsinput("items"),
+        comment:"",
+        complete:true
+    });
+    alert("You saved a cognitive log!");
+    $(cognitive_submit).attr("disabled",true);
+};
+
+literacy_save.onclick=function(){
+    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/literacy/').push();
+    newKey.set({
+        tag: $(literacyid).tagsinput("items"),
+        comment:"",
+        complete:false
+    });
+    alert("You saved a literacy log!");
+    $(literacy_save).attr("disabled",true);
+};
+
+literacy_submit.onclick=function(){
+    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/literacy/').push();
+    newKey.set({
+        tag: $(literacyid).tagsinput("items"),
+        comment:"",
+        complete:true
+    });
+    alert("You saved a literacy log!");
+    $(lieteracy_submit).attr("disabled",true);
+};
+
+other_save.onclick=function(){
+    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/other/').push();
+    newKey.set({
+        tag: $(ohterid).tagsinput("items"),
+        comment:"",
+        complete:false
+    });
+    alert("You saved an 'other' log!");
+    $(other_save).attr("disabled",true);
+};
+
+other_submit.onclick=function(){
+    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/other/').push();
+    newKey.set({
+        tag: $(otherid).tagsinput("items"),
+        comment:"",
+        complete:true
+    });
+    alert("You submit an other log!");
+    $(other_submit).attr("disabled",true);
+};
 
 //get name's index, corresponding kid's key in firebase, load current tags in showBox
 function initialize(){
@@ -75,6 +219,7 @@ function initialize(){
                     read_tag("cognitive","cognitivetag");
                     read_tag("literacy","literacytag");
                     read_tag("other","othertag");
+                    setTimeout(bind_tag_write_delete(),2000);
                 }
             });
         }
@@ -86,14 +231,13 @@ function initialize(){
 }
 
 //-----------------------------Show Box control function, Show Box is related to what will be shown in selected tags only
-function read_tag(category="",id=""){
 
+function read_tag(category="",id=""){
 
     firebase.database().ref('/kidsBox/'+kid_key+'/showBox/'+category+"/").once("value",function(snapshot){
         var myValue=snapshot.val();
         var str="";
         if(myValue!==null){
-
             var keyList=Object.keys(myValue);
             for(var i=0;i<keyList.length;i++){
                 var myKey=keyList[i];
@@ -101,21 +245,21 @@ function read_tag(category="",id=""){
                 if(i+1!==keyList.length){str+=",";}
             }
         }
-        $("#"+id).tagsinput("add",str);//loading current tags in showbox
-
+        $("#"+id).tagsinput("add",str)
     });
+
 }
 
 function delete_tag(category="",item=""){
-    return firebase.database().ref('kidsBox'+kid_key+'/showBox/'+category).once('value',function(snapshot){
+    return firebase.database().ref('/kidsBox/'+kid_key+'/showBox/'+category).once('value',function(snapshot){
         var myValue=snapshot.val();
         if(myValue!==null){
             var keyList=Object.keys(myValue);
             for(var i=0;i<keyList.length;i++){
                 var myKey = keyList[i];
                 if(item===myValue[myKey].tag){
-                firebase.database().ref('kidsBox'+kid_key+'/showBox/'+category).child(myKey).remove();
-                break;
+                    firebase.database().ref('kidsBox/'+kid_key+'/showBox/'+category).child(myKey).remove();
+                    break;
                 }
             }
 
@@ -124,26 +268,15 @@ function delete_tag(category="",item=""){
 }
 
 function write_tag(category="",item=""){
-    var newKey = firebase.database().ref('kidsBox'+kid_key+'/showBox/'+category).push();
-    newKey.set({
-        tag:item
-    });
+    if(document.getElementById(category+"tag").value.indexOf(item)!==-1){
+        var newKey = firebase.database().ref('kidsBox/'+kid_key+'/showBox/'+category).push();
+        newKey.set({
+            tag:item
+        });}
 }
 
-//-----------------------------Show Box control function, Show Box is related to what will be shown in selected tags only
-var eatid='#eatingtag';
-var sleepingid="#sleepingtag";
-var socialid="#socialtag";
-var physicalid="#physicaltag";
-var cognitiveid="#cognitivetag";
-var literacyid='#literacytag';
-var otherid="#othertag";
-
-//---------------------------------document loading------------------------------------------------------------------------------
-$(document).ready(function(){
-    initialize();
+function bind_tag_write_delete(){
     //------------------------------------- Bind delete tag event to each tag (delete on HTML and firebase)-------------------------
-
     $(eatid).on("itemRemoved",function(event){
         delete_tag("eating",event.item);
     });
@@ -165,9 +298,6 @@ $(document).ready(function(){
     $(otherid).on("itemRemoved",function(event){
         delete_tag("other",event.item);
     });
-    //------------------------------------- Bind delete tag event to each tag (delete on HTML and firebase)-------------------------
-
-
     //------------------------------------- Write added item in to firebase---------------------------------------------------------
     $(eatid).on("itemAdded",function(event){
         write_tag("eating",event.item);
@@ -190,6 +320,20 @@ $(document).ready(function(){
     $(otherid).on("itemAdded",function(event){
         write_tag("other",event.item);
     });
-    //------------------------------------- Write added item in to firebase---------------------------------------------------------
+}
+//-----------------------------Show Box control function, Show Box is related to what will be shown in selected tags only
+var eatid='#eatingtag';
+var sleepingid="#sleepingtag";
+var socialid="#socialtag";
+var physicalid="#physicaltag";
+var cognitiveid="#cognitivetag";
+var literacyid='#literacytag';
+var otherid="#othertag";
+
+//---------------------------------document loading------------------------------------------------------------------------------
+$(document).ready(function(){
+    initialize();
+
+
 
 });
