@@ -96,7 +96,7 @@ social_submit.onclick=function(){
     var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/social/').push();
     newKey.set({
         tag: $(socialid).tagsinput("items"),
-        comment:"",
+        comment:"No comment this time...",
         complete:true
     });
     alert("You saved a social log!");
@@ -118,7 +118,7 @@ physical_submit.onclick=function(){
     var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/physical/').push();
     newKey.set({
         tag: $(physicalid).tagsinput("items"),
-        comment:"",
+        comment:"No comment this time...",
         complete:true
     });
     alert("You saved a physical log!");
@@ -140,7 +140,7 @@ cognitive_submit.onclick=function(){
     var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/cognitive/').push();
     newKey.set({
         tag: $(cognitiveid).tagsinput("items"),
-        comment:"",
+        comment:"No comment this time...",
         complete:true
     });
     alert("You saved a cognitive log!");
@@ -162,7 +162,7 @@ literacy_submit.onclick=function(){
     var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/literacy/').push();
     newKey.set({
         tag: $(literacyid).tagsinput("items"),
-        comment:"",
+        comment:"No comment this time...",
         complete:true
     });
     alert("You saved a literacy log!");
@@ -184,7 +184,7 @@ other_submit.onclick=function(){
     var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/other/').push();
     newKey.set({
         tag: $(otherid).tagsinput("items"),
-        comment:"",
+        comment:"No comment this time...",
         complete:true
     });
     alert("You submit an other log!");
