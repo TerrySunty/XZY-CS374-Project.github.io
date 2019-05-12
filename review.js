@@ -100,7 +100,7 @@ function add_one_log_box(time="",tags=[],important=false,com=""){
     var p1=document.createElement("p");
     p1.innerHTML="<i class='fas fa-star'></i> important";
 
-    var p2=document.createElement("p")
+    var p2=document.createElement("p");
     p2.className="time_text";
     p2.innerHTML="<small class='text-muted'><i>"+time+"</i></small>";
 
@@ -174,8 +174,19 @@ var ctxP = document.getElementById("eating-pieChart1").getContext('2d');
 var reviewbutton = document.getElementById("review_btn");
 reviewbutton.onclick=function(){
   selected_category=$("#category_select_menu option:selected").val();
+  document.getElementById("historyBox").innerHTML="<h4 id=\"category_title\" class=\"text-center lead\">\n" +
+      "\n" +
+      "                        <!-- all tags in default -->\n" +
+      "                        <br>\n" +
+      "                        <br>\n" +
+      "                        <i class=\"fas fa-clipboard\"></i> \n" +
+      "                        All logs in this category: <!--选择的分类-->\n" +
+      "                        <br>\n" +
+      "                        <br>\n" +
+      "                    </h4>\n" +
+      "                    <hr>";
   initialize();
-}
+};
 // createbutton.onclick = function(){
 
 //     setTimeout("window.location.href='./Review Past Data.html'",950)
