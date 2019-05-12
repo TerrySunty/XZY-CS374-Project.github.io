@@ -211,7 +211,7 @@ save.onclick=function(){
 
 submit.onclick=function(){
     var Newkey=firebase.database().ref('/kidsBox/'+kid+"/logBox/"+chosen_category+"/").push();
-    var comments=document.getElementById("comments").innerHTML;
+    var comments=document.getElementById("comments").value;
     if (comments===""){comments="No comment this time";}
     Newkey.set({
         tag:$("#selected_tags").tagsinput("items"),
