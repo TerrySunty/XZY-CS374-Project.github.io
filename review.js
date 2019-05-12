@@ -33,7 +33,6 @@ function initialize(){
                         }
                     }
                     //后续函数
-                    read_log_inTime_range(selected_category,2 )//第二个变量为 总共需要遍历的log数量
                     read_log_inTime_range(selected_category,1 )//第二个变量为 总共需要遍历的log数量
 
 
