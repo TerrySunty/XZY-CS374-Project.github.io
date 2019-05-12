@@ -171,7 +171,7 @@ reviewbutton.onclick=function(){
     div1.innerHTML="<div class=\"album\">\n" +
       "<div class=\"chart-container text-center\">\n" +
       "<strong class=\"lead\"><i class=\"fas fa-chart-pie\"></i>Eating amount</strong>\n" +
-      "<canvas id=\"eating-pieChart2\" class=\"chart\"></canvas>\n" +
+      "<canvas id=\"pieChart2\" class=\"chart\"></canvas>\n" +
       "</div>\n" +
       "</div>";
 
