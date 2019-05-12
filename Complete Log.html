@@ -47,7 +47,7 @@
     <section class="jumbotron text-center">
         <div class="container">
             <h1 class="jumbotron-heading">Complete Log</h1>
-            <p class="lead text-muted">BEN</p>
+            <p id="kid_name_title" class="lead text-muted"></p>
         </div>
     </section>
 
@@ -57,18 +57,18 @@
             <div class="col-md-12 text-left">
                 <div>
                     <h5 class="font-weight-bold" >&nbsp;
-                        <p class="text-muted float-right"> <small><small>Recorded on: <i>24/5/2019 3.20pm</i></small></small></p></h5>
+                        <p class="text-muted float-right"> <small><small id="up_right_time">Recorded on: <i></i></small></small></p></h5>
                 </div>
                 <hr>
                 <label class="font-weight-bold" >Category:</label>
-                <h6 class="bold-mute">  <i class="fas fa-utensils"></i> Eating</h6><br>
+                <h6 id="complete_category" class="bold-mute"></h6><br>
 
-                <label class="font-weight-bold" >Eating amount:</label>
-                <h6 class="bold-mute">   Less than normal</h6><br>
+                <label id="amount_title" class="font-weight-bold" ></label>
+                <h6 id="amount" class="bold-mute"></h6><br>
 
                 <label class="font-weight-bold" >Selected tags:</label>
                 <div class="d-flex flex-column">
-                    <input type="text" value="Ate an apple, Did not finish milk, Drank the entire bowl of soup" data-role="tagsinput" placeholder="Add tag...">
+                    <input id="selected_tags" type="text" value="" data-role="tagsinput" placeholder="Add tag...">
                 </div>
             </div>
         </div>
@@ -80,70 +80,8 @@
                 <button type="button" class="btn btn-outline-secondary btn-small" data-toggle="collapse" data-target="#demo">Show latest history</button>
                 <div id="demo" class="collapse">
                     <div class="album; bgEmpha">
-                        <div class="container">
-                            <div class="histTable">
-                                <div class="col-md-12 text-left">
-                                    <table>
-                                        <tr>
-                                            <td><b>Tag:&ensp;</b></td>
-                                            <td><h6 class = "histTag"> Ate an apple </h6> &nbsp;
-                                                <h6 class = "histTag"> Cleaned up after himself</h6></td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Recorded:&ensp;</b></td>
-                                            <td><i>23/5/2019 3.00pm</i></td>
-                                        </tr>
-                                        <tr><td>&nbsp</td><td>&nbsp</td></tr>
-                                        <tr>
-                                            <td><b>Comment:&ensp;</b></td>
-                                            <td>He ate an apple for the first time and picked up the small bits that fell on the floor.</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="histTable">
-                                <div class="col-md-12 text-left">
-                                    <table>
-                                        <tr>
-                                            <td><b>Tag:&ensp;</b></td>
-                                            <td><h6 class = "histTag"> Did not finish milk </h6> &nbsp;
-                                                <h6 class = "histTag"> Cry </h6>&nbsp;
-                                                <h6 class = "histTag"> Full </h6>&nbsp;</td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Recorded:&ensp;</b></td>
-                                            <td><i>22/5/2019 1.20pm</i></td>
-                                        </tr>
-                                        <tr><td>&nbsp</td><td>&nbsp</td></tr>
-                                        <tr>
-                                            <td><b>Comment:&ensp;</b></td>
-                                            <td>Did not want to finish his milk and kept crying. Might be because he ate a lot for lunch.</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="histTable">
-                                <div class="col-md-12 text-left">
-                                    <table>
-                                        <tr>
-                                            <td><b>Tag:&ensp;</b></td>
-                                            <td><h7 class = "histTag"> Drank the entire bowl of soup </h7>&nbsp;
-                                                <h7 class = "histTag"> Cabbage soup </h7></td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Recorded:&ensp;</b></td>
-                                            <td><i>23/5/2019 12.25pm</i></td>
-                                        </tr>
-                                        <tr><td>&nbsp</td><td>&nbsp</td></tr>
-                                        <tr>
-                                            <td><b>Comment:&ensp;</b></td>
-                                            <td>Seems like he really liked the texture of the cabbage in the soup!</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
+                        <div id="history_container" class="container">
+
                         </div>
                     </div>
                 </div>

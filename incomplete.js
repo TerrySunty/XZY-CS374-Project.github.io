@@ -103,7 +103,8 @@ function add_one_incomplete_box(head="",time="",tags=[],key=""){
             firebase.database().ref('/incomplete_index/').set({
                 category:head.toLowerCase(),
                 key_idx:key,
-                kid_key:kid_key
+                kid_key:kid_key,
+                kname:name_idx
             });
             window.location="Complete Log.html";
         },300);

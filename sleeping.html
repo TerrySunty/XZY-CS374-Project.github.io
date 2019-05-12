@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="homeCSS.css" rel="stylesheet"/>
-
-    <title>sleeping page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Complete Log Page</title>
+    <link rel="stylesheet" href="bootstrap-tagsinput-latest/src/bootstrap-tagsinput.css">
 </head>
 
 <body>
@@ -42,43 +44,143 @@
 
 <!-- main body  -->
 <main role="main">
-
     <section class="jumbotron text-center">
         <div class="container">
-            <h1 class="jumbotron-heading">Welcome to LogKids</h1>
-            <p class="lead text-muted">Sleep performance</p>
+            <h1 class="jumbotron-heading">Complete Log</h1>
+            <p class="lead text-muted">BEN</p>
         </div>
     </section>
 
-    <!-- Evaluation part-->
-    <div class="album py-5 bg-light">
-        <div style="text-align: center">
-            <button type="button" class="btn btn-secondary btn-lg" disabled>Eating</button>
-        </div>
+    <!-- container-->
+    <div class="album py-3 bg-white">
+        <div class="container">
+            <div class="col-md-12 text-left">
+                <div>
+                    <h5 class="font-weight-bold" >&nbsp;
+                        <p class="text-muted float-right"> <small><small>Recorded on: <i>24/5/2019 3.20pm</i></small></small></p></h5>
+                </div>
+                <hr>
+                <label class="font-weight-bold" >Category:</label>
+                <h6 class="bold-mute">  <i class="fas fa-utensils"></i> Eating</h6><br>
 
-        <div style="text-align: center">
-            Time of this kid sleep<br>
-            <input class="btn-outline-secondary" type="button" value="less than normal">
-            <input class="btn-outline-secondary" type="button" value="normal">
-            <input class="btn-outline-secondary" type="button" value="more than average">
+                <label class="font-weight-bold" >Eating amount:</label>
+                <h6 class="bold-mute">   Less than normal</h6><br>
 
+                <label class="font-weight-bold" >Selected tags:</label>
+                <div class="d-flex flex-column">
+                    <input type="text" value="Ate an apple, Did not finish milk, Drank the entire bowl of soup" data-role="tagsinput" placeholder="Add tag...">
+                </div>
+            </div>
         </div>
-        <br>
-        <div style="text-align: center">
-            <textarea style="height:300px;width: 350px" placeholder="Please input detailed log here"></textarea>
-            <br>
-            <input type="submit" value="save"/>
-            <input type="submit" value="complete"/>
+    </div>
+
+    <div class="album bg-white">
+        <div class="container">
+            <div class="col-md-12 text-left">
+                <button type="button" class="btn btn-outline-secondary btn-small" data-toggle="collapse" data-target="#demo">Show latest history</button>
+                <div id="demo" class="collapse">
+                    <div class="album; bgEmpha">
+                        <div class="container">
+                            <div class="histTable">
+                                <div class="col-md-12 text-left">
+                                    <table>
+                                        <tr>
+                                            <td><b>Tag:&ensp;</b></td>
+                                            <td><h6 class = "histTag"> Ate an apple </h6> &nbsp;
+                                                <h6 class = "histTag"> Cleaned up after himself</h6></td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Recorded:&ensp;</b></td>
+                                            <td><i>23/5/2019 3.00pm</i></td>
+                                        </tr>
+                                        <tr><td>&nbsp</td><td>&nbsp</td></tr>
+                                        <tr>
+                                            <td><b>Comment:&ensp;</b></td>
+                                            <td>He ate an apple for the first time and picked up the small bits that fell on the floor.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="histTable">
+                                <div class="col-md-12 text-left">
+                                    <table>
+                                        <tr>
+                                            <td><b>Tag:&ensp;</b></td>
+                                            <td><h6 class = "histTag"> Did not finish milk </h6> &nbsp;
+                                                <h6 class = "histTag"> Cry </h6>&nbsp;
+                                                <h6 class = "histTag"> Full </h6>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Recorded:&ensp;</b></td>
+                                            <td><i>22/5/2019 1.20pm</i></td>
+                                        </tr>
+                                        <tr><td>&nbsp</td><td>&nbsp</td></tr>
+                                        <tr>
+                                            <td><b>Comment:&ensp;</b></td>
+                                            <td>Did not want to finish his milk and kept crying. Might be because he ate a lot for lunch.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="histTable">
+                                <div class="col-md-12 text-left">
+                                    <table>
+                                        <tr>
+                                            <td><b>Tag:&ensp;</b></td>
+                                            <td><h7 class = "histTag"> Drank the entire bowl of soup </h7>&nbsp;
+                                                <h7 class = "histTag"> Cabbage soup </h7></td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Recorded:&ensp;</b></td>
+                                            <td><i>23/5/2019 12.25pm</i></td>
+                                        </tr>
+                                        <tr><td>&nbsp</td><td>&nbsp</td></tr>
+                                        <tr>
+                                            <td><b>Comment:&ensp;</b></td>
+                                            <td>Seems like he really liked the texture of the cabbage in the soup!</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    </div>
+    <br>
+    <div class="album pt-3 pb-5 bg-white">
+        <div class="container">
+            <div class="col-md-12 text-left">
+                <label class="font-weight-bold" >Comments:</label>
+                <textarea class="form-control center-block" id="eating_comments" rows="3" placeholder="Type your comments here"></textarea>
+
+                <div class=“row”>
+                    <label class="font-weight-bold float-left" for="iStar"><br>Mark as important:</label>
+                    <input id="iStar" class="glyphicon glyphicon-star star" type="checkbox" checked>
+
+                </div>
+                <br><br>
+
+                <div class="container text-center col-sm-6 col-md-4 py-4">
+                    <button style="width: 100px; height: 40px;" class="btn btn-outline-success float-left" id="save" type="button">Save</button>&emsp;&emsp;
+                    <button style="width: 100px; height: 40px;" class="btn btn-outline-danger float-right" id="submit" type="button"><b>Submit</b></button>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 
+
 <!-- info in all pages -->
 <footer class="text-muted">
-    <div class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>KAIST 2019 CS374 @Team XZY</p>
+    <div class="album bg-white">
+        <div class="container">
+            <p class="float-right BLACK"><a href="#"><span class="text-muted fas fa-chevron-up">&nbsp;Back to top</span></a></p>
+            <p>KAIST 2019 CS374 @Team XZY</p>
+        </div>
     </div>
 </footer>
 
@@ -88,8 +190,13 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="./HomePage.js"></script>
-</body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+<script src="./bootstrap-tagsinput-latest/dist/bootstrap-tagsinput.js"></script>
+<script src="./complete.js"></script>
+</body>
 
 </html>
