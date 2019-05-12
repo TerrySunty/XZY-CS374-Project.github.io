@@ -211,11 +211,13 @@ save.onclick=function(){
 
 submit.onclick=function(){
     var Newkey=firebase.database().ref('/kidsBox/'+kid+"/logBox/"+chosen_category+"/").push();
+    var comments=document.getElementById("comments").innerHTML;
+    if (comments===""){comments="No comment this time";}
     Newkey.set({
         tag:$("#selected_tags").tagsinput("items"),
         amount:document.getElementById("amount").innerHTML,
         time:current_time,
-        comment:document.getElementById("comments").innerHTML,
+        comment:comments,
         important:important
     });
     firebase.database().ref('/kidsBox/'+kid+"/incompleteBox/"+chosen_category+"/"+log_key+"/").remove();
