@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8763cc83-06ca-4433-b725-d53c87772fc0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Complete Log.html" beforeDir="false" afterPath="$PROJECT_DIR$/Complete Log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete.js" beforeDir="false" afterPath="$PROJECT_DIR$/complete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/incomplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/incomplete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sleeping.html" beforeDir="false" afterPath="$PROJECT_DIR$/sleeping.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sleeping.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/Complete Log.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="258">
-              <caret line="65" column="39" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="39" />
+              <caret line="65" column="67" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -58,10 +55,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/complete.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="45" column="88" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="88" />
+            <state relative-caret-position="450">
+              <caret line="174" column="1" lean-forward="true" selection-start-line="174" selection-start-column="1" selection-end-line="174" selection-end-column="1" />
               <folding>
                 <element signature="e#34#291#0" />
+                <element signature="n#!!block;n#initialize#0" />
+                <element signature="e#498#1594#0" />
+                <element signature="e#564#1588#0" />
                 <element signature="e#914#1525#0" />
                 <element signature="e#937#1012#0" />
                 <element signature="e#1057#1141#0" />
@@ -70,6 +70,12 @@
                 <element signature="e#1373#1460#0" />
                 <element signature="e#1477#1565#0" />
                 <element signature="e#1441#1519#0" />
+                <element signature="e#1025#1576#0" />
+                <element signature="e#1107#1562#0" />
+                <element signature="e#2245#2316#0" />
+                <element signature="e#2325#2548#0" />
+                <element signature="e#2573#2798#0" />
+                <element signature="e#2825#2839#0" />
                 <element signature="n#!!block;n#add_history#0" />
                 <element signature="e#2551#3191#0" />
                 <element signature="e#2617#3185#0" />
@@ -361,7 +367,7 @@
       <workItem from="1557456775886" duration="32149000" />
       <workItem from="1557541704714" duration="37650000" />
       <workItem from="1557596128863" duration="684000" />
-      <workItem from="1557628050741" duration="11588000" />
+      <workItem from="1557628050741" duration="11849000" />
     </task>
     <task id="LOCAL-00001" summary="add link">
       <created>1556358901517</created>
@@ -468,15 +474,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557593472635</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update">
+      <created>1557646058229</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1557646058229</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164847000" />
+    <option name="totallyTimeSpent" value="165108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -492,7 +504,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -827,7 +839,7 @@
     <entry file="file://$PROJECT_DIR$/Complete Log.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
-          <caret line="65" column="39" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="39" />
+          <caret line="65" column="67" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
           <folding>
             <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -836,10 +848,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/complete.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="45" column="88" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="88" />
+        <state relative-caret-position="450">
+          <caret line="174" column="1" lean-forward="true" selection-start-line="174" selection-start-column="1" selection-end-line="174" selection-end-column="1" />
           <folding>
             <element signature="e#34#291#0" />
+            <element signature="n#!!block;n#initialize#0" />
+            <element signature="e#498#1594#0" />
+            <element signature="e#564#1588#0" />
             <element signature="e#914#1525#0" />
             <element signature="e#937#1012#0" />
             <element signature="e#1057#1141#0" />
@@ -848,6 +863,12 @@
             <element signature="e#1373#1460#0" />
             <element signature="e#1477#1565#0" />
             <element signature="e#1441#1519#0" />
+            <element signature="e#1025#1576#0" />
+            <element signature="e#1107#1562#0" />
+            <element signature="e#2245#2316#0" />
+            <element signature="e#2325#2548#0" />
+            <element signature="e#2573#2798#0" />
+            <element signature="e#2825#2839#0" />
             <element signature="n#!!block;n#add_history#0" />
             <element signature="e#2551#3191#0" />
             <element signature="e#2617#3185#0" />
