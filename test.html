@@ -77,80 +77,30 @@ $( "#myDatepicker" ).datepicker();
 </head>
 
 <body>
-<!-- navbar in all pages-->
-<div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-                <h4 class="text-white">About</h4>
-                <p class="text-muted">LogKids strives to serve for childcare teachers who need to make instant log of child under their care, and provide the log reviewing in a meaningful way. Start using LogKids to spend less time on notes-taking and interact with the child more!</p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-                <h4 class="text-white">Contact</h4>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">logkids@gmail.com</a></li>
-                    <!-- <li><a href="#" class="text-white">Like on Facebook</a></li>
-                     <li><a href="#" class="text-white">Email me</a></li> -->
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Navbar</a>
 
-<div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container d-flex justify-content-between">
-        <a href="index.html" class="navbar-brand d-flex align-items-center"><b>LogKids</b></a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</div>
-
-<!-- main body  -->
-<main role="main">
-    <section class="jumbotron text-center">
-        <div class="container">
-            <h1 class="jumbotron-heading">Data Review</h1>
-            <p class="lead text-muted">BEN</p>
-        </div>
-    </section>
-
-    <div class="album py-3 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="offset-md-3">
-                    <label for="from">From</label>
-                    <input class="form-control-sm" type="text" id="from" name="from">
-                    <label for="to">to</label>
-                    <input class="form-control-sm" type="text" id="to" name="to">
-                </div>
-
-                <div class="col-auto">
-                    <select class="custom-select custom-select-sm mb-3">
-                        <option selected>Select category...</option>
-                        <option value="1">Eating</option>
-                        <option value="2">Sleeping</option>
-                        <option value="3">Social</option>
-                        <option value="4">Physical</option>
-                        <option value="5">Cognitive</option>
-                        <option value="6">Literacy</option>
-                        <option value="7">Other</option>
-                    </select>
-                </div>
-
-                <div class="col-auto">
-                    <button type="button" class="btn btn-primary btn-sm">Search</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="chart-container">
-            <canvas id="pieChart"></canvas>
-        </div>
-
-    </div>
-</main>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
 
 
 <!-- info in all pages -->
