@@ -39,7 +39,8 @@ eat_submit.onclick=function(){
         amount:$("input[name='eatAmount']:checked").next("label").text(),
         tag: $(eatid).tagsinput("items"),
         comment:"No comment this time...",
-        time:time
+        time:time,
+        important:false
 
     });
     alert("You submitted a eating log!");
@@ -52,7 +53,8 @@ sleep_submit.onclick=function(){
         amount:$("input[name='sleepTime']:checked").next("label").text(),
         tag: $(eatid).tagsinput("items"),
         comment:"No comment this time...",
-        time:time
+        time:time,
+        important:false
 
     });
     alert("You submitted a eating log!");
@@ -64,7 +66,8 @@ social_submit.onclick=function(){
     newKey.set({
         tag: $(socialid).tagsinput("items"),
         comment:"No comment this time...",
-        time:time
+        time:time,
+        important:false
 
     });
     alert("You saved a social log!");
@@ -76,7 +79,8 @@ physical_submit.onclick=function(){
     newKey.set({
         tag: $(physicalid).tagsinput("items"),
         comment:"No comment this time...",
-        time:time
+        time:time,
+        important:false
 
     });
     alert("You saved a physical log!");
@@ -88,7 +92,8 @@ cognitive_submit.onclick=function(){
     newKey.set({
         tag: $(cognitiveid).tagsinput("items"),
         comment:"No comment this time...",
-        time:time
+        time:time,
+        important:false
 
     });
     alert("You saved a cognitive log!");
@@ -100,7 +105,8 @@ literacy_submit.onclick=function(){
     newKey.set({
         tag: $(literacyid).tagsinput("items"),
         comment:"No comment this time...",
-        time:time
+        time:time,
+        important:false
 
     });
     alert("You saved a literacy log!");
@@ -112,7 +118,8 @@ other_submit.onclick=function(){
     newKey.set({
         tag: $(otherid).tagsinput("items"),
         comment:"No comment this time...",
-        time:time
+        time:time,
+        important:false
     });
     alert("You submit an other log!");
     $(other_submit).attr("disabled",true);

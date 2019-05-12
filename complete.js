@@ -15,6 +15,7 @@ firebase.initializeApp(config);//initialize firebase
 var kid;
 var chosen_category;
 var log_key;
+var time;
 function initialize(){
     firebase.database().ref('/incomplete_index/').once('value', function(snapshot){
         var myValue = snapshot.val();
@@ -40,7 +41,7 @@ function initialize(){
                     console.log("locating incomplete "+chosen_category+" log");
                     var tags=myValue.tag;
                     var amount=myValue.amount;
-                    var time=myValue.time;
+                    time=myValue.time;
                     //在这里写后续的函数
                     switch(chosen_category){
                         case 'eating':
@@ -182,6 +183,45 @@ function bind_tag_write_delete(){
 
 }
 
+var save=document.getElementById("save");
+var submit=document.getElementById("submit");
+var important=false;
+var date=new Date();
+var current_time=date.toLocaleString( );
+var check_important=document.getElementsByName('important');
+
+$("input[name='important']").click(function(){
+
+    if(!check_important[0].checked){
+        important=true;
+    }
+
+
+});
+
+save.onclick=function(){
+    firebase.database().ref('/kidsBox/'+kid+"/incompleteBox/"+category+"/"+log_key+"/").set({
+        tag:$("#selected_tags").tagsinput("items"),
+        amount:document.getElementById("amount").innerHTML,
+        time:time,
+        comment:document.getElementById("comments").innerHTML
+    });
+    alert("You have success fully saved this log!");
+};
+
+submit.onclick=function(){
+    var Newkey=firebase.database().ref('/kidsBox/'+kid+"/logBox/"+chosen_category+"/").push();
+    Newkey.set({
+        tag:$("#selected_tags").tagsinput("items"),
+        amount:document.getElementById("amount").innerHTML,
+        time:current_time,
+        comment:document.getElementById("comments").innerHTML,
+        important:important
+    });
+    firebase.database().ref('/kidsBox/'+kid+"/incompleteBox/"+chosen_category+"/"+log_key+"/").remove();
+    alert("You have submitted this log successfully!");
+    window.location="Incomplete Log List.html"
+};
 
 //-----------------------------Show Box control function, Show Box is related to what will be shown in selected tags only
 
