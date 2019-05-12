@@ -17,3 +17,18 @@
 	  color: #FADC46;
 }
 
+#option-breadcrum{
+	margin: 0 auto;
+	background-color: white;
+	text-align:center;
+	height: 100px;
+	line-height:50px;
+
+}
+
+.review_select{
+	margin: 0 auto;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+}

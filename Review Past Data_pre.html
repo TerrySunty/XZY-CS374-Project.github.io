@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,11 +55,20 @@
                     <p class="lead text-muted">BEN</p>
                 </div>
             </section>
+            <div class="container">
 
-                <div class="container review_select">
-                   <div class="row text-center form-group form-row col-auto">
-                            <legend class="offset-md-3 col-auto col-form-label">Category:</legend>
-                            <select class="custom-select col-md-5">
+                <div class="album py-5">
+
+                    <div class="row">
+                        <div class="offset-md-3">
+                            <label for="from">From</label>
+                            <input class="form-control-sm" type="text" id="from" name="from">
+                            <label for="to">to</label>
+                            <input class="form-control-sm" type="text" id="to" name="to">
+                        </div>
+
+                        <div class="col-auto">
+                            <select class="custom-select custom-select-sm mb-3">
                               <option selected>Select category...</option>
                               <option value="1">Eating</option>
                               <option value="2">Sleeping</option>
@@ -70,48 +77,27 @@
                               <option value="5">Cognitive</option>
                               <option value="6">Literacy</option>
                               <option value="7">Other</option>
-                            </select>
-                    </div>
+                            </select>                    
+                        </div>
 
-                    <br>
-                    <div class="text-center form-group">
-                        <div class="custom-control custom-radio custom-control-inline">
-                          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                          <label class="custom-control-label" for="customRadioInline1">Recent one week</label>
-                        </div>
-                        <div class="custom-control custom-radio custom-control-inline">
-                          <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                          <label class="custom-control-label" for="customRadioInline2">Recent one month</label>
-                        </div>
-                        <div class="custom-control custom-radio custom-control-inline">
-                          <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
-                          <label class="custom-control-label" for="customRadioInline3">Recent three months</label>
+                        <div class="col-auto">
+                            <button type="button" class="btn btn-primary btn-sm">Search</button>
                         </div>
                     </div>
-
-                    <br>
-                    <div class="text-center">
-                        <input id="review_btn" class="btn btn-primary" type="submit" value="Review">
-                    </div>
-
-
                 </div>
 
-                <br>
-
-                <!-- chart html -->
-<!--             <div class="container">
                 <div class="album">
                     <div class="chart-container text-center">
                         <strong class="lead"><i class="fas fa-chart-pie"></i> Top-5 used tags and other tags</strong>
                         <canvas id="pieChart"></canvas>
                     </div>
+
+
                 </div>
-            </div> -->
 
+            </div>
 
-                <!-- log list html -->
-<!--             <div class="container">
+            <div class="container">
                 <div class="log-list album py-1 bg-light">
                     
                     <h4 class="text-center lead">
@@ -122,13 +108,15 @@
                         <br>
                         <br>
                         <small><small><i class="fas fa-quote-left"></i></small></small> 
-                        <strong>dislike</strong>
+                        <mark> dislike </mark>
                         <small><small><i class="fas fa-quote-right"></i></small></small>
                         <br>
                         <br>
                     </h4>
 
                     <hr>
+
+                    <!-- Log One -->
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <i class="fas fa-comment-dots fa-lg"></i>
@@ -137,8 +125,11 @@
                             <a class="btn btn-primary" href="Complete Log.html">See Details</a>
                         </div>
                     </div>
+                    <!-- /.row -->
 
                     <hr>
+
+                    <!-- Log Two -->
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <i class="fas fa-comment-dots fa-lg"></i>
@@ -148,8 +139,11 @@
                             <a class="btn btn-primary" href="Complete Log.html">See Details</a>
                         </div>
                     </div>
+                    <!-- /.row -->
 
                     <hr>
+
+                    <!-- Log Three -->
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <i class="fas fa-comment-dots fa-lg"></i>
@@ -159,7 +153,11 @@
                         </div>
                     </div>
 
+                    <!-- /.row -->
+
                     <hr>
+
+                    <!-- Log Four -->
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <i class="fas fa-comment-dots fa-lg"></i>
@@ -170,9 +168,37 @@
                         </div>
                     </div>
 
+                    <!-- /.row -->
+
                     <hr>
+
+                    <!-- <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>     -->
                 </div>
-            </div> -->
+            </div>
+
+        
         </main>
 
 
@@ -194,6 +220,24 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
         <script type="text/javascript" src="review.js"></script>
 
+        <script type="text/javascript">
+            canvas.onclick = function(evt) {
+      var activePoints = myNewChart.getElementsAtEvent(evt);
+      if (activePoints[0]) {
+        var chartData = activePoints[0]['_chart'].config.data;
+        var idx = activePoints[0]['_index'];
+
+        var label = chartData.labels[idx];
+        var value = chartData.datasets[0].data[idx];
+
+        console.log(hi);
+        alert(url);
+      }
+    };
+        </script>
+
+<!--         <script src="jquery/js/jquery-1.9.0.min.js"></script>
+        <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script> -->
     </body>
 
 </html>
