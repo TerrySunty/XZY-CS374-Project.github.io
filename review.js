@@ -444,7 +444,7 @@ var physical_dict= {
 
 // cognitive
 var cognitive_dict= {
-  labels: ["Walked up stairs on his own","Ate on his own", "Did 5 push-ups :D", "Ran around playground","Lift a toy","other"],
+  labels: ["Completed a puzzle set without help","Curious about a friend's bruise", "Recognize complex images", "Think logically","Feeling differently","other"],
       datasets: [{
         data: [3, 2, 2, 2, 2, 1],
         backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
