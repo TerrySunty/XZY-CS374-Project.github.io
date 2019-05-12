@@ -63,14 +63,14 @@
                    <div class="row text-center form-group form-row col-auto">
                             <legend class="offset-md-3 col-auto col-form-label"><b>Category: </b></legend>
                             <select class="custom-select col-md-5" id="category_select_menu">
-                              <option selected>Select category...</option>
-                              <option value="1">Eating</option>
-                              <option value="2">Sleeping</option>
-                              <option value="3">Social</option>
-                              <option value="4">Physical</option>
-                              <option value="5">Cognitive</option>
-                              <option value="6">Literacy</option>
-                              <option value="7">Other</option>
+                              <option value="">Select category...</option>
+                              <option value="eating">Eating</option>
+                              <option value="sleeping">Sleeping</option>
+                              <option value="social">Social</option>
+                              <option value="physical">Physical</option>
+                              <option value="cognitive">Cognitive</option>
+                              <option value="literacy">Literacy</option>
+                              <option value="other">Other</option>
                             </select>
                     </div>
 
@@ -87,10 +87,7 @@
                           <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
                           <label class="custom-control-label" for="customRadioInline2">Recent one month</label>
                         </div>
-                        <div class="custom-control custom-radio custom-control-inline">
-                          <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
-                          <label class="custom-control-label" for="customRadioInline3">Recent three months</label>
-                        </div>
+
                     </div>
 
                     <br>
@@ -128,13 +125,13 @@
             <div class="container">
                 <div class="log-list album py-1 bg-light">
                     
-                    <h4 class="text-center lead">
+                    <h4 id="category_title" class="text-center lead">
 
                         <!-- all tags in default -->
                         <br>
                         <br>
                         <i class="fas fa-clipboard"></i> 
-                        All eating logs 
+                        All eating logs <!--选择的分类-->
                         <br>
                         <br>
 
@@ -152,7 +149,7 @@
                         <br> -->
                     </h4>
 
-                    <hr>
+      <!--               <hr>
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <i class="fas fa-comment-dots fa-lg"></i>
@@ -168,7 +165,7 @@
                         <div class="col-md-12 text-center">
                             <i class="fas fa-comment-dots fa-lg"></i>
                             <h5>He may dislike fish</h5>
-                            <i class="fas fa-star"></i> important
+                            <p><i class="fas fa-star"></i> important</p>
                             <p class="time_text"><small class="text-muted"><i>05/04/2019 5:40pm</i></small></p>
                             <p><small class="text-muted">tags: Didn't finish dinner, Refuse to eat, Fish</small><p>
                         </div>
@@ -194,7 +191,7 @@
                             <p><small class="text-muted">tags: Apple, Refuse to eat</small><p>
 
                         </div>
-                    </div>
+                    </div> -->
 
 
 
