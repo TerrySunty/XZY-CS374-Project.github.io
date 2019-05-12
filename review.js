@@ -34,6 +34,7 @@ function initialize(){
                     }
                     //后续函数
                     read_log_inTime_range(selected_category,2 )//第二个变量为 总共需要遍历的log数量
+                    read_log_inTime_range(selected_category,1 )//第二个变量为 总共需要遍历的log数量
 
 
                 }
@@ -166,11 +167,12 @@ reviewbutton.onclick=function(){
     selected_category=$("#category_select_menu option:selected").val();
     document.getElementById("chart_place").innerHTML="";
     var chartBox=document.getElementById("chart_place");
+
     var div1=document.createElement("div");//Amount chart
-    div1.className="container";
+    div1.className="container pieChart2-container";
     div1.innerHTML="<div class=\"album\">\n" +
       "<div class=\"chart-container text-center\">\n" +
-      "<strong class=\"lead\"><i class=\"fas fa-chart-pie\"></i>Eating amount</strong>\n" +
+      "<strong class=\"lead\"><i class=\"fas fa-chart-pie\"></i>Amount</strong>\n" +
       "<canvas id=\"pieChart2\" class=\"chart\"></canvas>\n" +
       "</div>\n" +
       "</div>";
@@ -182,13 +184,12 @@ reviewbutton.onclick=function(){
       "<div class=\"album\">\n" +
       "<div class=\"chart-container text-center\">\n" +
       "<strong class=\"lead\"><i class=\"fas fa-chart-pie\"></i>Top-5 used tags and other tags</strong>\n" +
-      "<canvas id=\"pieChart1\" class=\"chart\">\n" +
-      "</canvas>\n" +
+      "<canvas id=\"pieChart1\" class=\"chart\"></canvas>\n" +
       "</div>\n" +
       "</div>\n";
-    if(selected_category==="eating" || selected_category==="sleeping"){
+    // if(selected_category==="eating" || selected_category==="sleeping"){
       chartBox.append(div1);
-    }
+    // }
     chartBox.append(div2);
 
     document.getElementById("historyBox").innerHTML=
@@ -205,11 +206,44 @@ reviewbutton.onclick=function(){
       "                    <hr>";
 
 
-
   initialize();
 
-  var ctxP = document.getElementById("pieChart1").getContext('2d');
-  var myPieChart = new Chart(ctxP, {
+  // var ctxP1 = document.getElementById("pieChart1").getContext('2d');
+  // var myPieChart1 = new Chart(ctxP1, {
+  //   type: 'pie',
+  //   data: {
+  //     labels: ["Refuse to eat", "Fish", "Didn't finish lunch", "Apple","Didn't finish lunch", "other"],
+  //     datasets: [{
+  //       data: [4, 2, 2, 1, 1, 1],
+  //       backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
+  //       // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+  //     }]
+  //   },
+  //   options: {
+  //     responsive: true
+  //   }
+  // });
+
+  // var ctxP2 = document.getElementById("pieChart2").getContext('2d');
+  // var myPieChart2 = new Chart(ctxP2, {
+  //   type: 'pie',
+  //   data: {
+  //     labels: ["Less than usual","Usual portion","More than usual"],
+
+  //     datasets: [{
+  //       data: [7, 4, 5],
+  //       backgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"],
+  //       // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
+  //     }]
+  //   },
+  //   options: {
+  //     responsive: true
+  //   }
+  // });
+
+
+  var ctxP1 = document.getElementById("pieChart1").getContext('2d');
+  var myPieChart1 = new Chart(ctxP1, {
     type: 'pie',
     data: {
       labels: ["Refuse to eat", "Fish", "Didn't finish lunch", "Apple","Didn't finish lunch", "other"],
@@ -223,7 +257,84 @@ reviewbutton.onclick=function(){
       responsive: true
     }
   });
+
+  
+
+  var ctxP2 = document.getElementById("pieChart2").getContext('2d');
+  var myPieChart2 = new Chart(ctxP2, {
+    type: 'pie',
+    data: {
+    labels: ["Less than usual","Usual portion","More than usual"],
+    datasets: [{
+      data: [7, 4, 5],
+      backgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"],
+      // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
+    }]
+    },
+    options: {
+      responsive: true
+    }
+  });
+
+
+    switch(selected_category) {
+      case 'eating': 
+        myPieChart1.data=eating_dict;
+        myPieChart1.update();
+        myPieChart2.data=eating_amount_dict;
+        myPieChart2.update();
+        break;
+
+      case 'sleeping':
+        myPieChart1.data=sleeping_dict;
+        myPieChart1.update();
+        myPieChart2.data=sleeping_amount_dict;
+        myPieChart2.update();
+        break;
+
+      case 'social':
+        myPieChart1.data=social_dict;
+        myPieChart1.update();
+        $(".pieChart2-container").remove();
+        myPieChart2.reset();
+
+        break;
+
+
+      case 'physical':
+        myPieChart1.data=physical_dict;
+        myPieChart1.update();
+        $(".pieChart2-container").remove();
+        myPieChart2.reset();
+
+        break;
+
+      case 'cognitive':
+        myPieChart1.data=cognitive_dict; 
+        myPieChart1.update();
+        $(".pieChart2-container").remove();
+        myPieChart2.reset();
+        break;
+
+      case 'literacy':
+        myPieChart1.data=literacy_dict; 
+        myPieChart1.update();
+        $(".pieChart2-container").remove();
+        myPieChart2.reset();
+        break;
+
+      case 'other':
+        myPieChart1.data=other_dict; 
+        myPieChart1.update();
+        $(".pieChart2-container").remove();
+        myPieChart2.reset();
+        break;
+
+    }
+
 };
+
+
 // createbutton.onclick = function(){
 
 //     setTimeout("window.location.href='./Review Past Data.html'",950)
@@ -272,7 +383,96 @@ reviewbutton.onclick=function(){
 //   }
 // );
 
+//eating
+var eating_dict={
+      labels: ["Ate a lot of vegetables today","Did not finish milk", "Drank the entire bowl of soup", "Disliked celery","Ate some oranges","other"],
+      datasets: [{
+        data: [4, 2, 2, 1, 1, 1],
+        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
+        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+      }]
+};
 
+var eating_amount_dict={
+      labels: ["Less than usual","Usual portion","More than usual"],
+
+      datasets: [{
+        data: [3, 3, 2],
+        backgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"],
+        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
+      }]
+};
+
+//sleeping
+var sleeping_dict= {
+  labels: ["Slept soundly","Had difficulty falling asleep", "Woke up early", "Didn't sleep at all", "Refuse to sleep", "other"],
+      datasets: [{
+        data: [2, 2, 2, 1, 1, 1],
+        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
+        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+      }]
+};
+
+var sleeping_amount_dict={
+      labels: ["Less than 2 hours","2 - 3 hours","More than 3 hours"],
+
+      datasets: [{
+        data: [4, 1, 1],
+        backgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"],
+        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
+      }]
+};
+
+// social
+var social_dict= {
+      labels: ["Completed a puzzle with a friend", "Had fun playing with other kids", "Made a new friend","Activated to interact with others", "Don't want to talk", "other"],
+      datasets: [{
+        data: [3, 2, 1, 1, 1, 1],
+        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
+        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+      }]
+};
+
+// physical
+var physical_dict= {
+  labels: ["Walked up stairs on his own","Ate on his own", "Did 5 push-ups :D", "Ran around playground","Lift a toy","other"],
+      datasets: [{
+        data: [4, 3, 2, 2, 1, 1],
+        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
+        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+      }]
+};
+
+// cognitive
+var cognitive_dict= {
+  labels: ["Walked up stairs on his own","Ate on his own", "Did 5 push-ups :D", "Ran around playground","Lift a toy","other"],
+      datasets: [{
+        data: [3, 2, 2, 2, 2, 1],
+        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
+        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+      }]
+};
+
+//literacy
+var literacy_dict= {
+  labels: ["Recited the full list of alphabets","Learnt to spell a few words", "Had a debate with the teacher :o", "Expressing love","Polite reply","other"],
+      datasets: [{
+        data: [3, 3, 2, 2, 2, 1],
+        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
+        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+      }]
+};
+
+
+//other
+var other_dict= {
+  labels: ["Dislike", "Like","Positive", "Negative", "Neutral", "other"],
+      datasets: [{
+        data: [3, 2, 2, 1, 1, 1],
+        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
+        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+      }]
+};
 
 
 
