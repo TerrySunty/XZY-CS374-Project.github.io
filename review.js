@@ -33,7 +33,7 @@ function initialize(){
                         }
                     }
                     //后续函数
-                    read_log_inTime_range(selected_category,1 )//第二个变量为 总共需要遍历的log数量
+                    read_log_inTime_range(selected_category,2 )//第二个变量为 总共需要遍历的log数量
 
 
                 }
@@ -91,6 +91,8 @@ function add_one_log_box(time="",tags=[],important=false,com=""){
     var div2=document.createElement("div");
     div2.className="col-md-12 text-center";
 
+    var hr1 = document.createElement("hr");
+
     var i_1 = document.createElement("i");
     i_1.className="fas fa-comment-dots fa-lg";
 
@@ -116,6 +118,7 @@ function add_one_log_box(time="",tags=[],important=false,com=""){
 
     p3.innerHTML="<small class='text-muted'> tags:"+tagstr+"</small>";
 
+    div2.appendChild(hr1);
     div2.appendChild(i_1);
     div2.appendChild(h5);
     if(important===true){
@@ -132,38 +135,24 @@ function add_one_log_box(time="",tags=[],important=false,com=""){
 
 
 //chart
-var ctxP = document.getElementById("eating-pieChart1").getContext('2d');
-  var myPieChart = new Chart(ctxP, {
-    type: 'pie',
-    data: {
-      labels: ["Refuse to eat", "Fish", "Didn't finish lunch", "Apple","Didn't finish lunch", "other"],
-      datasets: [{
-        data: [6, 4, 3, 2, 1, 1],
-        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
-        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-      }]
-    },
-    options: {
-      responsive: true
-    }
-  });
 
-  var ctxP = document.getElementById("eating-pieChart2").getContext('2d');
-  var myPieChart = new Chart(ctxP, {
-    type: 'pie',
-    data: {
-      labels: ["Less than usual","Usual portion","More than usual"],
 
-      datasets: [{
-        data: [7, 4, 5],
-        backgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"],
-        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
-      }]
-    },
-    options: {
-      responsive: true
-    }
-  });
+  // var ctxP = document.getElementById("eating-pieChart2").getContext('2d');
+  // var myPieChart = new Chart(ctxP, {
+  //   type: 'pie',
+  //   data: {
+  //     labels: ["Less than usual","Usual portion","More than usual"],
+
+  //     datasets: [{
+  //       data: [7, 4, 5],
+  //       backgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"],
+  //       // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
+  //     }]
+  //   },
+  //   options: {
+  //     responsive: true
+  //   }
+  // });
 
 //start program
 
@@ -174,7 +163,21 @@ var ctxP = document.getElementById("eating-pieChart1").getContext('2d');
 var reviewbutton = document.getElementById("review_btn");
 reviewbutton.onclick=function(){
   selected_category=$("#category_select_menu option:selected").val();
-  document.getElementById("historyBox").innerHTML="<h4 id=\"category_title\" class=\"text-center lead\">\n" +
+  document.getElementById("historyBox").innerHTML=
+
+      "<div class=\"container\">\n" +
+          "<div class=\"album\">\n" +
+            "<div class=\"chart-container text-center\">\n" +
+                  "<strong class=\"lead\"><i class=\"fas fa-chart-pie\"></i>Top-5 used tags and other tags</strong>\n" +
+                  "<canvas id=\"pieChart1\" class=\"chart\">\n" +
+                  "</canvas>\n" +
+              "</div>\n" +
+          "</div>\n"
+      "</div>"
+
+
+
+      "<h4 id=\"category_title\" class=\"text-center lead\">\n" +
       "\n" +
       "                        <!-- all tags in default -->\n" +
       "                        <br>\n" +
@@ -185,7 +188,26 @@ reviewbutton.onclick=function(){
       "                        <br>\n" +
       "                    </h4>\n" +
       "                    <hr>";
+
+
+
   initialize();
+
+  var ctxP = document.getElementById("pieChart1").getContext('2d');
+  var myPieChart = new Chart(ctxP, {
+    type: 'pie',
+    data: {
+      labels: ["Refuse to eat", "Fish", "Didn't finish lunch", "Apple","Didn't finish lunch", "other"],
+      datasets: [{
+        data: [4, 2, 2, 1, 1, 1],
+        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
+        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+      }]
+    },
+    options: {
+      responsive: true
+    }
+  });
 };
 // createbutton.onclick = function(){
 

@@ -33,7 +33,7 @@ var preBox={
     physical:{t1:{tag:"Walked up stairs on his own"},t2:{tag:"Ate on his own"},t3:{tag:"Did 5 push-ups :D"}},
     cognitive:{t1:{tag:"Completed a puzzle set without help"},t2:{tag:"Curious about a friend's bruise"}},
     literacy:{t1:{tag:"Recited the full list of alphabets"},t2:{tag:"Learnt to spell a few words"},t3:{tag:"Had a debate with the teacher :o"}},
-    other:{t1:{tag:"Extraaaaaaaaaa"}}
+    other:{t1:{tag:"other"}}
 
 };
 
