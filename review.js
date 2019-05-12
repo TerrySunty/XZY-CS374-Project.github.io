@@ -78,7 +78,6 @@ function read_log_inTime_range(category="",total_logs=0){
                 var time=myValue[myKey].time;
                 var tags=myValue[myKey].tag;
                 var important=myValue[myKey].important;
-                console.log(comments);
                 add_one_log_box(time,tags,important,comments);
             }
         }
@@ -160,23 +159,39 @@ function add_one_log_box(time="",tags=[],important=false,com=""){
 
 
 
+
+
 var reviewbutton = document.getElementById("review_btn");
 reviewbutton.onclick=function(){
-  selected_category=$("#category_select_menu option:selected").val();
-  document.getElementById("historyBox").innerHTML=
-
-      "<div class=\"container\">\n" +
-          "<div class=\"album\">\n" +
-            "<div class=\"chart-container text-center\">\n" +
-                  "<strong class=\"lead\"><i class=\"fas fa-chart-pie\"></i>Top-5 used tags and other tags</strong>\n" +
-                  "<canvas id=\"pieChart1\" class=\"chart\">\n" +
-                  "</canvas>\n" +
-              "</div>\n" +
-          "</div>\n"
-      "</div>"
-
+    selected_category=$("#category_select_menu option:selected").val();
+    document.getElementById("chart_place").innerHTML="";
+    var chartBox=document.getElementById("chart_place");
+    var div1=document.createElement("div");//Amount chart
+    div1.className="container";
+    div1.innerHTML="<div class=\"album\">\n" +
+      "<div class=\"chart-container text-center\">\n" +
+      "<strong class=\"lead\"><i class=\"fas fa-chart-pie\"></i>Eating amount</strong>\n" +
+      "<canvas id=\"eating-pieChart2\" class=\"chart\"></canvas>\n" +
+      "</div>\n" +
+      "</div>";
 
 
+    var div2=document.createElement("div");
+    div2.className="container";
+    div2.innerHTML=
+      "<div class=\"album\">\n" +
+      "<div class=\"chart-container text-center\">\n" +
+      "<strong class=\"lead\"><i class=\"fas fa-chart-pie\"></i>Top-5 used tags and other tags</strong>\n" +
+      "<canvas id=\"pieChart1\" class=\"chart\">\n" +
+      "</canvas>\n" +
+      "</div>\n" +
+      "</div>\n";
+    if(selected_category==="eating" || selected_category==="sleeping"){
+      chartBox.append(div1);
+    }
+    chartBox.append(div2);
+
+    document.getElementById("historyBox").innerHTML=
       "<h4 id=\"category_title\" class=\"text-center lead\">\n" +
       "\n" +
       "                        <!-- all tags in default -->\n" +
