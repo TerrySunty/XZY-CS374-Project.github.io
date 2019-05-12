@@ -54,14 +54,15 @@
             <section class="jumbotron text-center">
                 <div class="container">
                     <h1 class="jumbotron-heading">Data Review</h1>
-                    <p class="lead text-muted">BEN</p>
+                    <p id="head_name" class="lead text-muted"></p>
                 </div>
             </section>
 
+
                 <div class="container review_select">
                    <div class="row text-center form-group form-row col-auto">
-                            <legend class="offset-md-3 col-auto col-form-label">Category:</legend>
-                            <select class="custom-select col-md-5">
+                            <legend class="offset-md-3 col-auto col-form-label"><b>Category: </b></legend>
+                            <select class="custom-select col-md-5" id="category_select_menu">
                               <option selected>Select category...</option>
                               <option value="1">Eating</option>
                               <option value="2">Sleeping</option>
@@ -73,9 +74,12 @@
                             </select>
                     </div>
 
+                    <div class="test"></div>
+
+
                     <br>
                     <div class="text-center form-group">
-                        <div class="custom-control custom-radio custom-control-inline">
+                        <div id="range-radios" class="custom-control custom-radio custom-control-inline">
                           <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
                           <label class="custom-control-label" for="customRadioInline1">Recent one week</label>
                         </div>
@@ -100,52 +104,62 @@
                 <br>
 
                 <!-- chart html -->
-<!--             <div class="container">
+
+            <div class="container">
+                <div class="album">
+                    <div class="chart-container text-center">
+                        <strong class="lead"><i class="fas fa-chart-pie"></i>Eating amount</strong>
+                        <canvas id="eating-pieChart2" class="chart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
                 <div class="album">
                     <div class="chart-container text-center">
                         <strong class="lead"><i class="fas fa-chart-pie"></i> Top-5 used tags and other tags</strong>
-                        <canvas id="pieChart"></canvas>
+                        <canvas id="eating-pieChart1" class="chart"></canvas>
                     </div>
                 </div>
-            </div> -->
-
+            </div>
 
                 <!-- log list html -->
-<!--             <div class="container">
+
+            <div class="container">
                 <div class="log-list album py-1 bg-light">
                     
                     <h4 class="text-center lead">
+
+                        <!-- all tags in default -->
                         <br>
+                        <br>
+                        <i class="fas fa-clipboard"></i> 
+                        All eating logs 
+                        <br>
+                        <br>
+
+                        <!-- after click one tag in chart -->
+<!--                         <br>
                         <br>
                         <i class="fas fa-clipboard"></i> 
                         All eating logs about tag
                         <br>
                         <br>
                         <small><small><i class="fas fa-quote-left"></i></small></small> 
-                        <strong>dislike</strong>
+                        <strong>Refuse to eat</strong>
                         <small><small><i class="fas fa-quote-right"></i></small></small>
                         <br>
-                        <br>
+                        <br> -->
                     </h4>
 
                     <hr>
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <i class="fas fa-comment-dots fa-lg"></i>
-                            <h5>Ate an apple he doesn't like </h5>
-                            <p><small class="text-muted"><i>06/05/2019 12:30am</i></small></p>
-                            <a class="btn btn-primary" href="Complete Log.html">See Details</a>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <i class="fas fa-comment-dots fa-lg"></i>
-                            <h5>Didn't finish the lunch for it has fish</h5>
+                            <h5>The child doesn't like fish</h5>
                             <i class="fas fa-star"></i> important
-                            <p><small class="text-muted"><i>06/05/2019 12:30am</i></small></p>
-                            <a class="btn btn-primary" href="Complete Log.html">See Details</a>
+                            <p class="time_text"><small class="text-muted"><i>06/05/2019 12:30am</i></small></p>
+                            <p><small class="text-muted">tags: Didn't finish lunch, Refuse to eat, Fish</small><p>
                         </div>
                     </div>
 
@@ -153,26 +167,41 @@
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <i class="fas fa-comment-dots fa-lg"></i>
-                            <h5>Don't like sweet things</h5>
-                            <p><small class="text-muted"><i>06/05/2019 10:30am</i></small></p>
-                            <a class="btn btn-primary" href="Complete Log.html">See Details</a>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <i class="fas fa-comment-dots fa-lg"></i>
-                            <h5>Dislike eating fish</h5>
+                            <h5>He may dislike fish</h5>
                             <i class="fas fa-star"></i> important
-                            <p><small class="text-muted"><i>05/04/2019 12:30am</i></small></p>
-                            <a class="btn btn-primary" href="Complete Log.html">See Details</a>
+                            <p class="time_text"><small class="text-muted"><i>05/04/2019 5:40pm</i></small></p>
+                            <p><small class="text-muted">tags: Didn't finish dinner, Refuse to eat, Fish</small><p>
                         </div>
                     </div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <i class="fas fa-comment-dots fa-lg"></i>
+                            <h5>Seems don't like sweet</h5>
+                            <p class="time_text"><small class="text-muted"><i>06/05/2019 10:30am</i></small></p>
+                            <p><small class="text-muted">tags: Refuse to eat, Apple</small><p>
+
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <i class="fas fa-comment-dots fa-lg"></i>
+                            <h5>Doesn't like apple</h5>
+                            <p class="time_text"><small class="text-muted"><i>03/05/2019 10:30am</i></small></p>
+                            <p><small class="text-muted">tags: Apple, Refuse to eat</small><p>
+
+                        </div>
+                    </div>
+
+
+
 
                     <hr>
                 </div>
-            </div> -->
+            </div>
         </main>
 
 
@@ -186,13 +215,17 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+        
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+
         <script type="text/javascript" src="review.js"></script>
+
 
     </body>
 
