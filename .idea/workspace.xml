@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8763cc83-06ca-4433-b725-d53c87772fc0" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Make Log.html" beforeDir="false" afterPath="$PROJECT_DIR$/Make Log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/makelog.js" beforeDir="false" afterPath="$PROJECT_DIR$/makelog.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Review Past Data.html" beforeDir="false" afterPath="$PROJECT_DIR$/Review Past Data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/review.js" afterDir="false" />
+>>>>>>> 08af884ecc3475ce97f777c3344da33be545e2f6
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +33,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Complete Log.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1512">
               <caret line="108" column="18" lean-forward="true" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
+=======
+            <state relative-caret-position="1425">
+              <caret line="95" column="120" selection-start-line="95" selection-start-column="120" selection-end-line="95" selection-end-column="120" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/complete.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="83" column="13" lean-forward="true" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+              <folding>
+                <element signature="e#34#291#0" />
+                <element signature="e#7#13#0" expanded="true" />
+                <element signature="e#12#18#0" expanded="true" />
+                <element signature="e#11#17#0" expanded="true" />
+                <element signature="n#!!block;n#read_tag#0" />
+                <element signature="n#!!block;n#bind_tag_write_delete#0" />
+              </folding>
+>>>>>>> 08af884ecc3475ce97f777c3344da33be545e2f6
             </state>
           </provider>
         </entry>
@@ -49,17 +79,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Review Past Data.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1190">
               <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+=======
+            <state relative-caret-position="202">
+              <caret line="109" column="35" lean-forward="true" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="35" />
+              <folding>
+                <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#h4#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+>>>>>>> 08af884ecc3475ce97f777c3344da33be545e2f6
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/review.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1400">
               <caret line="479" selection-start-line="479" selection-end-line="479" />
+=======
+            <state relative-caret-position="575">
+              <caret line="132" column="34" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
+>>>>>>> 08af884ecc3475ce97f777c3344da33be545e2f6
             </state>
           </provider>
         </entry>
@@ -192,11 +237,18 @@
         <option value="$PROJECT_DIR$/incomplete.js" />
         <option value="$PROJECT_DIR$/sleeping.html" />
         <option value="$PROJECT_DIR$/Complete Log.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Review Past Data.html" />
         <option value="$PROJECT_DIR$/review.js" />
         <option value="$PROJECT_DIR$/complete.js" />
         <option value="$PROJECT_DIR$/Make Log.html" />
         <option value="$PROJECT_DIR$/makelog.js" />
+=======
+        <option value="$PROJECT_DIR$/makelog.js" />
+        <option value="$PROJECT_DIR$/complete.js" />
+        <option value="$PROJECT_DIR$/Review Past Data.html" />
+        <option value="$PROJECT_DIR$/review.js" />
+>>>>>>> 08af884ecc3475ce97f777c3344da33be545e2f6
       </list>
     </option>
   </component>
@@ -270,6 +322,7 @@
       <workItem from="1557628050741" duration="16563000" />
       <workItem from="1557672490978" duration="6139000" />
       <workItem from="1557711682374" duration="187000" />
+      <workItem from="1557718764986" duration="871000" />
     </task>
     <task id="LOCAL-00001" summary="add link">
       <created>1556358901517</created>
@@ -429,10 +482,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="177895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="177019000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="811" extended-state="0" />
+>>>>>>> 08af884ecc3475ce97f777c3344da33be545e2f6
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -623,6 +683,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Review Past Data.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
@@ -666,6 +727,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 08af884ecc3475ce97f777c3344da33be545e2f6
     <entry file="file://$PROJECT_DIR$/Make Log.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -689,7 +752,18 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/makelog.js">
+=======
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2430">
+          <caret line="162" column="49" selection-start-line="162" selection-start-column="49" selection-end-line="162" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/complete.js">
+>>>>>>> 08af884ecc3475ce97f777c3344da33be545e2f6
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="92" column="44" selection-start-line="92" selection-start-column="44" selection-end-line="92" selection-end-column="44" />
@@ -697,6 +771,25 @@
             <element signature="e#34#291#0" />
             <element signature="e#348#376#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Review Past Data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="109" column="35" lean-forward="true" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="35" />
+          <folding>
+            <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#h4#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/review.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="132" column="34" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
         </state>
       </provider>
     </entry>
