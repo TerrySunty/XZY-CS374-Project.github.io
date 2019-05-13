@@ -75,7 +75,8 @@ social_submit.onclick=function(){
 };
 
 physical_submit.onclick=function(){
-    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/physical/').push();
+    if (document.getElementById('physical_submit').textContent == 'Submit'){
+        var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/physical/').push();
     newKey.set({
         tag: $(physicalid).tagsinput("items"),
         comment:"No comment this time...",
@@ -84,10 +85,17 @@ physical_submit.onclick=function(){
 
     });
     alert("You saved a physical log!");
-    $(physical_submit).attr("disabled",true);
+    document.getElementById('physical_submit').textContent = 'Submit another log';
+    document.getElementById('physical_submit').style.width = '180px';
+    //$(physical_submit).attr("disabled",true);
+} else {
+    document.getElementById('physical_submit').textContent = 'Submit';
+    document.getElementById('physical_submit').style.width = '100px';
+}
 };
 
 cognitive_submit.onclick=function(){
+    if (document.getElementById('cognitive_submit').textContent == 'Submit'){
     var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/cognitive/').push();
     newKey.set({
         tag: $(cognitiveid).tagsinput("items"),
@@ -97,11 +105,18 @@ cognitive_submit.onclick=function(){
 
     });
     alert("You saved a cognitive log!");
-    $(cognitive_submit).attr("disabled",true);
+    document.getElementById('cognitive_submit').textContent = 'Submit another log';
+    document.getElementById('cognitive_submit').style.width = '180px';
+    //$(cognitive_submit).attr("disabled",true);
+} else {
+    document.getElementById('cognitive_submit').textContent = 'Submit';
+    document.getElementById('cognitive_submit').style.width = '100px';
+}
 };
 
 literacy_submit.onclick=function(){
-    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/literacy/').push();
+    if (document.getElementById('literacy_submit').textContent == 'Submit'){
+        var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/literacy/').push();
     newKey.set({
         tag: $(literacyid).tagsinput("items"),
         comment:"No comment this time...",
@@ -110,10 +125,17 @@ literacy_submit.onclick=function(){
 
     });
     alert("You saved a literacy log!");
-    $(lieteracy_submit).attr("disabled",true);
+    document.getElementById('literacy_submit').textContent = 'Submit another log';
+    document.getElementById('literacy_submit').style.width = '180px';
+    //$(lieteracy_submit).attr("disabled",true);
+} else {
+    document.getElementById('literacy_submit').textContent = 'Submit';
+    document.getElementById('literacy_submit').style.width = '100px';
+}
 };
 
 other_submit.onclick=function(){
+    if (document.getElementById('other_submit').textContent == 'Submit'){
     var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/other/').push();
     newKey.set({
         tag: $(otherid).tagsinput("items"),
@@ -122,7 +144,13 @@ other_submit.onclick=function(){
         important:false
     });
     alert("You submit an other log!");
-    $(other_submit).attr("disabled",true);
+        document.getElementById('other_submit').textContent = 'Submit another log';
+        document.getElementById('other_submit').style.width = '180px';
+    //$(other_submit).attr("disabled",true);
+    } else {
+        document.getElementById('other_submit').textContent = 'Submit';
+        document.getElementById('other_submit').style.width = '100px';
+    }
 };
 
 
