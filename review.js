@@ -204,8 +204,7 @@ reviewbutton.onclick=function(){
       "                        log list: <!--选择的分类-->\n" +
       "                        <br>\n" +
       "                        <br>\n" +
-      "                    </h4>\n" +
-      "                    <hr>";
+      "                    </h4>";
 
 
   initialize();
