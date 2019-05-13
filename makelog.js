@@ -55,8 +55,8 @@ sleep_submit.onclick=function(){
         comment:"No comment this time...",
         time:time,
         important:false
-
     });
+
     alert("You submitted a eating log!");
     $(sleep_submit).attr("disabled",true);
 };
@@ -127,6 +127,7 @@ other_submit.onclick=function(){
 
 
 eat_save.onclick=function(){
+    if (document.getElementById('eating_save').textContent == 'Save'){
     var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/eating/').push();
     newKey.set({
         amount:$("input[name='eatAmount']:checked").next("label").text(),
@@ -134,34 +135,55 @@ eat_save.onclick=function(){
         time:time
 
     });
+        document.getElementById('eating_save').textContent = 'Save another log';
+        document.getElementById('eating_save').style.width = '180px';
     alert("You saved a eating log!");
-    $(eat_save).attr("disabled",true);
+    //$(eat_save).attr("disabled",true);
+    } else {
+        document.getElementById('eating_save').textContent = 'Save';
+        document.getElementById('eating_save').style.width = '100px';
+    }
 };
 
 sleep_save.onclick=function(){
-    var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/sleeping/').push();
-    newKey.set({
-        amount:$("input[name='sleepTime']:checked").next("label").text(),
-        tag: $(sleepingid).tagsinput("items"),
-        time:time
+    if (document.getElementById('sleeping_save').textContent == 'Save'){
+        var newKey = firebase.database().ref('kidsBox/' + kid_key + '/incompleteBox/sleeping/').push();
+        newKey.set({
+            amount: $("input[name='sleepTime']:checked").next("label").text(),
+            tag: $(sleepingid).tagsinput("items"),
+            time: time
 
-    });
-    alert("You saved a sleeping log!");
-    $(sleep_save).attr("disabled",true);
+        });
+        document.getElementById('sleeping_save').textContent = 'Save another log';
+        document.getElementById('sleeping_save').style.width = '180px';
+        alert("You saved a sleeping log!");
+         //$(sleep_save).attr("disabled",true);
+    } else {
+        document.getElementById('sleeping_save').textContent = 'Save';
+        document.getElementById('sleeping_save').style.width = '100px';
+    }
 };
 
 social_save.onclick=function(){
+    if (document.getElementById('social_save').textContent == 'Save'){
     var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/social/').push();
     newKey.set({
         tag: $(socialid).tagsinput("items"),
         time:time
 
     });
+        document.getElementById('social_save').textContent = 'Save another log';
+        document.getElementById('social_save').style.width = '180px';
     alert("You saved a social log!");
-    $(social_save).attr("disabled",true);
+    //$(social_save).attr("disabled",true);
+    } else {
+        document.getElementById('social_save').textContent = 'Save';
+        document.getElementById('social_save').style.width = '100px';
+    }
 };
 
 physical_save.onclick=function(){
+    if (document.getElementById('physical_save').textContent == 'Save'){
     var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/physical/').push();
     newKey.set({
         tag: $(physicalid).tagsinput("items"),
@@ -169,10 +191,17 @@ physical_save.onclick=function(){
 
     });
     alert("You saved a physical log!");
-    $(physical_save).attr("disabled",true);
+    document.getElementById('physical_save').textContent = 'Save another log';
+    document.getElementById('physical_save').style.width = '180px';
+    //$(physical_save).attr("disabled",true);
+} else {
+    document.getElementById('physical_save').textContent = 'Save';
+    document.getElementById('physical_save').style.width = '100px';
+}
 };
 
 cognitive_save.onclick=function(){
+    if (document.getElementById('cognitive_save').textContent == 'Save'){
     var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/cognitive/').push();
     newKey.set({
         tag: $(cognitiveid).tagsinput("items"),
@@ -180,27 +209,47 @@ cognitive_save.onclick=function(){
 
     });
     alert("You saved a cognitive log!");
-    $(cognitivg_save).attr("disabled",true);
+    document.getElementById('cognitive_save').textContent = 'Save another log';
+    document.getElementById('cognitive_save').style.width = '180px';
+    //$(cognitivg_save).attr("disabled",true);
+} else {
+    document.getElementById('cognitive_save').textContent = 'Save';
+    document.getElementById('cognitive_save').style.width = '100px';
+}
 };
 
 literacy_save.onclick=function(){
+    if (document.getElementById('literacy_save').textContent == 'Save'){
     var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/literacy/').push();
     newKey.set({
         tag: $(literacyid).tagsinput("items"),
         time:time
     });
     alert("You saved a literacy log!");
-    $(literacy_save).attr("disabled",true);
+    document.getElementById('literacy_save').textContent = 'Save another log';
+    document.getElementById('literacy_save').style.width = '180px';
+    //$(literacy_save).attr("disabled",true);
+} else {
+    document.getElementById('literacy_save').textContent = 'Save';
+    document.getElementById('literacy_save').style.width = '100px';
+}
 };
 
 other_save.onclick=function(){
+    if (document.getElementById('other_save').textContent == 'Save'){
     var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/other/').push();
     newKey.set({
         tag: $(ohterid).tagsinput("items"),
         time:time
     });
     alert("You saved an 'other' log!");
-    $(other_save).attr("disabled",true);
+    document.getElementById('other_save').textContent = 'Save another log';
+    document.getElementById('other_save').style.width = '180px';
+    //$(other_save).attr("disabled",true);
+} else {
+    document.getElementById('other_save').textContent = 'Save';
+    document.getElementById('other_save').style.width = '100px';
+}
 };
 
 
