@@ -70,12 +70,15 @@ function read_log_inTime_range(category="",total_logs=0){
         if(myValue!==null){
             console.log("loading logs in time selected: "+category);
             var keyList=Object.keys(myValue);
-            for(var i=keyList.length-1;i>keyList.length-total_logs-1;i--){
-                console.log(i);
-                var myKey=keyList[i];
-                console.log(myKey);
+            for(var i=0;i<total_logs;i++){
+
+                var index=keyList.length-i-1;
+                console.log(index);
+                var myKey=keyList[index];
+
                 var comments=myValue[myKey].comment;
                 var time=myValue[myKey].time;
+                console.log(time);
                 var tags=myValue[myKey].tag;
                 var important=myValue[myKey].important;
                 add_one_log_box(time,tags,important,comments);
@@ -127,7 +130,7 @@ function add_one_log_box(time="",tags=[],important=false,com=""){
     div2.appendChild(p3);
     div1.appendChild(div2);
 
-    $(div1).insertAfter("#category_title");
+    $("#historyBox").append(div1);
 
 }
 
