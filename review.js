@@ -33,7 +33,7 @@ function initialize(){
                         }
                     }
                     //后续函数
-                    read_log_inTime_range(selected_category,1 )//第二个变量为 总共需要遍历的log数量
+                    read_log_inTime_range(selected_category,8)//第二个变量为 总共需要遍历的log数量
 
 
                 }
@@ -198,7 +198,7 @@ reviewbutton.onclick=function(){
       "                        <br>\n" +
       "                        <br>\n" +
       "                        <i class=\"fas fa-clipboard\"></i> \n" +
-      "                        All logs in this category: <!--选择的分类-->\n" +
+      "                        log list: <!--选择的分类-->\n" +
       "                        <br>\n" +
       "                        <br>\n" +
       "                    </h4>\n" +
@@ -382,11 +382,13 @@ reviewbutton.onclick=function(){
 //   }
 // );
 
+//tags dictionaties
+
 //eating
 var eating_dict={
-      labels: ["Ate a lot of vegetables today","Did not finish milk", "Drank the entire bowl of soup", "Disliked celery","Ate some oranges","other"],
+      labels: ["Ate a lot of cabbage","Ate some oranges", "Finished all his food very quickly", "Disliked green peas","Told me cabbage was delicious","other"],
       datasets: [{
-        data: [4, 2, 2, 1, 1, 1],
+        data: [4, 2, 2, 2, 2, 6],
         backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
         // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
       }]
