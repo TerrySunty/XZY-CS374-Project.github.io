@@ -74,7 +74,8 @@ function add_history(){
             var comment;
             if(len<3){
                 for(var i=0;i<len;i++){
-                    myKey=keyList[i];
+                    var index=len-i-1;
+                    myKey=keyList[index];
                     tags=myValue[myKey].tag;
                     time=myValue[myKey].time;
                     comment=myValue[myKey].comment;
@@ -83,6 +84,8 @@ function add_history(){
             }
             else{
                 for(i=0;i<3;i++){
+                    index=len-i-1;
+                    myKey=keyList[index];
                     myKey=keyList[i];
                     tags=myValue[myKey].tag;
                     time=myValue[myKey].time;

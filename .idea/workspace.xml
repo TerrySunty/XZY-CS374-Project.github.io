@@ -228,10 +228,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="945" />
-    <option name="width" value="980" />
-    <option name="height" value="1035" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="811" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -256,7 +256,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../XZY-CS374-Project.github.io - 副本" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -536,7 +536,7 @@
     </entry>
     <entry file="file://$USER_HOME$/Dropbox (Personal)/University/KAIST/CS374 Intro to Human-Computer Interface/Programming/Programming 3/capital_game.js" />
     <entry file="file://$USER_HOME$/Dropbox (Personal)/University/KAIST/CS374 Intro to Human-Computer Interface/Programming/Programming 3/index.html" />
-    <entry file="file://$USER_HOME$/Desktop/345021434-Mechanics-of-Materials-7th-Edition-Beer-Johnson-Chapter-7.pdf _ Stress (Mechanics) _ Solid Mechanics_files/saved_resource(1).html" />
+    <entry file="file://$PROJECT_DIR$/../345021434-Mechanics-of-Materials-7th-Edition-Beer-Johnson-Chapter-7.pdf _ Stress (Mechanics) _ Solid Mechanics_files/saved_resource(1).html" />
     <entry file="file://$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2492">
