@@ -409,9 +409,9 @@ var eating_amount_dict={
 
 //sleeping
 var sleeping_dict= {
-  labels: ["Slept soundly","Had difficulty falling asleep", "Woke up early", "Didn't sleep at all", "Refuse to sleep", "other"],
+  labels: ["Slept soundly","Had difficulty falling asleep", "Didn't want to wake up", "Didn't sleep at all", "Refuse to sleep", "other"],
       datasets: [{
-        data: [2, 2, 2, 1, 1, 1],
+        data: [1, 2, 1, 2, 1, 1],
         backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
         // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
       }]
@@ -431,7 +431,7 @@ var sleeping_amount_dict={
 var social_dict= {
       labels: ["Completed a puzzle with a friend", "Had fun playing with other kids", "Made a new friend","Activated to interact with others", "Don't want to talk", "other"],
       datasets: [{
-        data: [3, 2, 1, 1, 1, 1],
+        data: [1, 2, 1, 1, 1, 1],
         backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
         // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
       }]
@@ -441,7 +441,7 @@ var social_dict= {
 var physical_dict= {
   labels: ["Walked up stairs on his own","Ate on his own", "Did 5 push-ups :D", "Ran around playground","Lift a toy","other"],
       datasets: [{
-        data: [4, 3, 2, 2, 1, 1],
+        data: [2, 2, 2, 1, 1, 1],
         backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
         // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
       }]
@@ -451,7 +451,7 @@ var physical_dict= {
 var cognitive_dict= {
   labels: ["Completed a puzzle set without help","Curious about a friend's bruise", "Recognize complex images", "Think logically","Feeling differently","other"],
       datasets: [{
-        data: [3, 2, 2, 2, 2, 1],
+        data: [3, 2, 1, 1, 1, 0],
         backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
         // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
       }]
@@ -459,9 +459,9 @@ var cognitive_dict= {
 
 //literacy
 var literacy_dict= {
-  labels: ["Recited the full list of alphabets","Learnt to spell a few words", "Had a debate with the teacher :o", "Expressing love","Polite reply","other"],
+  labels: ["Recited the full list of alphabets","Reading a book", "Clear articulation", "Spoke new vocabulary","Talked to other child","other"],
       datasets: [{
-        data: [3, 3, 2, 2, 2, 1],
+        data: [2, 1, 1, 3, 2, 0],
         backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
         // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
       }]
@@ -470,9 +470,9 @@ var literacy_dict= {
 
 //other
 var other_dict= {
-  labels: ["Dislike", "Like","Positive", "Negative", "Neutral", "other"],
+  labels: [ "Negative","Had a tantrum", "Scolded his friend", "other"],
       datasets: [{
-        data: [3, 2, 2, 1, 1, 1],
+        data: [3, 2, 2, 0],
         backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
         // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
       }]
