@@ -29,12 +29,21 @@ var literacy_save=document.getElementById("literacy_save");
 var literacy_submit=document.getElementById("literacy_submit");
 var other_save=document.getElementById("other_save");
 var other_submit=document.getElementById("other_submit");
+var makeAnotherLog=document.getElementById("makeAnotherLog");
 
 var date=new Date();
 var time=date.toLocaleString( );
 
+$(".anotherButton").hide();
+
+makeAnotherLog.onclick=function(){
+    $(".hideButton").show();
+    $(".anotherButton").hide();
+    $("p").hide();
+};
+
 eat_submit.onclick=function(){
-    if (document.getElementById('eating_submit').textContent == 'Submit'){
+
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/eating/').push();
         newKey.set({
             amount:$("input[name='eatAmount']:checked").next("label").text(),
@@ -42,17 +51,15 @@ eat_submit.onclick=function(){
             comment:"No comment this time...",
             time:time,
             important:false
-
         });
         alert("You submitted a eating log!");
-        document.getElementById('eating_submit').textContent = 'Submit another log';
-        document.getElementById('eating_submit').style.width = '180px';
+        $(".hideButton").hide();
         //$(eat_submit).attr("disabled",true);
-    } else {
-        document.getElementById('eating_submit').textContent = 'Submit';
-        document.getElementById('eating_submit').style.width = '100px';
-    }
+        $( "<p><br>You submitted a log</p>" ).insertAfter( ".hideButton" );
+        $("p").addClass("styleConfirm");
+        $(".anotherButton").show();
 };
+
 
 sleep_submit.onclick=function(){
     if (document.getElementById('sleeping_submit').textContent == 'Submit'){

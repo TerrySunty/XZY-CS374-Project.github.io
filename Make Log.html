@@ -87,34 +87,40 @@
 
             <div class="tab-content" id="pills-tabContent">
 
-                <!-- eating -->
-                <div class="tab-pane fade show active" id="pills-eating" role="tabpanel" aria-labelledby="pills-eating-tab">
-                    <label class="font-weight-bold" for="pills-eating">Amount eaten:</label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="eatingRadio1" name="eatAmount" class="custom-control-input">
-                        <label class="custom-control-label" for="eatingRadio1">Less than usual</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="eatingRadio2" name="eatAmount" checked="checked" class="custom-control-input">
-                        <label class="custom-control-label" for="eatingRadio2">Usual portion</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="eatingRadio3" name="eatAmount" class="custom-control-input">
-                        <label class="custom-control-label" for="eatingRadio3">More than usual</label>
-                    </div><br>
-                    <form>
-                        <div class="form-group">
-                            <label class="font-weight-bold">Selected Tags:</label>
-                            <div id="eating">
-                                <input id="eatingtag" type="text" value="" data-role="tagsinput" placeholder="Add tag...">
-                            </div>
-                        </div>
-                    </form>
-                    <div class="container text-center col-sm-6 col-md-4 py-2">
-                        <button style="width: 100px; height: 40px;" class="btn btn-outline-success float-left" id="eating_save" type="button">Save</button>&emsp;&emsp;
-                        <button style="width: 100px; height: 40px;" class="btn btn-outline-danger float-right" id="eating_submit" type="submit">Submit</button>
-                    </div>
-                </div>
+<!-- eating -->
+<div class="tab-pane fade show active" id="pills-eating" role="tabpanel" aria-labelledby="pills-eating-tab">
+    <label class="font-weight-bold" for="pills-eating">Amount eaten:</label>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="eatingRadio1" name="eatAmount" class="custom-control-input">
+        <label class="custom-control-label" for="eatingRadio1">Less than usual</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="eatingRadio2" name="eatAmount" checked="checked" class="custom-control-input">
+        <label class="custom-control-label" for="eatingRadio2">Usual portion</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="eatingRadio3" name="eatAmount" class="custom-control-input">
+        <label class="custom-control-label" for="eatingRadio3">More than usual</label>
+    </div><br>
+    <form>
+        <div class="form-group">
+            <label class="font-weight-bold">Selected Tags:</label>
+            <div id="eating">
+                <input id="eatingtag" type="text" value="" data-role="tagsinput" placeholder="Add tag...">
+            </div>
+        </div>
+    </form>
+    <div class="container text-center col-sm-6 col-md-4 py-2 hideButton">
+        <button style="width: 150px; height: 40px;" class="btn btn-outline-secondary float-left" id="eating_save" type="button">Save for later</button>&emsp;&emsp;
+        <button style="width: 150px; height: 40px;" class="btn btn-outline-success float-right" id="eating_submit" type="submit">Complete log</button>
+    </div>
+    
+     <div class="container text-center col-sm-6 col-md-2 py-6 anotherButton">
+     <button style="width: 160px; height: 40px;" class="btn btn-outline-secondary float-left" id="makeAnotherLog" type="button">Make another log</button>
+    </div>
+
+</div>
+
 
                 <!-- sleeping -->
                 <div class="tab-pane fade" id="pills-sleeping" role="tabpanel" aria-labelledby="pills-sleeping-tab">
