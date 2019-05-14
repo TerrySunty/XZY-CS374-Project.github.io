@@ -52,10 +52,10 @@ eat_submit.onclick=function(){
             time:time,
             important:false
         });
-        alert("You submitted a eating log!");
+        alert("You completed an eating log!");
         $(".hideButton").hide();
         //$(eat_submit).attr("disabled",true);
-        $( "<p><br>You submitted a log</p>" ).insertAfter( ".hideButton" );
+        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
         $("p").addClass("styleConfirm");
         $(".anotherButton").show();
 };
@@ -182,7 +182,6 @@ other_submit.onclick=function(){
 
 
 eat_save.onclick=function(){
-    if (document.getElementById('eating_save').textContent == 'Save'){
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/eating/').push();
         newKey.set({
             amount:$("input[name='eatAmount']:checked").next("label").text(),
@@ -190,14 +189,13 @@ eat_save.onclick=function(){
             time:time
 
         });
-        document.getElementById('eating_save').textContent = 'Save another log';
-        document.getElementById('eating_save').style.width = '180px';
-        alert("You saved a eating log!");
+        alert("You saved an eating log!");
+         $(".hideButton").hide();
         //$(eat_save).attr("disabled",true);
-    } else {
-        document.getElementById('eating_save').textContent = 'Save';
-        document.getElementById('eating_save').style.width = '100px';
-    }
+  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( ".hideButton" );
+        $("p").addClass("styleConfirm");
+        $(".anotherButton").show();
+
 };
 
 sleep_save.onclick=function(){
