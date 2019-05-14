@@ -127,6 +127,10 @@ tr{
   color: black;
 }
 
+.styleConfirm{
+  text-align: center;
+  color: gray;
+}
 /*
 input[type=checkbox] + label {
   position: absolute;
