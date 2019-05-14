@@ -22,8 +22,8 @@ Team XZY
 5. complete.js (backend for "Complete Log.html. Download the log that user chose to complete and latest three completed log as reference for user to finish completing the log. It will also save data in firebase user submitted after complete the log.)
 6. review.js ( Download logs in chosen time range, and do statistics to make a pie-chart that can directly shows a summary information for the user)
 7. Chart.js (Library for using google chart to make a pie chart)
-
 ---
+
 ## Implementation tool/Library we used:
 1. jQuery
 2. Bootstrap
