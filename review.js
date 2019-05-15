@@ -43,9 +43,8 @@ function initialize(){
     });
 }
 
-var category_menu = document.getElementById('category_select_menu');
-var selected_category; 
 
+var selected_category;
 var range_radios = document.getElementsByName('customRadioInline1');
 var selected_range;
 
@@ -69,6 +68,12 @@ $("input[name='customRadioInline1']").click(function(){
 
 var statistic_tag=[];
 var amount_statistic=[];
+var dataset;
+var dataset_array;
+var amount_set;
+var amountset_array;
+var amount_count=[];
+var count=[];
 function read_log_inTime_range(category=""){
     firebase.database().ref('/kidsBox/'+kid_key+'/logBox/'+category+"/").once('value', function(snapshot){
         var myValue = snapshot.val();
@@ -86,8 +91,19 @@ function read_log_inTime_range(category=""){
                 var tags=myValue[myKey].tag;
                 var important=myValue[myKey].important;
                 add_one_log_box(time,tags,important,comments);
-
+                if(category==="eating"||category==="sleeping"){
+                    amount_statistic.push(myValue[myKey].amount)
+                }
             }
+
+            if(category==="eating"||category==="sleeping"){
+                amount_set=new Set(amount_statistic);
+                amountset_array=Array.from(amount_set);
+                for(i=0;i<amountset_array.length;i++){
+                    amount_count.push(count_num(amountset_array[i],amount_statistic));
+                }
+            }
+
             dataset=new Set(statistic_tag);
             dataset_array=Array.from(dataset);
             for(i=0;i<dataset_array.length;i++){
@@ -157,9 +173,7 @@ function count_num(tag="",array=[]){
 }
 
 
-var dataset;
-var dataset_array;
-var count=[];
+
 var reviewbutton = document.getElementById("review_btn");
 reviewbutton.onclick=function(){
     selected_category=$("#category_select_menu option:selected").val();
@@ -175,7 +189,7 @@ reviewbutton.onclick=function(){
       "</div>\n" +
       "</div>";
 
-    
+
     var div2=document.createElement("div");
     div2.className="container";
     div2.innerHTML=
@@ -202,7 +216,6 @@ reviewbutton.onclick=function(){
 
 
   initialize();
-
   var ctxP1 = document.getElementById("pieChart1").getContext('2d');
   var myPieChart1 = new Chart(ctxP1, {
     type: 'pie',
@@ -225,9 +238,9 @@ reviewbutton.onclick=function(){
   var myPieChart2 = new Chart(ctxP2, {
     type: 'pie',
     data: {
-    labels: ["Less than usual","Usual portion","More than usual"],
+    labels: amountset_array,
     datasets: [{
-      data: [7, 4, 5],
+      data: amount_count,
       backgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"],
       // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
     }]
@@ -239,18 +252,10 @@ reviewbutton.onclick=function(){
 
 
     switch(selected_category) {
-      case 'eating': 
-
-        myPieChart1.update();
-
-        myPieChart2.update();
+      case 'eating':
         break;
 
       case 'sleeping':
-
-        myPieChart1.update();
-
-        myPieChart2.update();
         break;
 
       case 'social':

@@ -86,7 +86,6 @@ social_submit.onclick=function(){
             comment:"No comment this time...",
             time:time,
             important:false
-
         });
         $(social_submit).hide();
         $(social_save).hide();
