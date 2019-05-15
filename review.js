@@ -24,6 +24,10 @@ firebase.initializeApp(config);//initialize firebase
  //initialize 在click reveiw之后执行
 function initialize(){
     firebase.database().ref('/name_index/').once('value', function(snapshot){
+        statistic_tag=[];
+        amount_statistic=[];
+        amount_count=[];//amount的出现次数
+        count=[];//每个tag出现的次数，位置对应array的index
         var myValue = snapshot.val();
         if(myValue!==null){
             console.log("getting chosen kid name");
@@ -192,11 +196,6 @@ function count_num(tag="",array=[]){
 
 var reviewbutton = document.getElementById("review_btn");
 reviewbutton.onclick=function(){
-     statistic_tag=[];
-     amount_statistic=[];
-
-     amount_count=[];//amount的出现次数
-     count=[];//每个tag出现的次数，位置对应array的index
     selected_category=$("#category_select_menu option:selected").val();
     document.getElementById("chart_place").innerHTML="";
     var chartBox=document.getElementById("chart_place");
@@ -284,7 +283,6 @@ reviewbutton.onclick=function(){
         break;
 
       case 'social':
-
           myPieChart1.update();
           $(".pieChart2-container").remove();
           myPieChart2.reset();
