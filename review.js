@@ -149,8 +149,6 @@ function count_num(tag="",array=[]){
 
 
 
-
-
 var reviewbutton = document.getElementById("review_btn");
 reviewbutton.onclick=function(){
     selected_category=$("#category_select_menu option:selected").val();
@@ -176,10 +174,8 @@ reviewbutton.onclick=function(){
       "<canvas id=\"pieChart1\" class=\"chart\"></canvas>\n" +
       "</div>\n" +
       "</div>\n";
-    // if(selected_category==="eating" || selected_category==="sleeping"){
       chartBox.append(div1);
-    // }
-    chartBox.append(div2);
+      chartBox.append(div2);
 
     document.getElementById("historyBox").innerHTML=
       "<h4 id=\"category_title\" class=\"text-center lead\">\n" +
@@ -293,99 +289,3 @@ reviewbutton.onclick=function(){
     }
 
 };
-
-
-/
-//eating
-var eating_dict={
-      labels: ["Ate a lot of cabbage","Ate some oranges", "Finished all his food very quickly", "Disliked green peas","Told me cabbage was delicious","other"],
-      datasets: [{
-        data: [4, 2, 2, 2, 2, 6],
-        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
-        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-      }]
-};
-
-var eating_amount_dict={
-      labels: ["Less than usual","Usual portion","More than usual"],
-
-      datasets: [{
-        data: [3, 3, 2],
-        backgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"],
-        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
-      }]
-};
-
-//sleeping
-var sleeping_dict= {
-  labels: ["Slept soundly","Had difficulty falling asleep", "Didn't want to wake up", "Didn't sleep at all", "Refuse to sleep", "other"],
-      datasets: [{
-        data: [1, 2, 1, 2, 1, 1],
-        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
-        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-      }]
-};
-
-var sleeping_amount_dict={
-      labels: ["Less than 2 hours","2 - 3 hours","More than 3 hours"],
-
-      datasets: [{
-        data: [4, 1, 1],
-        backgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"],
-        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
-      }]
-};
-
-// social
-var social_dict= {
-      labels: ["Completed a puzzle with a friend", "Had fun playing with other kids", "Made a new friend","Activated to interact with others", "Don't want to talk", "other"],
-      datasets: [{
-        data: [1, 2, 1, 1, 1, 1],
-        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
-        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-      }]
-};
-
-// physical
-var physical_dict= {
-  labels: ["Walked up stairs on his own","Ate on his own", "Did 5 push-ups :D", "Ran around playground","Lift a toy","other"],
-      datasets: [{
-        data: [2, 2, 2, 1, 1, 1],
-        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
-        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-      }]
-};
-
-// cognitive
-var cognitive_dict= {
-  labels: ["Completed a puzzle set without help","Curious about a friend's bruise", "Recognize complex images", "Think logically","Feeling differently","other"],
-      datasets: [{
-        data: [3, 2, 1, 1, 1, 0],
-        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
-        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-      }]
-};
-
-//literacy
-var literacy_dict= {
-  labels: ["Recited the full list of alphabets","Reading a book", "Clear articulation", "Spoke new vocabulary","Talked to other child","other"],
-      datasets: [{
-        data: [2, 1, 1, 3, 2, 0],
-        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
-        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-      }]
-};
-
-
-//other
-var other_dict= {
-  labels: [ "Negative","Had a tantrum", "Scolded his friend", "other"],
-      datasets: [{
-        data: [3, 2, 2, 0],
-        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
-        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-      }]
-};
-
-
-
