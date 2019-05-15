@@ -100,7 +100,6 @@ function read_log_inTime_range(category=""){
                 //在这里增加时间比对的函数
                 var compared_timeV=get_end_Time(selected_range);
                 var time_value=myValue[myKey].timeV;
-                console.log(time_value<=compared_timeV);
                 if(time_value<=compared_timeV){
                     break;
                 }
@@ -129,6 +128,91 @@ function read_log_inTime_range(category=""){
             for(i=0;i<dataset_array.length;i++){
                 count.push(count_num(dataset_array[i],statistic_tag));}
         }
+        var ctxP1 = document.getElementById("pieChart1").getContext('2d');
+        var myPieChart1 = new Chart(ctxP1, {
+            type: 'pie',
+            data: {
+                labels: dataset_array,
+                datasets: [{
+                    data: count,
+                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
+                    // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+
+
+
+        var ctxP2 = document.getElementById("pieChart2").getContext('2d');
+        var myPieChart2 = new Chart(ctxP2, {
+            type: 'pie',
+            data: {
+                labels: amountset_array,
+                datasets: [{
+                    data: amount_count,
+                    backgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"],
+                    // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+
+
+        switch(selected_category) {
+            case 'eating':
+                myPieChart1.update();
+                myPieChart2.update();
+                break;
+
+            case 'sleeping':
+                myPieChart1.update();
+                myPieChart2.update();
+                break;
+
+            case 'social':
+                myPieChart1.update();
+                $(".pieChart2-container").remove();
+                myPieChart2.reset();
+
+                break;
+
+
+            case 'physical':
+
+                myPieChart1.update();
+                $(".pieChart2-container").remove();
+                myPieChart2.reset();
+
+                break;
+
+            case 'cognitive':
+
+                myPieChart1.update();
+                $(".pieChart2-container").remove();
+                myPieChart2.reset();
+                break;
+
+            case 'literacy':
+
+                myPieChart1.update();
+                $(".pieChart2-container").remove();
+                myPieChart2.reset();
+                break;
+
+            case 'other':
+
+                myPieChart1.update();
+                $(".pieChart2-container").remove();
+                myPieChart2.reset();
+                break;
+
+        }
+
     });
 }
 
@@ -236,89 +320,6 @@ reviewbutton.onclick=function(){
 
 
   initialize();
-  var ctxP1 = document.getElementById("pieChart1").getContext('2d');
-  var myPieChart1 = new Chart(ctxP1, {
-    type: 'pie',
-    data: {
-      labels: dataset_array,
-      datasets: [{
-        data: count,
-        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
-        // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-      }]
-    },
-    options: {
-      responsive: true
-    }
-  });
 
-  
-
-  var ctxP2 = document.getElementById("pieChart2").getContext('2d');
-  var myPieChart2 = new Chart(ctxP2, {
-    type: 'pie',
-    data: {
-    labels: amountset_array,
-    datasets: [{
-      data: amount_count,
-      backgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"],
-      // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
-    }]
-    },
-    options: {
-      responsive: true
-    }
-  });
-
-
-    switch(selected_category) {
-      case 'eating':
-          myPieChart1.update();
-          myPieChart2.update();
-          break;
-
-      case 'sleeping':
-          myPieChart1.update();
-          myPieChart2.update();
-        break;
-
-      case 'social':
-          myPieChart1.update();
-          $(".pieChart2-container").remove();
-          myPieChart2.reset();
-
-        break;
-
-
-      case 'physical':
-
-        myPieChart1.update();
-        $(".pieChart2-container").remove();
-        myPieChart2.reset();
-
-        break;
-
-      case 'cognitive':
-
-        myPieChart1.update();
-        $(".pieChart2-container").remove();
-        myPieChart2.reset();
-        break;
-
-      case 'literacy':
-
-        myPieChart1.update();
-        $(".pieChart2-container").remove();
-        myPieChart2.reset();
-        break;
-
-      case 'other':
-
-        myPieChart1.update();
-        $(".pieChart2-container").remove();
-        myPieChart2.reset();
-        break;
-
-    }
 
 };
