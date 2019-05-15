@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51025cd2-c32e-4a84-8b69-e4834123e79f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Make Log.html" beforeDir="false" afterPath="$PROJECT_DIR$/Make Log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/makelog.js" beforeDir="false" afterPath="$PROJECT_DIR$/makelog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/review.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/review.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
+            <state relative-caret-position="215">
+              <caret line="122" column="19" selection-start-line="122" selection-start-column="12" selection-end-line="122" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -45,9 +48,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Make Log.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="103" column="29" lean-forward="true" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
+            <state relative-caret-position="-827">
+              <caret line="139" column="127" selection-start-line="139" selection-start-column="127" selection-end-line="139" selection-end-column="127" />
               <folding>
+                <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -57,9 +62,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makelog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="113" column="77" lean-forward="true" selection-start-line="113" selection-start-column="77" selection-end-line="113" selection-end-column="77" />
+            <state relative-caret-position="-897">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
+                <element signature="e#1459#1542#0" />
+                <element signature="e#1997#2080#0" />
+                <element signature="e#2114#2197#0" />
+                <element signature="e#2231#2314#0" />
+                <element signature="e#2469#2552#0" />
+                <element signature="e#2465#2548#0" />
+                <element signature="e#2582#2665#0" />
+                <element signature="e#1591#2267#0" />
+                <element signature="e#2302#2990#0" />
                 <element signature="e#3025#3631#0" />
                 <element signature="e#3668#4286#0" />
                 <element signature="e#4324#4947#0" />
@@ -109,8 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>read_tag</find>
-      <find>eat</find>
       <find>tags</find>
       <find>fadeIn</find>
       <find>radio</find>
@@ -139,6 +151,8 @@
       <find>disable</find>
       <find>submit</find>
       <find>usual</find>
+      <find>eating_another</find>
+      <find>dataset</find>
     </findStrings>
     <replaceStrings>
       <replace>type=&quot;button&quot;</replace>
@@ -179,8 +193,8 @@
         <option value="$PROJECT_DIR$/Review Past Data.html" />
         <option value="$PROJECT_DIR$/homeCSS.css" />
         <option value="$PROJECT_DIR$/complete.js" />
-        <option value="$PROJECT_DIR$/Make Log.html" />
         <option value="$PROJECT_DIR$/makelog.js" />
+        <option value="$PROJECT_DIR$/Make Log.html" />
         <option value="$PROJECT_DIR$/review.js" />
       </list>
     </option>
@@ -258,7 +272,7 @@
       <workItem from="1557829946109" duration="2915000" />
       <workItem from="1557850167319" duration="1710000" />
       <workItem from="1557885990156" duration="3359000" />
-      <workItem from="1557901764630" duration="8733000" />
+      <workItem from="1557901764630" duration="9936000" />
     </task>
     <task id="LOCAL-00001" summary="add link">
       <created>1556358901517</created>
@@ -453,7 +467,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194835000" />
+    <option name="totallyTimeSpent" value="196038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="814" extended-state="6" />
@@ -667,38 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Make Log.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="103" column="29" lean-forward="true" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makelog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="113" column="77" lean-forward="true" selection-start-line="113" selection-start-column="77" selection-end-line="113" selection-end-column="77" />
-          <folding>
-            <element signature="e#3025#3631#0" />
-            <element signature="e#3668#4286#0" />
-            <element signature="e#4324#4947#0" />
-            <element signature="e#4984#5602#0" />
-            <element signature="e#5636#6237#0" />
-            <element signature="e#5801#6343#0" />
-            <element signature="e#6375#6929#0" />
-            <element signature="e#6962#7428#0" />
-            <element signature="e#7463#7933#0" />
-            <element signature="e#7969#8441#0" />
-            <element signature="e#8476#8947#0" />
-            <element signature="e#8979#9443#0" />
-            <element signature="e#9554#11000#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/homeCSS.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
@@ -722,10 +704,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Make Log.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-827">
+          <caret line="139" column="127" selection-start-line="139" selection-start-column="127" selection-end-line="139" selection-end-column="127" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makelog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-897">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#1459#1542#0" />
+            <element signature="e#1997#2080#0" />
+            <element signature="e#2114#2197#0" />
+            <element signature="e#2231#2314#0" />
+            <element signature="e#2469#2552#0" />
+            <element signature="e#2465#2548#0" />
+            <element signature="e#2582#2665#0" />
+            <element signature="e#1591#2267#0" />
+            <element signature="e#2302#2990#0" />
+            <element signature="e#3025#3631#0" />
+            <element signature="e#3668#4286#0" />
+            <element signature="e#4324#4947#0" />
+            <element signature="e#4984#5602#0" />
+            <element signature="e#5636#6237#0" />
+            <element signature="e#5801#6343#0" />
+            <element signature="e#6375#6929#0" />
+            <element signature="e#6962#7428#0" />
+            <element signature="e#7463#7933#0" />
+            <element signature="e#7969#8441#0" />
+            <element signature="e#8476#8947#0" />
+            <element signature="e#8979#9443#0" />
+            <element signature="e#9554#11000#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/review.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
+        <state relative-caret-position="215">
+          <caret line="122" column="19" selection-start-line="122" selection-start-column="12" selection-end-line="122" selection-end-column="19" />
         </state>
       </provider>
     </entry>

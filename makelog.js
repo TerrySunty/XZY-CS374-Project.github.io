@@ -30,12 +30,12 @@ var literacy_submit=document.getElementById("literacy_submit");
 var other_save=document.getElementById("other_save");
 var other_submit=document.getElementById("other_submit");
 
-var sleepAnotherLog=document.getElementById("sleep_another");
+var sleepAnotherLog=document.getElementById("sleeping_another");
 var socialAnotherLog=document.getElementById("social_another");
 var cognitiveAnotherLog=document.getElementById("cognitive_another");
 var physicalAnotherLog=document.getElementById("physical_another");
 var otherAnotherLog=document.getElementById("other_another");
-var eatAnotherLog=document.getElementById("eat_another");
+var eatAnotherLog=document.getElementById("eating_another");
 var literacyAnotherLog=document.getElementById("literacy_another");
 
 var date=new Date();

@@ -96,6 +96,7 @@ function read_log_inTime_range(category=""){
                 //在这里增加时间比对的函数
                 var compared_timeV=get_end_Time(selected_range);
                 var time_value=myValue[myKey].timeV;
+                console.log(time_value<=compared_timeV);
                 if(time_value<=compared_timeV){
                     break;
                 }
@@ -191,6 +192,11 @@ function count_num(tag="",array=[]){
 
 var reviewbutton = document.getElementById("review_btn");
 reviewbutton.onclick=function(){
+     statistic_tag=[];
+     amount_statistic=[];
+
+     amount_count=[];//amount的出现次数
+     count=[];//每个tag出现的次数，位置对应array的index
     selected_category=$("#category_select_menu option:selected").val();
     document.getElementById("chart_place").innerHTML="";
     var chartBox=document.getElementById("chart_place");
@@ -268,16 +274,20 @@ reviewbutton.onclick=function(){
 
     switch(selected_category) {
       case 'eating':
-        break;
+          myPieChart1.update();
+          myPieChart2.update();
+          break;
 
       case 'sleeping':
+          myPieChart1.update();
+          myPieChart2.update();
         break;
 
       case 'social':
 
-        myPieChart1.update();
-        $(".pieChart2-container").remove();
-        myPieChart2.reset();
+          myPieChart1.update();
+          $(".pieChart2-container").remove();
+          myPieChart2.reset();
 
         break;
 
