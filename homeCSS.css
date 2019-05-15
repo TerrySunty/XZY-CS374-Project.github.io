@@ -146,7 +146,7 @@ input[type=checkbox]:checked + label {
 }
 */
 
-.styleConfirm{
+/*.styleConfirm{
   text-align: center;
   color: gray;
 }
@@ -166,4 +166,4 @@ input[type=checkbox]:checked + label {
   background-color: #cfe2f3 !important;
   color:black !important;
   outline-color: #cfe2f3 !important;
-}
+}*/
