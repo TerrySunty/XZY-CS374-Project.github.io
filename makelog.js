@@ -58,7 +58,7 @@ eat_submit.onclick=function(){
         //$(eat_submit).attr("disabled",true);
         $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
         $("p").addClass("styleConfirm");
-        $("#eat_another").show();
+        $("#eating_another").show();
 };
 
 
@@ -76,7 +76,7 @@ sleep_submit.onclick=function(){
         //$(eat_submit).attr("disabled",true);
         $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
         $("p").addClass("styleConfirm");
-        $("#sleep_another").show();
+        $("#sleeping_another").show();
 };
 
 social_submit.onclick=function(){
@@ -93,7 +93,7 @@ social_submit.onclick=function(){
         //$(eat_submit).attr("disabled",true);
         $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
         $("p").addClass("styleConfirm");
-        $(".anotherButton").show();
+        $("#social_another").show();
 };
 
 physical_submit.onclick=function(){
@@ -106,11 +106,12 @@ physical_submit.onclick=function(){
             important:false
 
         });
-        $(".hideButton").hide();
+        $(physical_submit).hide();
+        $(physical_save).hide();
         //$(eat_submit).attr("disabled",true);
         $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
         $("p").addClass("styleConfirm");
-        $(".anotherButton").show();
+        $("#physical_another").show();
 };
 
 cognitive_submit.onclick=function(){
@@ -123,11 +124,12 @@ cognitive_submit.onclick=function(){
             important:false
 
         });
-        $(".hideButton").hide();
+        $(cognitive_submit).hide();
+        $(cognitive_save).hide();
         //$(eat_submit).attr("disabled",true);
         $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
         $("p").addClass("styleConfirm");
-        $(".anotherButton").show();
+        $("#cognitive_another").show();
 };
 
 literacy_submit.onclick=function(){
@@ -140,11 +142,12 @@ literacy_submit.onclick=function(){
             important:false
 
         });
-        $(".hideButton").hide();
+        $(literacy_submit).hide();
+        $(literacy_save).hide();
         //$(eat_submit).attr("disabled",true);
         $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
         $("p").addClass("styleConfirm");
-        $(".anotherButton").show();
+        $("#literacy_another").show();
 };
 
 other_submit.onclick=function(){
@@ -155,11 +158,12 @@ other_submit.onclick=function(){
             time:time,
             important:false
         });
-        $(".hideButton").hide();
+        $(other_submit).hide();
+        $(other_save).hide();
         //$(eat_submit).attr("disabled",true);
         $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
         $("p").addClass("styleConfirm");
-        $(".anotherButton").show();
+        $("#other_another").show();
 };
 
 
