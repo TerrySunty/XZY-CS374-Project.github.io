@@ -12,6 +12,7 @@ firebase.initializeApp(config);//initialize firebase
 
  var name_idx;
  var kid_key;
+
  //initialize 在click reveiw之后执行
 function initialize(){
     firebase.database().ref('/name_index/').once('value', function(snapshot){
@@ -33,7 +34,7 @@ function initialize(){
                         }
                     }
                     //后续函数
-                    read_log_inTime_range(selected_category,8)//第二个变量为 总共需要遍历的log数量
+                    read_log_inTime_range(selected_category)//第二个变量为 总共需要遍历的log数量
 
 
                 }
@@ -46,7 +47,7 @@ var category_menu = document.getElementById('category_select_menu');
 var selected_category; 
 
 var range_radios = document.getElementsByName('customRadioInline1');
-var selected_range='';
+var selected_range;
 
 
 
@@ -54,28 +55,27 @@ var selected_range='';
 $("input[name='customRadioInline1']").click(function(){
 
     if(range_radios[0].checked){
-        selected_range='Recent one week';
+        selected_range=7;
     }
     else if(range_radios[1].checked){
-        selected_range='Recent one month';
+        selected_range=30;
     }
 
 
 });
 
 var statistic_tag=[];
-function read_log_inTime_range(category="",total_logs=0){
+var amount_statistic=[];
+function read_log_inTime_range(category=""){
     firebase.database().ref('/kidsBox/'+kid_key+'/logBox/'+category+"/").once('value', function(snapshot){
         var myValue = snapshot.val();
         if(myValue!==null){
             console.log("loading logs in time selected: "+category);
             var keyList=Object.keys(myValue);
-            for(var i=0;i<total_logs;i++){
-
+            for(var i=0;i<keyList.length;i++){
                 var index=keyList.length-i-1;
                 console.log(index);
                 var myKey=keyList[index];
-
                 var comments=myValue[myKey].comment;
                 var time=myValue[myKey].time;
                 console.log(time);
@@ -135,30 +135,17 @@ function add_one_log_box(time="",tags=[],important=false,com=""){
 }
 
 
-
-//chart
-
-
-  // var ctxP = document.getElementById("eating-pieChart2").getContext('2d');
-  // var myPieChart = new Chart(ctxP, {
-  //   type: 'pie',
-  //   data: {
-  //     labels: ["Less than usual","Usual portion","More than usual"],
-
-  //     datasets: [{
-  //       data: [7, 4, 5],
-  //       backgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"],
-  //       // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
-  //     }]
-  //   },
-  //   options: {
-  //     responsive: true
-  //   }
-  // });
-
-//start program
-
-
+//计算元素出现的次数
+function count_num(tag="",array=[]){
+    var num=0;
+    for(vari=0; i<array.length;i++){
+        if(tag===array[i]){
+            num+=1;
+            array.splice(i,1);
+        }
+    }
+    return num;
+}
 
 
 
@@ -208,48 +195,20 @@ reviewbutton.onclick=function(){
 
 
   initialize();
-
-  // var ctxP1 = document.getElementById("pieChart1").getContext('2d');
-  // var myPieChart1 = new Chart(ctxP1, {
-  //   type: 'pie',
-  //   data: {
-  //     labels: ["Refuse to eat", "Fish", "Didn't finish lunch", "Apple","Didn't finish lunch", "other"],
-  //     datasets: [{
-  //       data: [4, 2, 2, 1, 1, 1],
-  //       backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
-  //       // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-  //     }]
-  //   },
-  //   options: {
-  //     responsive: true
-  //   }
-  // });
-
-  // var ctxP2 = document.getElementById("pieChart2").getContext('2d');
-  // var myPieChart2 = new Chart(ctxP2, {
-  //   type: 'pie',
-  //   data: {
-  //     labels: ["Less than usual","Usual portion","More than usual"],
-
-  //     datasets: [{
-  //       data: [7, 4, 5],
-  //       backgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"],
-  //       // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
-  //     }]
-  //   },
-  //   options: {
-  //     responsive: true
-  //   }
-  // });
-
+  var dataset=new Set(statistic_tag);
+  var dataset_array=Array.from(dataset);
+  var count=[];
+  for(var i=0;i<dataset_array.length;i++){
+    count.push(count_num(dataset_array[i],statistic_tag));
+  }
 
   var ctxP1 = document.getElementById("pieChart1").getContext('2d');
   var myPieChart1 = new Chart(ctxP1, {
     type: 'pie',
     data: {
-      labels: ["Refuse to eat", "Fish", "Didn't finish lunch", "Apple","Didn't finish lunch", "other"],
+      labels: dataset_array,
       datasets: [{
-        data: [4, 2, 2, 1, 1, 1],
+        data: count,
         backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
         // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
       }]
@@ -336,56 +295,7 @@ reviewbutton.onclick=function(){
 };
 
 
-// createbutton.onclick = function(){
-
-//     setTimeout("window.location.href='./Review Past Data.html'",950)
-// };
-
-
-// var data = {
-//   datasets: [{
-//     data: [300, 50, 100, 40, 120, 20],
-//     backgroundColor: [
-//       "#F7464A",
-//       "#46BFBD",
-//       "#FDB45C", 
-//       "#949FB1", 
-//       "#4D5360",
-//       "#ADD8E6"
-//     ]
-//   }],
-//   labels: ["tag1", "tag2", "tag3", "tag4", "tag5", "other"],
-// };
-
-
-//   $(document).ready(
-//   function() {
-//     var canvas = document.getElementById("pieChart");
-//     var ctx = canvas.getContext("2d");
-//     var myNewChart = new Chart(ctx, {
-//       type: 'pie',
-//       data: data
-//     });
-
-//     canvas.onclick = function(evt) {
-//       var activePoints = myNewChart.getElementsAtEvent(evt);
-//       if (activePoints[0]) {
-//         var chartData = activePoints[0]['_chart'].config.data;
-//         var idx = activePoints[0]['_index'];
-
-//         var label = chartData.labels[idx];
-//         var value = chartData.datasets[0].data[idx];
-
-//         var url = "http://example.com/?label=" + label + "&value=" + value;
-//         console.log(url);
-//         alert(url);
-//       }
-//     };
-//   }
-// );
-
-//tags dictionaties
-
+/
 //eating
 var eating_dict={
       labels: ["Ate a lot of cabbage","Ate some oranges", "Finished all his food very quickly", "Disliked green peas","Told me cabbage was delicious","other"],
