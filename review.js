@@ -13,6 +13,15 @@ firebase.initializeApp(config);//initialize firebase
  var name_idx;
  var kid_key;
 
+  var statistic_tag=[];
+  var amount_statistic=[];
+  var dataset;
+  var dataset_array;
+  var amount_set;
+  var amountset_array;
+  var amount_count=[];
+  var count=[];
+
  //initialize 在click reveiw之后执行
 function initialize(){
     firebase.database().ref('/name_index/').once('value', function(snapshot){
@@ -34,9 +43,13 @@ function initialize(){
                         }
                     }
                     //后续函数
-                    read_log_inTime_range(selected_category)//第二个变量为 总共需要遍历的log数量
-
-
+                    read_log_inTime_range(selected_category);//第二个变量为 总共需要遍历的log数量
+                    statistic_tag=[];
+                    amount_statistic=[];
+                    dataset_array=[];
+                    amountset_array=[];
+                    amount_count=[];
+                    count=[];
                 }
             });
         }
@@ -65,15 +78,6 @@ $("input[name='customRadioInline1']").click(function(){
 
 
 
-
-var statistic_tag=[];
-var amount_statistic=[];
-var dataset;
-var dataset_array;
-var amount_set;
-var amountset_array;
-var amount_count=[];
-var count=[];
 function read_log_inTime_range(category=""){
     firebase.database().ref('/kidsBox/'+kid_key+'/logBox/'+category+"/").once('value', function(snapshot){
         var myValue = snapshot.val();
@@ -253,9 +257,13 @@ reviewbutton.onclick=function(){
 
     switch(selected_category) {
       case 'eating':
+        myPieChart1.update();
+        myPieChart2.update();
         break;
 
       case 'sleeping':
+        myPieChart1.update();
+        myPieChart2.update();
         break;
 
       case 'social':
@@ -263,7 +271,6 @@ reviewbutton.onclick=function(){
         myPieChart1.update();
         $(".pieChart2-container").remove();
         myPieChart2.reset();
-
         break;
 
 
@@ -272,7 +279,6 @@ reviewbutton.onclick=function(){
         myPieChart1.update();
         $(".pieChart2-container").remove();
         myPieChart2.reset();
-
         break;
 
       case 'cognitive':
