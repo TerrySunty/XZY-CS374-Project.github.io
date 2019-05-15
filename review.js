@@ -64,6 +64,9 @@ $("input[name='customRadioInline1']").click(function(){
 
 });
 
+
+
+
 var statistic_tag=[];
 var amount_statistic=[];
 function read_log_inTime_range(category=""){
@@ -76,13 +79,19 @@ function read_log_inTime_range(category=""){
                 var index=keyList.length-i-1;
                 console.log(index);
                 var myKey=keyList[index];
+                //在这里增加时间比对的函数
                 var comments=myValue[myKey].comment;
                 var time=myValue[myKey].time;
                 console.log(time);
                 var tags=myValue[myKey].tag;
                 var important=myValue[myKey].important;
                 add_one_log_box(time,tags,important,comments);
+
             }
+            dataset=new Set(statistic_tag);
+            dataset_array=Array.from(dataset);
+            for(i=0;i<dataset_array.length;i++){
+                count.push(count_num(dataset_array[i],statistic_tag));}
         }
     });
 }
@@ -138,7 +147,7 @@ function add_one_log_box(time="",tags=[],important=false,com=""){
 //计算元素出现的次数
 function count_num(tag="",array=[]){
     var num=0;
-    for(vari=0; i<array.length;i++){
+    for(var i=0; i<array.length;i++){
         if(tag===array[i]){
             num+=1;
             array.splice(i,1);
@@ -148,7 +157,9 @@ function count_num(tag="",array=[]){
 }
 
 
-
+var dataset;
+var dataset_array;
+var count=[];
 var reviewbutton = document.getElementById("review_btn");
 reviewbutton.onclick=function(){
     selected_category=$("#category_select_menu option:selected").val();
@@ -164,7 +175,7 @@ reviewbutton.onclick=function(){
       "</div>\n" +
       "</div>";
 
-
+    
     var div2=document.createElement("div");
     div2.className="container";
     div2.innerHTML=
@@ -191,12 +202,6 @@ reviewbutton.onclick=function(){
 
 
   initialize();
-  var dataset=new Set(statistic_tag);
-  var dataset_array=Array.from(dataset);
-  var count=[];
-  for(var i=0;i<dataset_array.length;i++){
-    count.push(count_num(dataset_array[i],statistic_tag));
-  }
 
   var ctxP1 = document.getElementById("pieChart1").getContext('2d');
   var myPieChart1 = new Chart(ctxP1, {
@@ -235,21 +240,21 @@ reviewbutton.onclick=function(){
 
     switch(selected_category) {
       case 'eating': 
-        myPieChart1.data=eating_dict;
+
         myPieChart1.update();
-        myPieChart2.data=eating_amount_dict;
+
         myPieChart2.update();
         break;
 
       case 'sleeping':
-        myPieChart1.data=sleeping_dict;
+
         myPieChart1.update();
-        myPieChart2.data=sleeping_amount_dict;
+
         myPieChart2.update();
         break;
 
       case 'social':
-        myPieChart1.data=social_dict;
+
         myPieChart1.update();
         $(".pieChart2-container").remove();
         myPieChart2.reset();
@@ -258,7 +263,7 @@ reviewbutton.onclick=function(){
 
 
       case 'physical':
-        myPieChart1.data=physical_dict;
+
         myPieChart1.update();
         $(".pieChart2-container").remove();
         myPieChart2.reset();
@@ -266,21 +271,21 @@ reviewbutton.onclick=function(){
         break;
 
       case 'cognitive':
-        myPieChart1.data=cognitive_dict; 
+
         myPieChart1.update();
         $(".pieChart2-container").remove();
         myPieChart2.reset();
         break;
 
       case 'literacy':
-        myPieChart1.data=literacy_dict; 
+
         myPieChart1.update();
         $(".pieChart2-container").remove();
         myPieChart2.reset();
         break;
 
       case 'other':
-        myPieChart1.data=other_dict; 
+
         myPieChart1.update();
         $(".pieChart2-container").remove();
         myPieChart2.reset();

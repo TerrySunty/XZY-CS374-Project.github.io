@@ -53,11 +53,12 @@ eat_submit.onclick=function(){
             time:time,
             important:false
         });
-        $(".hideButton").hide();
+        $(eat_submit).hide();
+        $(eat_save).hide();
         //$(eat_submit).attr("disabled",true);
         $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
         $("p").addClass("styleConfirm");
-        $(".anotherButton").show();
+        $("#eat_another").show();
 };
 
 
@@ -65,16 +66,17 @@ sleep_submit.onclick=function(){
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/sleeping/').push();
         newKey.set({
             amount:$("input[name='sleepTime']:checked").next("label").text(),
-            tag: $(eatid).tagsinput("items"),
+            tag: $(sleepingid).tagsinput("items"),
             comment:"No comment this time...",
             time:time,
             important:false
         });
-        $(".hideButton").hide();
+        $(sleep_submit).hide();
+        $(sleep_save).hide();
         //$(eat_submit).attr("disabled",true);
         $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
         $("p").addClass("styleConfirm");
-        $(".anotherButton").show();
+        $("#sleep_another").show();
 };
 
 social_submit.onclick=function(){
@@ -86,7 +88,8 @@ social_submit.onclick=function(){
             important:false
 
         });
-        $(".hideButton").hide();
+        $(social_submit).hide();
+        $(social_save).hide();
         //$(eat_submit).attr("disabled",true);
         $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
         $("p").addClass("styleConfirm");
