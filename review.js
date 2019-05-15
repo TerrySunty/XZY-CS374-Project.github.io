@@ -46,13 +46,13 @@ function initialize(){
                         }
                     }
                     //后续函数
-                    read_log_inTime_range(selected_category)//第二个变量为 总共需要遍历的log数量
-
+                    read_log_inTime_range(selected_category);//第二个变量为 总共需要遍历的log数量
 
                 }
             });
         }
     });
+
 }
 
 
@@ -212,6 +212,7 @@ function read_log_inTime_range(category=""){
                 break;
 
         }
+        $(reviewbutton).attr("disabled",false);
 
     });
 }
@@ -280,6 +281,7 @@ function count_num(tag="",array=[]){
 
 var reviewbutton = document.getElementById("review_btn");
 reviewbutton.onclick=function(){
+    $(reviewbutton).attr("disabled",true);
     selected_category=$("#category_select_menu option:selected").val();
     document.getElementById("chart_place").innerHTML="";
     var chartBox=document.getElementById("chart_place");
