@@ -36,6 +36,7 @@ var time=date.toLocaleString( );
 
 $(".anotherButton").hide();
 
+
 makeAnotherLog.onclick=function(){
     $(".hideButton").show();
     $(".anotherButton").hide();
@@ -52,7 +53,6 @@ eat_submit.onclick=function(){
             time:time,
             important:false
         });
-        alert("You completed an eating log!");
         $(".hideButton").hide();
         //$(eat_submit).attr("disabled",true);
         $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
@@ -62,7 +62,6 @@ eat_submit.onclick=function(){
 
 
 sleep_submit.onclick=function(){
-    if (document.getElementById('sleeping_submit').textContent == 'Submit'){
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/sleeping/').push();
         newKey.set({
             amount:$("input[name='sleepTime']:checked").next("label").text(),
@@ -71,18 +70,14 @@ sleep_submit.onclick=function(){
             time:time,
             important:false
         });
-        alert("You submitted a eating log!");
-        document.getElementById('sleeping_submit').textContent = 'Submit another log';
-        document.getElementById('sleeping_submit').style.width = '180px';
-        //$(sleep_submit).attr("disabled",true);
-    } else {
-        document.getElementById('sleeping_submit').textContent = 'Submit';
-        document.getElementById('sleeping_submit').style.width = '100px';
-    }
+        $(".hideButton").hide();
+        //$(eat_submit).attr("disabled",true);
+        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
+        $("p").addClass("styleConfirm");
+        $(".anotherButton").show();
 };
 
 social_submit.onclick=function(){
-    if (document.getElementById('social_submit').textContent == 'Submit'){
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/social/').push();
         newKey.set({
             tag: $(socialid).tagsinput("items"),
@@ -91,18 +86,15 @@ social_submit.onclick=function(){
             important:false
 
         });
-        alert("You saved a social log!");
-        //$(social_save).attr("disabled",true);
-        document.getElementById('social_submit').textContent = 'Submit another log';
-        document.getElementById('social_submit').style.width = '180px';
-    } else {
-        document.getElementById('social_submit').textContent = 'Submit';
-        document.getElementById('social_submit').style.width = '100px';
-    }
+        $(".hideButton").hide();
+        //$(eat_submit).attr("disabled",true);
+        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
+        $("p").addClass("styleConfirm");
+        $(".anotherButton").show();
 };
 
 physical_submit.onclick=function(){
-    if (document.getElementById('physical_submit').textContent == 'Submit'){
+
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/physical/').push();
         newKey.set({
             tag: $(physicalid).tagsinput("items"),
@@ -111,18 +103,15 @@ physical_submit.onclick=function(){
             important:false
 
         });
-        alert("You saved a physical log!");
-        document.getElementById('physical_submit').textContent = 'Submit another log';
-        document.getElementById('physical_submit').style.width = '180px';
-        //$(physical_submit).attr("disabled",true);
-    } else {
-        document.getElementById('physical_submit').textContent = 'Submit';
-        document.getElementById('physical_submit').style.width = '100px';
-    }
+        $(".hideButton").hide();
+        //$(eat_submit).attr("disabled",true);
+        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
+        $("p").addClass("styleConfirm");
+        $(".anotherButton").show();
 };
 
 cognitive_submit.onclick=function(){
-    if (document.getElementById('cognitive_submit').textContent == 'Submit'){
+
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/cognitive/').push();
         newKey.set({
             tag: $(cognitiveid).tagsinput("items"),
@@ -131,18 +120,15 @@ cognitive_submit.onclick=function(){
             important:false
 
         });
-        alert("You saved a cognitive log!");
-        document.getElementById('cognitive_submit').textContent = 'Submit another log';
-        document.getElementById('cognitive_submit').style.width = '180px';
-        //$(cognitive_submit).attr("disabled",true);
-    } else {
-        document.getElementById('cognitive_submit').textContent = 'Submit';
-        document.getElementById('cognitive_submit').style.width = '100px';
-    }
+        $(".hideButton").hide();
+        //$(eat_submit).attr("disabled",true);
+        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
+        $("p").addClass("styleConfirm");
+        $(".anotherButton").show();
 };
 
 literacy_submit.onclick=function(){
-    if (document.getElementById('literacy_submit').textContent == 'Submit'){
+
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/literacy/').push();
         newKey.set({
             tag: $(literacyid).tagsinput("items"),
@@ -151,18 +137,14 @@ literacy_submit.onclick=function(){
             important:false
 
         });
-        alert("You saved a literacy log!");
-        document.getElementById('literacy_submit').textContent = 'Submit another log';
-        document.getElementById('literacy_submit').style.width = '180px';
-        //$(lieteracy_submit).attr("disabled",true);
-    } else {
-        document.getElementById('literacy_submit').textContent = 'Submit';
-        document.getElementById('literacy_submit').style.width = '100px';
-    }
+        $(".hideButton").hide();
+        //$(eat_submit).attr("disabled",true);
+        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
+        $("p").addClass("styleConfirm");
+        $(".anotherButton").show();
 };
 
 other_submit.onclick=function(){
-    if (document.getElementById('other_submit').textContent == 'Submit'){
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/logBox/other/').push();
         newKey.set({
             tag: $(otherid).tagsinput("items"),
@@ -170,14 +152,11 @@ other_submit.onclick=function(){
             time:time,
             important:false
         });
-        alert("You submit an other log!");
-        document.getElementById('other_submit').textContent = 'Submit another log';
-        document.getElementById('other_submit').style.width = '180px';
-        //$(other_submit).attr("disabled",true);
-    } else {
-        document.getElementById('other_submit').textContent = 'Submit';
-        document.getElementById('other_submit').style.width = '100px';
-    }
+        $(".hideButton").hide();
+        //$(eat_submit).attr("disabled",true);
+        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
+        $("p").addClass("styleConfirm");
+        $(".anotherButton").show();
 };
 
 
@@ -189,7 +168,6 @@ eat_save.onclick=function(){
             time:time
 
         });
-        alert("You saved an eating log!");
          $(".hideButton").hide();
         //$(eat_save).attr("disabled",true);
   $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( ".hideButton" );
@@ -199,7 +177,6 @@ eat_save.onclick=function(){
 };
 
 sleep_save.onclick=function(){
-    if (document.getElementById('sleeping_save').textContent == 'Save'){
         var newKey = firebase.database().ref('kidsBox/' + kid_key + '/incompleteBox/sleeping/').push();
         newKey.set({
             amount: $("input[name='sleepTime']:checked").next("label").text(),
@@ -207,102 +184,81 @@ sleep_save.onclick=function(){
             time: time
 
         });
-        document.getElementById('sleeping_save').textContent = 'Save another log';
-        document.getElementById('sleeping_save').style.width = '180px';
-        alert("You saved a sleeping log!");
-        //$(sleep_save).attr("disabled",true);
-    } else {
-        document.getElementById('sleeping_save').textContent = 'Save';
-        document.getElementById('sleeping_save').style.width = '100px';
-    }
+         $(".hideButton").hide();
+        //$(eat_save).attr("disabled",true);
+  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( ".hideButton" );
+        $("p").addClass("styleConfirm");
+        $(".anotherButton").show();
 };
 
 social_save.onclick=function(){
-    if (document.getElementById('social_save').textContent == 'Save'){
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/social/').push();
         newKey.set({
             tag: $(socialid).tagsinput("items"),
             time:time
 
         });
-        document.getElementById('social_save').textContent = 'Save another log';
-        document.getElementById('social_save').style.width = '180px';
-        alert("You saved a social log!");
-        //$(social_save).attr("disabled",true);
-    } else {
-        document.getElementById('social_save').textContent = 'Save';
-        document.getElementById('social_save').style.width = '100px';
-    }
+         $(".hideButton").hide();
+        //$(eat_save).attr("disabled",true);
+  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( ".hideButton" );
+        $("p").addClass("styleConfirm");
+        $(".anotherButton").show();
 };
 
 physical_save.onclick=function(){
-    if (document.getElementById('physical_save').textContent == 'Save'){
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/physical/').push();
         newKey.set({
             tag: $(physicalid).tagsinput("items"),
             time:time
 
         });
-        alert("You saved a physical log!");
-        document.getElementById('physical_save').textContent = 'Save another log';
-        document.getElementById('physical_save').style.width = '180px';
-        //$(physical_save).attr("disabled",true);
-    } else {
-        document.getElementById('physical_save').textContent = 'Save';
-        document.getElementById('physical_save').style.width = '100px';
-    }
+         $(".hideButton").hide();
+        //$(eat_save).attr("disabled",true);
+  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( ".hideButton" );
+        $("p").addClass("styleConfirm");
+        $(".anotherButton").show();
 };
 
 cognitive_save.onclick=function(){
-    if (document.getElementById('cognitive_save').textContent == 'Save'){
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/cognitive/').push();
         newKey.set({
             tag: $(cognitiveid).tagsinput("items"),
             time:time
 
         });
-        alert("You saved a cognitive log!");
-        document.getElementById('cognitive_save').textContent = 'Save another log';
-        document.getElementById('cognitive_save').style.width = '180px';
-        //$(cognitivg_save).attr("disabled",true);
-    } else {
-        document.getElementById('cognitive_save').textContent = 'Save';
-        document.getElementById('cognitive_save').style.width = '100px';
-    }
+         $(".hideButton").hide();
+        //$(eat_save).attr("disabled",true);
+  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( ".hideButton" );
+        $("p").addClass("styleConfirm");
+        $(".anotherButton").show();
 };
 
 literacy_save.onclick=function(){
-    if (document.getElementById('literacy_save').textContent == 'Save'){
+ 
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/literacy/').push();
         newKey.set({
             tag: $(literacyid).tagsinput("items"),
             time:time
         });
-        alert("You saved a literacy log!");
-        document.getElementById('literacy_save').textContent = 'Save another log';
-        document.getElementById('literacy_save').style.width = '180px';
-        //$(literacy_save).attr("disabled",true);
-    } else {
-        document.getElementById('literacy_save').textContent = 'Save';
-        document.getElementById('literacy_save').style.width = '100px';
-    }
+         $(".hideButton").hide();
+        //$(eat_save).attr("disabled",true);
+  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( ".hideButton" );
+        $("p").addClass("styleConfirm");
+        $(".anotherButton").show();
 };
 
 other_save.onclick=function(){
-    if (document.getElementById('other_save').textContent == 'Save'){
+
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/other/').push();
         newKey.set({
             tag: $(ohterid).tagsinput("items"),
             time:time
         });
-        alert("You saved an 'other' log!");
-        document.getElementById('other_save').textContent = 'Save another log';
-        document.getElementById('other_save').style.width = '180px';
-        //$(other_save).attr("disabled",true);
-    } else {
-        document.getElementById('other_save').textContent = 'Save';
-        document.getElementById('other_save').style.width = '100px';
-    }
+         $(".hideButton").hide();
+        //$(eat_save).attr("disabled",true);
+  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( ".hideButton" );
+        $("p").addClass("styleConfirm");
+        $(".anotherButton").show();
 };
 
 
