@@ -150,3 +150,20 @@ input[type=checkbox]:checked + label {
   text-align: center;
   color: gray;
 }
+
+.btnSubCat{
+  border-color: #cfe2f3 !important;
+  color:black !important;
+}
+
+.btnSubCat:hover{
+  background-color: #cfe2f3 !important;
+  color:black !important;
+  outline-color: #cfe2f3 !important;
+}
+
+.btnSubCat:active{
+  background-color: #cfe2f3 !important;
+  color:black !important;
+  outline-color: #cfe2f3 !important;
+}
