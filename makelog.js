@@ -101,7 +101,7 @@ eat_submit.onclick=function(){
         });
         $(eat_submit).hide();
         $(eat_save).hide();
-        //$(eat_submit).attr("disabled",true);
+        //
         $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
         $("p").addClass("styleConfirm");
         $("#eat_another").show();
@@ -329,6 +329,7 @@ other_save.onclick=function(){
 
 //get name's index, corresponding kid's key in firebase, load current tags in showBox
 function initialize(){
+
     firebase.database().ref('/name_index/').once('value', function(snapshot){
         var myValue = snapshot.val();
         if(myValue!==null){
@@ -360,6 +361,20 @@ function initialize(){
                 }
             });
         }
+        $(eat_save).attr("disabled",false);
+        $(eat_submit).attr("disabled",false);
+        $(sleep_save).attr("disabled",false);
+        $(sleep_submit).attr("disabled",false);
+        $(social_save).attr("disabled",false);
+        $(social_submit).attr("disabled",false);
+        $(physical_save).attr("disabled",false);
+        $(physical_submit).attr("disabled",false);
+        $(cognitive_save).attr("disabled",false);
+        $(cognitive_submit).attr("disabled",false);
+        $(literacy_save).attr("disabled",false);
+        $(literacy_submit).attr("disabled",false);
+        $(other_save).attr("disabled",false);
+        $(other_submit).attr("disabled",false);
     });
 
 
