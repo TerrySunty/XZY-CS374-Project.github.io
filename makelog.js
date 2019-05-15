@@ -29,17 +29,62 @@ var literacy_save=document.getElementById("literacy_save");
 var literacy_submit=document.getElementById("literacy_submit");
 var other_save=document.getElementById("other_save");
 var other_submit=document.getElementById("other_submit");
-var makeAnotherLog=document.getElementById("makeAnotherLog");
+
+var sleepAnotherLog=document.getElementById("sleep_another");
+var socialAnotherLog=document.getElementById("social_another");
+var cognitiveAnotherLog=document.getElementById("cognitive_another");
+var physicalAnotherLog=document.getElementById("physical_another");
+var otherAnotherLog=document.getElementById("other_another");
+var eatAnotherLog=document.getElementById("eat_another");
+var literacyAnotherLog=document.getElementById("literacy_another");
 
 var date=new Date();
 var time=date.toLocaleString( );
+var time_value=date.getTime();
 
 $(".anotherButton").hide();
 
 
-makeAnotherLog.onclick=function(){
-    $(".hideButton").show();
-    $(".anotherButton").hide();
+eatAnotherLog.onclick=function(){
+    $(eat_submit).show();
+    $(eat_save).show();
+    $(eatAnotherLog).hide();
+    $("p").hide();
+};
+sleepAnotherLog.onclick=function(){
+    $(sleep_submit).show();
+    $(sleep_save).show();
+    $(sleepAnotherLog).hide();
+    $("p").hide();
+};
+socialAnotherLog.onclick=function(){
+    $(social_submit).show();
+    $(social_save).show();
+    $(socialAnotherLog).hide();
+    $("p").hide();
+};
+cognitiveAnotherLog.onclick=function(){
+    $(cognitive_submit).show();
+    $(cognitive_save).show();
+    $(cognitiveAnotherLog).hide();
+    $("p").hide();
+};
+physicalAnotherLog.onclick=function(){
+    $(physical_submit).show();
+    $(physical_save).show();
+    $(physicalAnotherLog).hide();
+    $("p").hide();
+};
+literacyAnotherLog.onclick=function(){
+    $(literacy_submit).show();
+    $(literacy_save).show();
+    $(literacyAnotherLog).hide();
+    $("p").hide();
+};
+otherAnotherLog.onclick=function(){
+    $(other_submit).show();
+    $(other_save).show();
+    $(otherAnotherLog).hide();
     $("p").hide();
 };
 
@@ -51,14 +96,15 @@ eat_submit.onclick=function(){
             tag: $(eatid).tagsinput("items"),
             comment:"No comment this time...",
             time:time,
-            important:false
+            important:false,
+            timeV:time_value
         });
         $(eat_submit).hide();
         $(eat_save).hide();
         //$(eat_submit).attr("disabled",true);
         $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
         $("p").addClass("styleConfirm");
-        $("#eating_another").show();
+        $("#eat_another").show();
 };
 
 
@@ -69,14 +115,15 @@ sleep_submit.onclick=function(){
             tag: $(sleepingid).tagsinput("items"),
             comment:"No comment this time...",
             time:time,
-            important:false
+            important:false,
+            timeV:time_value
         });
         $(sleep_submit).hide();
         $(sleep_save).hide();
         //$(eat_submit).attr("disabled",true);
         $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
         $("p").addClass("styleConfirm");
-        $("#sleeping_another").show();
+        $("#sleep_another").show();
 };
 
 social_submit.onclick=function(){
@@ -85,7 +132,8 @@ social_submit.onclick=function(){
             tag: $(socialid).tagsinput("items"),
             comment:"No comment this time...",
             time:time,
-            important:false
+            important:false,
+            timeV:time_value
         });
         $(social_submit).hide();
         $(social_save).hide();
@@ -102,7 +150,8 @@ physical_submit.onclick=function(){
             tag: $(physicalid).tagsinput("items"),
             comment:"No comment this time...",
             time:time,
-            important:false
+            important:false,
+            timeV:time_value
 
         });
         $(physical_submit).hide();
@@ -120,7 +169,8 @@ cognitive_submit.onclick=function(){
             tag: $(cognitiveid).tagsinput("items"),
             comment:"No comment this time...",
             time:time,
-            important:false
+            important:false,
+            timeV:time_value
 
         });
         $(cognitive_submit).hide();
@@ -138,7 +188,8 @@ literacy_submit.onclick=function(){
             tag: $(literacyid).tagsinput("items"),
             comment:"No comment this time...",
             time:time,
-            important:false
+            important:false,
+            timeV:time_value
 
         });
         $(literacy_submit).hide();
@@ -155,7 +206,8 @@ other_submit.onclick=function(){
             tag: $(otherid).tagsinput("items"),
             comment:"No comment this time...",
             time:time,
-            important:false
+            important:false,
+            timeV:time_value
         });
         $(other_submit).hide();
         $(other_save).hide();
@@ -171,7 +223,8 @@ eat_save.onclick=function(){
         newKey.set({
             amount:$("input[name='eatAmount']:checked").next("label").text(),
             tag: $(eatid).tagsinput("items"),
-            time:time
+            time:time,
+            timeV:time_value
 
         });
          $(".hideButton").hide();
@@ -187,7 +240,8 @@ sleep_save.onclick=function(){
         newKey.set({
             amount: $("input[name='sleepTime']:checked").next("label").text(),
             tag: $(sleepingid).tagsinput("items"),
-            time: time
+            time: time,
+            timeV:time_value
 
         });
          $(".hideButton").hide();
@@ -201,7 +255,8 @@ social_save.onclick=function(){
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/social/').push();
         newKey.set({
             tag: $(socialid).tagsinput("items"),
-            time:time
+            time:time,
+            timeV:time_value
 
         });
          $(".hideButton").hide();
@@ -215,7 +270,8 @@ physical_save.onclick=function(){
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/physical/').push();
         newKey.set({
             tag: $(physicalid).tagsinput("items"),
-            time:time
+            time:time,
+            timeV:time_value
 
         });
          $(".hideButton").hide();
@@ -229,7 +285,8 @@ cognitive_save.onclick=function(){
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/cognitive/').push();
         newKey.set({
             tag: $(cognitiveid).tagsinput("items"),
-            time:time
+            time:time,
+            timeV:time_value
 
         });
          $(".hideButton").hide();
@@ -244,7 +301,8 @@ literacy_save.onclick=function(){
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/literacy/').push();
         newKey.set({
             tag: $(literacyid).tagsinput("items"),
-            time:time
+            time:time,
+            timeV:time_value
         });
          $(".hideButton").hide();
         //$(eat_save).attr("disabled",true);
@@ -258,7 +316,8 @@ other_save.onclick=function(){
         var newKey = firebase.database().ref('kidsBox/'+kid_key+'/incompleteBox/other/').push();
         newKey.set({
             tag: $(ohterid).tagsinput("items"),
-            time:time
+            time:time,
+            timeV:time_value
         });
          $(".hideButton").hide();
         //$(eat_save).attr("disabled",true);

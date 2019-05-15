@@ -191,6 +191,8 @@ var submit=document.getElementById("submit");
 var important=false;
 var date=new Date();
 var current_time=date.toLocaleString( );
+var time_value=date.getTime();
+
 var check_important=document.getElementsByName('important');
 
 $("input[name='important']").click(function(){
@@ -207,7 +209,8 @@ save.onclick=function(){
         tag:$("#selected_tags").tagsinput("items"),
         amount:document.getElementById("amount").innerHTML,
         time:time,
-        comment:document.getElementById("comments").innerHTML
+        comment:document.getElementById("comments").innerHTML,
+        timeV:time_value
     });
     alert("You have success fully saved this log!");
 };
@@ -221,7 +224,8 @@ submit.onclick=function(){
         amount:document.getElementById("amount").innerHTML,
         time:current_time,
         comment:comments,
-        important:important
+        important:important,
+        timeV:time_value
     });
     firebase.database().ref('/kidsBox/'+kid+"/incompleteBox/"+chosen_category+"/"+log_key+"/").remove();
     alert("You have submitted this log successfully!");

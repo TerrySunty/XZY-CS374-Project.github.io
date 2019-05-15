@@ -13,6 +13,14 @@ firebase.initializeApp(config);//initialize firebase
  var name_idx;
  var kid_key;
 
+
+
+
+
+
+
+
+
  //initialize 在click reveiw之后执行
 function initialize(){
     firebase.database().ref('/name_index/').once('value', function(snapshot){
@@ -62,18 +70,19 @@ $("input[name='customRadioInline1']").click(function(){
 
 
 });
-
-
-
+var today=new Date();
+function get_end_Time(days_num) {
+    return today - 60 * 60 * 1000 * 24 * days_num;
+}
 
 var statistic_tag=[];
 var amount_statistic=[];
 var dataset;
-var dataset_array;
+var dataset_array;//获取到的所有tag的数组，无重复，到时候用在label
 var amount_set;
-var amountset_array;
-var amount_count=[];
-var count=[];
+var amountset_array;//获取到的所有amount，无重复，label
+var amount_count=[];//amount的出现次数
+var count=[];//每个tag出现的次数，位置对应array的index
 function read_log_inTime_range(category=""){
     firebase.database().ref('/kidsBox/'+kid_key+'/logBox/'+category+"/").once('value', function(snapshot){
         var myValue = snapshot.val();
@@ -85,8 +94,9 @@ function read_log_inTime_range(category=""){
                 console.log(index);
                 var myKey=keyList[index];
                 //在这里增加时间比对的函数
-                var comments=myValue[myKey].comment;
                 var time=myValue[myKey].time;
+                var comments=myValue[myKey].comment;
+
                 console.log(time);
                 var tags=myValue[myKey].tag;
                 var important=myValue[myKey].important;
