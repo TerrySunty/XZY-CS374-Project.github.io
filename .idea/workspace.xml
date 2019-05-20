@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51025cd2-c32e-4a84-8b69-e4834123e79f" name="Default Changelist" comment="">
+    <list default="true" id="8763cc83-06ca-4433-b725-d53c87772fc0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Make Log.html" beforeDir="false" afterPath="$PROJECT_DIR$/Make Log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/makelog.js" beforeDir="false" afterPath="$PROJECT_DIR$/makelog.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,28 +18,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Review Past Data.html">
+        <entry file="file://$PROJECT_DIR$/review.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="64" column="93" lean-forward="true" selection-start-line="64" selection-start-column="93" selection-end-line="64" selection-end-column="93" />
+            <state relative-caret-position="2600">
+              <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/review.js">
+        <entry file="file://$PROJECT_DIR$/makelog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="101" column="52" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homeCSS.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="146" selection-start-line="146" selection-end-line="146" />
+            <state relative-caret-position="156">
+              <caret line="321" selection-start-line="321" selection-end-line="321" />
+              <folding>
+                <element signature="e#34#291#0" />
+                <element signature="e#348#376#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,64 +42,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Make Log.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-917">
-              <caret line="133" column="127" selection-start-line="133" selection-start-column="127" selection-end-line="133" selection-end-column="127" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="3300">
+              <caret line="132" column="81" selection-start-line="132" selection-start-column="81" selection-end-line="132" selection-end-column="95" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/makelog.js">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-897">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="e#1459#1542#0" />
-                <element signature="e#1997#2080#0" />
-                <element signature="e#2114#2197#0" />
-                <element signature="e#2231#2314#0" />
-                <element signature="e#2469#2552#0" />
-                <element signature="e#2465#2548#0" />
-                <element signature="e#2582#2665#0" />
-                <element signature="e#1591#2267#0" />
-                <element signature="e#2302#2990#0" />
-                <element signature="e#3025#3631#0" />
-                <element signature="e#3668#4286#0" />
-                <element signature="e#4324#4947#0" />
-                <element signature="e#4984#5602#0" />
-                <element signature="e#5636#6237#0" />
-                <element signature="e#5801#6343#0" />
-                <element signature="e#6375#6929#0" />
-                <element signature="e#6962#7428#0" />
-                <element signature="e#7463#7933#0" />
-                <element signature="e#7969#8441#0" />
-                <element signature="e#8476#8947#0" />
-                <element signature="e#8979#9443#0" />
-                <element signature="e#9554#11000#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/complete.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="19" column="83" lean-forward="true" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
-              <folding>
-                <element signature="e#34#291#0" />
-                <element signature="n#!!block;n#add_history#0" />
-                <element signature="e#7#13#0" expanded="true" />
-                <element signature="e#12#18#0" expanded="true" />
-                <element signature="e#11#17#0" expanded="true" />
-                <element signature="n#!!block;n#read_tag#0" />
-                <element signature="n#!!block;n#bind_tag_write_delete#0" />
-              </folding>
+            <state relative-caret-position="4050">
+              <caret line="162" column="49" selection-start-line="162" selection-start-column="49" selection-end-line="162" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -121,8 +70,15 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>inpBox</find>
+      <find>ul</find>
+      <find>jquery</find>
+      <find>save</find>
+      <find>read_tag</find>
+      <find>eat</find>
       <find>tags</find>
       <find>fadeIn</find>
+      <find>disable</find>
       <find>radio</find>
       <find>BEN</find>
       <find>// Ignore items allready added</find>
@@ -135,22 +91,15 @@
       <find>tag</find>
       <find>show</find>
       <find>remove</find>
-      <find>firebase</find>
-      <find>pie</find>
-      <find>amount</find>
-      <find>make an</find>
-      <find>selected_category</find>
       <find>time</find>
-      <find>make_another</find>
-      <find>makeAnother</find>
-      <find>another</find>
-      <find>category_select_menu</find>
-      <find>disable</find>
-      <find>submit</find>
-      <find>usual</find>
-      <find>eating_another</find>
-      <find>dataset</find>
+      <find>firebase</find>
+      <find>selected_category</find>
+      <find>pie</find>
       <find>initialize</find>
+      <find>amount</find>
+      <find>sleeping_another</find>
+      <find>hid</find>
+      <find>another</find>
     </findStrings>
     <replaceStrings>
       <replace>type=&quot;button&quot;</replace>
@@ -173,6 +122,7 @@
         <option value="$PROJECT_DIR$/makelog.css" />
         <option value="$PROJECT_DIR$/eating.html" />
         <option value="$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.css" />
+        <option value="$PROJECT_DIR$/homeCSS.css" />
         <option value="$PROJECT_DIR$/addNewKid.html" />
         <option value="$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/node_modules/Variable_Storage.js" />
@@ -188,27 +138,24 @@
         <option value="$PROJECT_DIR$/incomplete.js" />
         <option value="$PROJECT_DIR$/sleeping.html" />
         <option value="$PROJECT_DIR$/Complete Log.html" />
-        <option value="$PROJECT_DIR$/Review Past Data.html" />
-        <option value="$PROJECT_DIR$/homeCSS.css" />
         <option value="$PROJECT_DIR$/complete.js" />
-        <option value="$PROJECT_DIR$/makelog.js" />
-        <option value="$PROJECT_DIR$/Make Log.html" />
+        <option value="$PROJECT_DIR$/Review Past Data.html" />
         <option value="$PROJECT_DIR$/review.js" />
+        <option value="$PROJECT_DIR$/Make Log.html" />
+        <option value="$PROJECT_DIR$/makelog.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="25" />
-    <option name="y" value="23" />
-    <option name="width" value="1287" />
-    <option name="height" value="816" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="945" />
+    <option name="width" value="980" />
+    <option name="height" value="1035" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,6 +167,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,7 +197,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="51025cd2-c32e-4a84-8b69-e4834123e79f" name="Default Changelist" comment="" />
+      <changelist id="8763cc83-06ca-4433-b725-d53c87772fc0" name="Default Changelist" comment="" />
       <created>1556357900071</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -269,8 +217,9 @@
       <workItem from="1557672490978" duration="6372000" />
       <workItem from="1557829946109" duration="2915000" />
       <workItem from="1557850167319" duration="1710000" />
-      <workItem from="1557885990156" duration="3359000" />
-      <workItem from="1557901764630" duration="10727000" />
+      <workItem from="1557885990156" duration="3369000" />
+      <workItem from="1557935690417" duration="3100000" />
+      <workItem from="1557973242699" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="add link">
       <created>1556358901517</created>
@@ -427,67 +376,24 @@
       <updated>1557681125566</updated>
     </task>
     <task id="LOCAL-00023" summary="update">
-      <created>1557905636744</created>
+      <created>1557890858606</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1557905636744</updated>
+      <updated>1557890858606</updated>
     </task>
-    <task id="LOCAL-00024" summary="update">
-      <created>1557907889281</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1557907889281</updated>
-    </task>
-    <task id="LOCAL-00025" summary="update">
-      <created>1557911278182</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1557911278182</updated>
-    </task>
-    <task id="LOCAL-00026" summary="update">
-      <created>1557911851165</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1557911851165</updated>
-    </task>
-    <task id="LOCAL-00027" summary="update">
-      <created>1557912060414</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1557912060414</updated>
-    </task>
-    <task id="LOCAL-00028" summary="update">
-      <created>1557913762762</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1557913762762</updated>
-    </task>
-    <task id="LOCAL-00029" summary="update">
-      <created>1557913962919</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1557913962919</updated>
-    </task>
-    <option name="localTasksCounter" value="30" />
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196829000" />
+    <option name="totallyTimeSpent" value="187887000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="814" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.10500352" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.15587847" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -496,10 +402,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32825485" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -554,11 +460,18 @@
     </entry>
     <entry file="file://$USER_HOME$/Dropbox (Personal)/University/KAIST/CS374 Intro to Human-Computer Interface/Programming/Programming 3/capital_game.js" />
     <entry file="file://$USER_HOME$/Dropbox (Personal)/University/KAIST/CS374 Intro to Human-Computer Interface/Programming/Programming 3/index.html" />
-    <entry file="file://$PROJECT_DIR$/../345021434-Mechanics-of-Materials-7th-Edition-Beer-Johnson-Chapter-7.pdf _ Stress (Mechanics) _ Solid Mechanics_files/saved_resource(1).html" />
+    <entry file="file://$USER_HOME$/Desktop/345021434-Mechanics-of-Materials-7th-Edition-Beer-Johnson-Chapter-7.pdf _ Stress (Mechanics) _ Solid Mechanics_files/saved_resource(1).html" />
     <entry file="file://$PROJECT_DIR$/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2492">
           <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeCSS.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -586,7 +499,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../mypr-hci.github.io/index.html" />
+    <entry file="file://$PROJECT_DIR$/../mypr-hci.github.io/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-600" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jquery-ui-1.12.1/external/jquery/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -610,9 +527,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/completelog.html" />
-    <entry file="file://$PROJECT_DIR$/template.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/template.html" />
     <entry file="file://$PROJECT_DIR$/Incomplete Log List.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -628,7 +543,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sleeping.html" />
-    <entry file="file://$PROJECT_DIR$/../mypr-hci.github.io/capital_game.js" />
+    <entry file="file://$PROJECT_DIR$/../mypr-hci.github.io/capital_game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="156" column="27" lean-forward="true" selection-start-line="156" selection-start-column="27" selection-end-line="156" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/create.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1265">
@@ -636,8 +557,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Review Past Data_pre.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Review Past Data_pre.html" />
+    <entry file="file://$PROJECT_DIR$/Review Past Data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HomePage.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -645,6 +575,22 @@
           <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
           <folding>
             <element signature="n#!!block;n#readFromDatabase#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/complete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="227" column="46" lean-forward="true" selection-start-line="227" selection-start-column="46" selection-end-line="227" selection-end-column="46" />
+          <folding>
+            <element signature="e#34#291#0" />
+            <element signature="n#!!block;n#add_history#0" />
+            <element signature="e#7#13#0" expanded="true" />
+            <element signature="e#12#18#0" expanded="true" />
+            <element signature="e#11#17#0" expanded="true" />
+            <element signature="n#!!block;n#read_tag#0" />
+            <element signature="n#!!block;n#bind_tag_write_delete#0" />
           </folding>
         </state>
       </provider>
@@ -679,6 +625,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/review.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2600">
+          <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Make Log.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3300">
+          <caret line="132" column="81" selection-start-line="132" selection-start-column="81" selection-end-line="132" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4050">
@@ -686,83 +646,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Review Past Data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="64" column="93" lean-forward="true" selection-start-line="64" selection-start-column="93" selection-end-line="64" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homeCSS.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="146" selection-start-line="146" selection-end-line="146" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complete.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="19" column="83" lean-forward="true" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
-          <folding>
-            <element signature="e#34#291#0" />
-            <element signature="n#!!block;n#add_history#0" />
-            <element signature="e#7#13#0" expanded="true" />
-            <element signature="e#12#18#0" expanded="true" />
-            <element signature="e#11#17#0" expanded="true" />
-            <element signature="n#!!block;n#read_tag#0" />
-            <element signature="n#!!block;n#bind_tag_write_delete#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Make Log.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-917">
-          <caret line="133" column="127" selection-start-line="133" selection-start-column="127" selection-end-line="133" selection-end-column="127" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/makelog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-897">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="156">
+          <caret line="321" selection-start-line="321" selection-end-line="321" />
           <folding>
-            <element signature="e#1459#1542#0" />
-            <element signature="e#1997#2080#0" />
-            <element signature="e#2114#2197#0" />
-            <element signature="e#2231#2314#0" />
-            <element signature="e#2469#2552#0" />
-            <element signature="e#2465#2548#0" />
-            <element signature="e#2582#2665#0" />
-            <element signature="e#1591#2267#0" />
-            <element signature="e#2302#2990#0" />
-            <element signature="e#3025#3631#0" />
-            <element signature="e#3668#4286#0" />
-            <element signature="e#4324#4947#0" />
-            <element signature="e#4984#5602#0" />
-            <element signature="e#5636#6237#0" />
-            <element signature="e#5801#6343#0" />
-            <element signature="e#6375#6929#0" />
-            <element signature="e#6962#7428#0" />
-            <element signature="e#7463#7933#0" />
-            <element signature="e#7969#8441#0" />
-            <element signature="e#8476#8947#0" />
-            <element signature="e#8979#9443#0" />
-            <element signature="e#9554#11000#0" />
+            <element signature="e#34#291#0" />
+            <element signature="e#348#376#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/review.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="101" column="52" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
         </state>
       </provider>
     </entry>
