@@ -53,35 +53,35 @@ eatAnotherLog.onclick=function(){
 sleepAnotherLog.onclick=function(){
 
     $("#hid_sleeping").show();
-    $(sleepAnotherLog).hide();
+    $("#sleeping_another").hide();
     $("p").hide();
 };
 socialAnotherLog.onclick=function(){
     $("#hid_social").show();
-    $(socialAnotherLog).hide();
+    $("#social_another").hide();
     $("p").hide();
 };
 cognitiveAnotherLog.onclick=function(){
     $("#hid_cognitive").show();
-    $(cognitiveAnotherLog).hide();
+    $("#cognitive_another").hide();
     $("p").hide();
 };
 physicalAnotherLog.onclick=function(){
 
     $("#hid_physical").show();
-    $(physicalAnotherLog).hide();
+    $("#physical_another").hide();
     $("p").hide();
 };
 literacyAnotherLog.onclick=function(){
 
     $("#hid_literacy").show();
-    $(literacyAnotherLog).hide();
+    $("#literacy_another").hide();
     $("p").hide();
 };
 otherAnotherLog.onclick=function(){
 
     $("#hid_other").show();
-    $(otherAnotherLog).hide();
+    $("#other_another").hide();
     $("p").hide();
 };
 
