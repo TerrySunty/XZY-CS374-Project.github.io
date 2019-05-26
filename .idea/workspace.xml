@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8763cc83-06ca-4433-b725-d53c87772fc0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/review.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/review.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
+            <state relative-caret-position="266">
+              <caret line="146" column="47" lean-forward="true" selection-start-line="146" selection-start-column="47" selection-end-line="146" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -28,7 +27,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makelog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2800">
+            <state relative-caret-position="358">
               <caret line="121" column="2" selection-start-line="121" selection-start-column="2" selection-end-line="121" selection-end-column="2" />
               <folding>
                 <element signature="e#34#291#0" />
@@ -41,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Make Log.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4650">
+            <state relative-caret-position="583">
               <caret line="186" selection-start-line="186" selection-end-line="186" />
             </state>
           </provider>
@@ -50,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4050">
-              <caret line="162" column="49" selection-start-line="162" selection-start-column="49" selection-end-line="162" selection-end-column="49" />
+            <state relative-caret-position="481">
+              <caret line="151" column="30" lean-forward="true" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -220,7 +219,7 @@
       <workItem from="1557935690417" duration="3100000" />
       <workItem from="1557973242699" duration="599000" />
       <workItem from="1558793946485" duration="1717000" />
-      <workItem from="1558846261266" duration="2087000" />
+      <workItem from="1558846261266" duration="2341000" />
     </task>
     <task id="LOCAL-00001" summary="add link">
       <created>1556358901517</created>
@@ -390,11 +389,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558794910564</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="update">
+      <created>1558849445674</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1558849445674</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191691000" />
+    <option name="totallyTimeSpent" value="191945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -402,7 +408,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.15587847" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.15587847" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -414,7 +420,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -634,16 +640,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/review.js">
+    <entry file="file://$PROJECT_DIR$/Make Log.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
+        <state relative-caret-position="583">
+          <caret line="186" selection-start-line="186" selection-end-line="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="151" column="30" lean-forward="true" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/makelog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2800">
+        <state relative-caret-position="358">
           <caret line="121" column="2" selection-start-line="121" selection-start-column="2" selection-end-line="121" selection-end-column="2" />
           <folding>
             <element signature="e#34#291#0" />
@@ -652,17 +665,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Make Log.html">
+    <entry file="file://$PROJECT_DIR$/review.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4650">
-          <caret line="186" selection-start-line="186" selection-end-line="186" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4050">
-          <caret line="162" column="49" selection-start-line="162" selection-start-column="49" selection-end-line="162" selection-end-column="49" />
+        <state relative-caret-position="266">
+          <caret line="146" column="47" lean-forward="true" selection-start-line="146" selection-start-column="47" selection-end-line="146" selection-end-column="47" />
         </state>
       </provider>
     </entry>

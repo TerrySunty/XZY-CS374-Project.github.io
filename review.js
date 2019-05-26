@@ -143,8 +143,8 @@ function read_log_inTime_range(category=""){
                 dataset_array[minindex]=temp_data;
             }
             if(dataset_array.length>=5){
-                var new_data_set=dataset_array.slice(0,5);
-                var new_count=count.slice(0,5);
+                dataset_array=dataset_array.slice(0,5);
+                count=count.slice(0,5);
             }
 
         }
@@ -154,9 +154,9 @@ function read_log_inTime_range(category=""){
         var myPieChart1 = new Chart(ctxP1, {
             type: 'pie',
             data: {
-                labels: new_data_set,
+                labels: dataset_array,
                 datasets: [{
-                    data: new_count,
+                    data: count,
                     backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
                     // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
                 }]
