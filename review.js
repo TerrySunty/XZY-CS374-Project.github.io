@@ -127,14 +127,36 @@ function read_log_inTime_range(category=""){
             dataset_array=Array.from(dataset);
             for(i=0;i<dataset_array.length;i++){
                 count.push(count_num(dataset_array[i],statistic_tag));}
+            var minindex,temp_count,temp_data;
+            for(i=0;i<count.length-1;i++){
+                minindex=i;
+                for(var j=i+1;j<count.length;j++){
+                    if(count[j]<count[minindex]){
+                        minindex=j;
+                    }
+                }
+                temp_count=count[i];
+                temp_data=dataset_array[i];
+                count[i]=count[minindex];
+                dataset_array[i]=dataset_array[minindex];
+                count[minindex]=temp_count;
+                dataset_array[minindex]=temp_data;
+            }
+            if(dataset_array.length>=5){
+                var new_data_set=dataset_array.slice(0,5);
+                var new_count=count.slice(0,5);
+            }
+
         }
+
         var ctxP1 = document.getElementById("pieChart1").getContext('2d');
+
         var myPieChart1 = new Chart(ctxP1, {
             type: 'pie',
             data: {
-                labels: dataset_array,
+                labels: new_data_set,
                 datasets: [{
-                    data: count,
+                    data: new_count,
                     backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#ADD8E6"],
                     // hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
                 }]
