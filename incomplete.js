@@ -74,13 +74,13 @@ function add_one_incomplete_box(head="",time="",tags=[],key=""){
 
     var h4=document.createElement("h4");
     switch (head){
-        case "EATING": h4.innerHTML="<i class=\"fas fa-utensils\"></i>"+head;break;
-        case "SLEEPING":h4.innerHTML="<i class=\"fas fa-bed\"></i>"+head;break;
-        case "SOCIAL":  h4.innerHTML="<i class=\"fas fa-user-friends\"></i>"+head;break;
-        case "PHYSICAL":h4.innerHTML="<i class=\"fas fa-walking\"></i>"+head;break;
-        case "COGNITIVE":h4.innerHTML="<i class=\"fas fa-brain\"></i>"+head;break;
-        case "LITERACY":h4.innerHTML="<i class=\"fas fa-comment\"></i>"+head;break;
-        case "OTHER":   h4.innerHTML="<i class=\"fas fa-ellipsis-h\"></i>"+head;break;
+        case "EATING": h4.innerHTML="<i class=\"fas fa-utensils\"></i>"+" Eating";break;
+        case "SLEEPING":h4.innerHTML="<i class=\"fas fa-bed\"></i>"+" Sleeping";break;
+        case "SOCIAL":  h4.innerHTML="<i class=\"fas fa-user-friends\"></i>"+" Social";break;
+        case "PHYSICAL":h4.innerHTML="<i class=\"fas fa-walking\"></i>"+" Physical";break;
+        case "COGNITIVE":h4.innerHTML="<i class=\"fas fa-brain\"></i>"+" Cognitive";break;
+        case "LITERACY":h4.innerHTML="<i class=\"fas fa-comment\"></i>"+" Literacy";break;
+        case "OTHER":   h4.innerHTML="<i class=\"fas fa-ellipsis-h\"></i>"+" Other";break;
     }
 
     var small=document.createElement("small");
@@ -96,7 +96,7 @@ function add_one_incomplete_box(head="",time="",tags=[],key=""){
     }
     var link=document.createElement('a');
     link.href="#";
-    link.className="btn btn-primary";
+    link.className="btn btn-outline-dark";
     link.innerHTML="Complete it!";
     $(link).on("click",function(){
         setTimeout(function(){
