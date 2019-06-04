@@ -44,10 +44,9 @@ function htmladd(kidname,path){// add a new kid box, use data fetched from fireb
     var link=document.createElement('a');
     link.href="#";
     $(link).on("click",function(){
-        var name=this.innerHTML;
         setTimeout(function(){
             firebase.database().ref('/name_index/').set({
-                name_index:name
+                name_index:kidname
             });
             window.location="task choosing.html";
         },300);
