@@ -74,7 +74,7 @@ function htmladd(kidname,path){// add a new kid box, use data fetched from fireb
     div3.appendChild(div4);
     div2.appendChild(img);
     div2.appendChild(div3);
-    link.append(div2);
+    link.appendChild(div2);
     div1.appendChild(link);
     return div1
 
