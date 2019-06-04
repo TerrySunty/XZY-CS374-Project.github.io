@@ -43,7 +43,7 @@ function htmladd(kidname,path){// add a new kid box, use data fetched from fireb
 
     var link=document.createElement('a');
     link.href="#";
-    $(link).on("click","p",function(){
+    $(link).on("click",function(){
         var name=this.innerHTML;
         setTimeout(function(){
             firebase.database().ref('/name_index/').set({
