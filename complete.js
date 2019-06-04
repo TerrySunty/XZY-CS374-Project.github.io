@@ -205,7 +205,7 @@ $("input[name='important']").click(function(){
 });
 
 save.onclick=function(){
-    firebase.database().ref('/kidsBox/'+kid+"/incompleteBox/"+category+"/"+log_key+"/").set({
+    firebase.database().ref('/kidsBox/'+kid+"/incompleteBox/"+chosen_category+"/"+log_key+"/").set({
         tag:$("#selected_tags").tagsinput("items"),
         amount:document.getElementById("amount").innerHTML,
         time:time,

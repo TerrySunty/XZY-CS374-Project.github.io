@@ -21,14 +21,14 @@ Team XZY
 4. incomplete.js (backend for "Incomplete Log List.html", down load all incompleted logs information form firebase, and load them into html document, they will be sorted by category and log's submitted time)
 5. complete.js (backend for "Complete Log.html. Download the log that user chose to complete and latest three completed log as reference for user to finish completing the log. It will also save data in firebase user submitted after complete the log.)
 6. review.js ( Download logs in chosen time range, and do statistics to make a pie-chart that can directly shows a summary information for the user)
-7. Chart.js (Library for using google chart to make a pie chart)
+7. Chart.js (Library for using chart.js to make a pie chart)
 ---
 
 ## Implementation tool/Library we used:
 1. jQuery
 2. Bootstrap
 3. Bootstrap-tags-input
-4. Google Chart
+4. Chart.js
 ---
 
 LogKids @Team XZY - for childcare teachers to make instant log about kids under their care and review past data in a meaningful way

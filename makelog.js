@@ -30,13 +30,13 @@ var literacy_submit=document.getElementById("literacy_submit");
 var other_save=document.getElementById("other_save");
 var other_submit=document.getElementById("other_submit");
 
-var sleepAnotherLog=document.getElementById("sleeping_another");
-var socialAnotherLog=document.getElementById("social_another");
-var cognitiveAnotherLog=document.getElementById("cognitive_another");
-var physicalAnotherLog=document.getElementById("physical_another");
-var otherAnotherLog=document.getElementById("other_another");
-var eatAnotherLog=document.getElementById("eating_another");
-var literacyAnotherLog=document.getElementById("literacy_another");
+var sleepAnotherLog=document.getElementById("sleeping_ano");
+var socialAnotherLog=document.getElementById("social_ano");
+var cognitiveAnotherLog=document.getElementById("cognitive_ano");
+var physicalAnotherLog=document.getElementById("physical_ano");
+var otherAnotherLog=document.getElementById("other_ano");
+var eatAnotherLog=document.getElementById("eating_ano");
+var literacyAnotherLog=document.getElementById("literacy_ano");
 
 var date=new Date();
 var time=date.toLocaleString( );
@@ -46,45 +46,42 @@ $(".anotherButton").hide();
 
 
 eatAnotherLog.onclick=function(){
-    $(eat_submit).show();
-    $(eat_save).show();
-    $(eatAnotherLog).hide();
+    $("#hid_eating").show();
+    $("#eating_another").hide();
     $("p").hide();
 };
 sleepAnotherLog.onclick=function(){
-    $(sleep_submit).show();
-    $(sleep_save).show();
-    $(sleepAnotherLog).hide();
+
+    $("#hid_sleeping").show();
+    $("#sleeping_another").hide();
     $("p").hide();
 };
 socialAnotherLog.onclick=function(){
-    $(social_submit).show();
-    $(social_save).show();
-    $(socialAnotherLog).hide();
+    $("#hid_social").show();
+    $("#social_another").hide();
     $("p").hide();
 };
 cognitiveAnotherLog.onclick=function(){
-    $(cognitive_submit).show();
-    $(cognitive_save).show();
-    $(cognitiveAnotherLog).hide();
+    $("#hid_cognitive").show();
+    $("#cognitive_another").hide();
     $("p").hide();
 };
 physicalAnotherLog.onclick=function(){
-    $(physical_submit).show();
-    $(physical_save).show();
-    $(physicalAnotherLog).hide();
+
+    $("#hid_physical").show();
+    $("#physical_another").hide();
     $("p").hide();
 };
 literacyAnotherLog.onclick=function(){
-    $(literacy_submit).show();
-    $(literacy_save).show();
-    $(literacyAnotherLog).hide();
+
+    $("#hid_literacy").show();
+    $("#literacy_another").hide();
     $("p").hide();
 };
 otherAnotherLog.onclick=function(){
-    $(other_submit).show();
-    $(other_save).show();
-    $(otherAnotherLog).hide();
+
+    $("#hid_other").show();
+    $("#other_another").hide();
     $("p").hide();
 };
 
@@ -99,12 +96,11 @@ eat_submit.onclick=function(){
             important:false,
             timeV:time_value
         });
-        $(eat_submit).hide();
-        $(eat_save).hide();
-        //
-        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
+
+        $("#hid_eating").hide();
+        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( "#hid_eating" );
         $("p").addClass("styleConfirm");
-        $("#eat_another").show();
+        $("#eating_another").show();
 };
 
 
@@ -118,12 +114,11 @@ sleep_submit.onclick=function(){
             important:false,
             timeV:time_value
         });
-        $(sleep_submit).hide();
-        $(sleep_save).hide();
+        $("#hid_sleeping").hide();
         //$(eat_submit).attr("disabled",true);
-        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
+        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( "#hid_sleeping" );
         $("p").addClass("styleConfirm");
-        $("#sleep_another").show();
+        $("#sleeping_another").show();
 };
 
 social_submit.onclick=function(){
@@ -135,10 +130,9 @@ social_submit.onclick=function(){
             important:false,
             timeV:time_value
         });
-        $(social_submit).hide();
-        $(social_save).hide();
+        $("#hid_social").hide();
         //$(eat_submit).attr("disabled",true);
-        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
+        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter("#hid_social");
         $("p").addClass("styleConfirm");
         $("#social_another").show();
 };
@@ -154,10 +148,10 @@ physical_submit.onclick=function(){
             timeV:time_value
 
         });
-        $(physical_submit).hide();
-        $(physical_save).hide();
+
+        $("#hid_physical").hide();
         //$(eat_submit).attr("disabled",true);
-        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
+        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( "#hid_physical" );
         $("p").addClass("styleConfirm");
         $("#physical_another").show();
 };
@@ -173,10 +167,10 @@ cognitive_submit.onclick=function(){
             timeV:time_value
 
         });
-        $(cognitive_submit).hide();
-        $(cognitive_save).hide();
+
+        $("#hid_cognitive").hide();
         //$(eat_submit).attr("disabled",true);
-        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
+        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( "#hid_cognitive" );
         $("p").addClass("styleConfirm");
         $("#cognitive_another").show();
 };
@@ -192,10 +186,10 @@ literacy_submit.onclick=function(){
             timeV:time_value
 
         });
-        $(literacy_submit).hide();
-        $(literacy_save).hide();
+
+        $("#hid_literacy").hide();
         //$(eat_submit).attr("disabled",true);
-        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
+        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( "#hid_literacy" );
         $("p").addClass("styleConfirm");
         $("#literacy_another").show();
 };
@@ -209,10 +203,10 @@ other_submit.onclick=function(){
             important:false,
             timeV:time_value
         });
-        $(other_submit).hide();
-        $(other_save).hide();
+
+        $("#hid_other").hide();
         //$(eat_submit).attr("disabled",true);
-        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( ".hideButton" );
+        $( "<p><br>You completed a log which may be found in 'Data Review'.</p>" ).insertAfter( "#hid_other" );
         $("p").addClass("styleConfirm");
         $("#other_another").show();
 };
@@ -227,11 +221,11 @@ eat_save.onclick=function(){
             timeV:time_value
 
         });
-         $(".hideButton").hide();
+         $("#hid_eating").hide();
         //$(eat_save).attr("disabled",true);
-  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( ".hideButton" );
+  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( "#hid_eating" );
         $("p").addClass("styleConfirm");
-        $(".anotherButton").show();
+        $("#eating_another").show();
 
 };
 
@@ -244,11 +238,11 @@ sleep_save.onclick=function(){
             timeV:time_value
 
         });
-         $(".hideButton").hide();
+         $("#hid_sleeping").hide();
         //$(eat_save).attr("disabled",true);
-  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( ".hideButton" );
+  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( "#hid_sleeping" );
         $("p").addClass("styleConfirm");
-        $(".anotherButton").show();
+        $("#sleeping_another").show();
 };
 
 social_save.onclick=function(){
@@ -259,11 +253,11 @@ social_save.onclick=function(){
             timeV:time_value
 
         });
-         $(".hideButton").hide();
+         $("#hid_social").hide();
         //$(eat_save).attr("disabled",true);
-  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( ".hideButton" );
+  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( "#hid_social" );
         $("p").addClass("styleConfirm");
-        $(".anotherButton").show();
+        $("#social_another").show();
 };
 
 physical_save.onclick=function(){
@@ -274,11 +268,11 @@ physical_save.onclick=function(){
             timeV:time_value
 
         });
-         $(".hideButton").hide();
+         $("#hid_physical").hide();
         //$(eat_save).attr("disabled",true);
-  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( ".hideButton" );
+  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( "#hid_physical" );
         $("p").addClass("styleConfirm");
-        $(".anotherButton").show();
+        $("#physical_another").show();
 };
 
 cognitive_save.onclick=function(){
@@ -289,11 +283,11 @@ cognitive_save.onclick=function(){
             timeV:time_value
 
         });
-         $(".hideButton").hide();
+         $("#hid_cognitive").hide();
         //$(eat_save).attr("disabled",true);
-  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( ".hideButton" );
+  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( "#hid_cognitive" );
         $("p").addClass("styleConfirm");
-        $(".anotherButton").show();
+        $("#cognitive_another").show();
 };
 
 literacy_save.onclick=function(){
@@ -304,11 +298,11 @@ literacy_save.onclick=function(){
             time:time,
             timeV:time_value
         });
-         $(".hideButton").hide();
+         $("#hid_literacy").hide();
         //$(eat_save).attr("disabled",true);
-  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( ".hideButton" );
+  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( "#hid_literacy" );
         $("p").addClass("styleConfirm");
-        $(".anotherButton").show();
+        $("#literacy_another").show();
 };
 
 other_save.onclick=function(){
@@ -319,11 +313,11 @@ other_save.onclick=function(){
             time:time,
             timeV:time_value
         });
-         $(".hideButton").hide();
+         $("#hid_other").hide();
         //$(eat_save).attr("disabled",true);
-  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( ".hideButton" );
+  $( "<p><br>You saved a log which may be found in 'Complete Log'.</p>" ).insertAfter( "#hid_other" );
         $("p").addClass("styleConfirm");
-        $(".anotherButton").show();
+        $("#other_another").show();
 };
 
 

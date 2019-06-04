@@ -127,8 +127,30 @@ function read_log_inTime_range(category=""){
             dataset_array=Array.from(dataset);
             for(i=0;i<dataset_array.length;i++){
                 count.push(count_num(dataset_array[i],statistic_tag));}
+            var minindex,temp_count,temp_data;
+            for(i=0;i<count.length-1;i++){
+                minindex=i;
+                for(var j=i+1;j<count.length;j++){
+                    if(count[j]<count[minindex]){
+                        minindex=j;
+                    }
+                }
+                temp_count=count[i];
+                temp_data=dataset_array[i];
+                count[i]=count[minindex];
+                dataset_array[i]=dataset_array[minindex];
+                count[minindex]=temp_count;
+                dataset_array[minindex]=temp_data;
+            }
+            if(dataset_array.length>=5){
+                dataset_array=dataset_array.slice(0,5);
+                count=count.slice(0,5);
+            }
+
         }
+
         var ctxP1 = document.getElementById("pieChart1").getContext('2d');
+
         var myPieChart1 = new Chart(ctxP1, {
             type: 'pie',
             data: {
