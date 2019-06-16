@@ -19,34 +19,33 @@
 
 <body>
 <!-- navbar in all pages-->
-<div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-                <h4 class="text-white">About</h4>
-                <p class="text-muted">LogKids strives to serve for childcare teachers who need to make instant log of child under their care, and provide the log reviewing in a meaningful way. Start using LogKids to spend less time on notes-taking and interact with the child more!</p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-                <h4 class="text-white">Contact Us</h4>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">logkids@gmail.com</a></li>
-                    <!-- <li><a href="#" class="text-white">Like on Facebook</a></li>
-                     <li><a href="#" class="text-white">Email me</a></li> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container d-flex justify-content-between">
+            <b class="navbar-brand d-flex align-items-center">LogKids</b>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="goBack()">Back</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Make Log.html">Make Log<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Incomplete Log List.html">Complete Log</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Review Past Data.html">Review Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </div>
-</div>
-
-<div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container d-flex justify-content-between">
-        <a href="index.html" class="navbar-brand d-flex align-items-center"><b>LogKids</b></a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</div>
+    </nav>
 
 <!-- main body  -->
 <main role="main">
@@ -320,6 +319,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
 <script src="./bootstrap-tagsinput-latest/dist/bootstrap-tagsinput.js"></script>
 <script src="./makelog.js"></script>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
 </body>
 
 </html>

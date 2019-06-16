@@ -12,19 +12,17 @@
 
    <body>
         <!-- navbar in all pages-->
-        <div class="collapse bg-dark" id="navbarHeader">
+<!--         <div class="collapse bg-dark" id="navbarHeader">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 col-md-7 py-4">
                         <h4 class="text-white">About</h4>
-                        <p class="text-muted">LogKids strives to serve for childcare teachers who need to make instant log of child under their care, and provide the log reviewing in a meaningful way. Start using LogKids to spend less time on notes-taking and interact with the child more!</p>
+                        <p class="text-white">LogKids strives to serve for childcare teachers who need to make instant log of child under their care, and provide the log reviewing in a meaningful way. Start using LogKids to spend less time on notes-taking and interact with the child more!</p>
                     </div>
                     <div class="col-sm-4 offset-md-1 py-4">
                         <h4 class="text-white">Contact</h4>
                         <ul class="list-unstyled">
                             <li><a href="#" class="text-white">logkids@gmail.com</a></li>
-                            <!-- <li><a href="#" class="text-white">Like on Facebook</a></li>
-                             <li><a href="#" class="text-white">Email me</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -39,8 +37,34 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
+        </div> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container d-flex justify-content-between">
+            <b class="navbar-brand d-flex align-items-center">LogKids</b>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="goBack()">Back</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Make Log.html">Make Log</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Incomplete Log List.html">Complete Log<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Review Past Data.html">Review Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
+    </nav>
         <!-- main body  -->
         <main role="main">
 
@@ -155,7 +179,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="./incomplete.js"></script>
-
+        <script>
+        function goBack() {
+          window.history.back();
+        }
+        </script>
 
 </body>
 </html>
